@@ -1,7 +1,13 @@
 /** Canonical origin without trailing slash (e.g. https://bizmetricshq.com). */
 export function getSiteOrigin(): string {
-  const url = process.env.SITE_URL ?? process.env.NEXT_PUBLIC_SITE_URL ?? "https://bizmetricshq.com";
-  return url.replace(/\/$/, "");
+  const explicit = process.env.SITE_URL ?? process.env.NEXT_PUBLIC_SITE_URL;
+  if (explicit) return explicit.replace(/\/$/, "");
+
+  if (process.env.GITHUB_PAGES === "true") {
+    return "https://gurmeetmarwah.github.io";
+  }
+
+  return "https://bizmetricshq.com";
 }
 
 /** Base path prefix for GitHub Pages project sites (e.g. /biz-metrics-hq). */
