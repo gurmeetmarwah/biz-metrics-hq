@@ -46,8 +46,8 @@ export function BrowseByMetric() {
           {metrics.map((metric, index) => {
             const style = metricStyles[index];
             return (
-              <AnimateIn key={metric.href} delay={index * 100}>
-                <li>
+              <li key={metric.href}>
+                <AnimateIn delay={index * 100}>
                   <Link
                     href={metric.href}
                     className={`card-interactive group ${style.accent} relative flex gap-5 overflow-hidden rounded-2xl border border-border bg-surface p-6 sm:p-8`}
@@ -85,8 +85,8 @@ export function BrowseByMetric() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
                   </Link>
-                </li>
-              </AnimateIn>
+                </AnimateIn>
+              </li>
             );
           })}
         </ul>

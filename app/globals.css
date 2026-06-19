@@ -125,6 +125,13 @@ body {
   transform: translateY(0);
 }
 
+@media (scripting: none) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* ── Interactive cards ── */
 .card-interactive {
   transition:

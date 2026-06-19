@@ -19,8 +19,8 @@ export function Calculators() {
 
         <ul className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
           {calculators.map((calculator, index) => (
-            <AnimateIn key={calculator.href} delay={index * 80}>
-              <li>
+            <li key={calculator.href}>
+              <AnimateIn delay={index * 80}>
                 <Link
                   href={calculator.href}
                   className="card-interactive group flex h-full items-center gap-4 rounded-2xl border border-border bg-surface px-5 py-5 sm:px-6 sm:py-6"
@@ -45,8 +45,8 @@ export function Calculators() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
                 </Link>
-              </li>
-            </AnimateIn>
+              </AnimateIn>
+            </li>
           ))}
         </ul>
       </div>

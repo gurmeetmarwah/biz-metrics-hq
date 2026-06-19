@@ -27,8 +27,8 @@ export function FeaturedBenchmarks() {
 
         <ul className="mt-10 grid grid-cols-1 items-stretch gap-5 sm:grid-cols-2 sm:gap-6">
           {featuredBenchmarks.map((benchmark, index) => (
-            <AnimateIn key={benchmark.href} delay={index * 100} className="h-full">
-              <li className="h-full">
+            <li key={benchmark.href} className="h-full">
+              <AnimateIn delay={index * 100} className="h-full">
                 <article className="card-interactive group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface">
                   <div
                     className="h-1 w-full shrink-0"
@@ -102,8 +102,8 @@ export function FeaturedBenchmarks() {
                     </div>
                   </div>
                 </article>
-              </li>
-            </AnimateIn>
+              </AnimateIn>
+            </li>
           ))}
         </ul>
       </div>

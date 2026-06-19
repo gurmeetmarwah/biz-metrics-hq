@@ -17,8 +17,8 @@ export function IndustryComparisons() {
 
         <ul className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
           {comparisons.map((comparison, index) => (
-            <AnimateIn key={comparison.href} delay={index * 80}>
-              <li>
+            <li key={comparison.href}>
+              <AnimateIn delay={index * 80}>
                 <Link
                   href={comparison.href}
                   className="card-interactive group flex items-center justify-between gap-4 rounded-2xl border border-border bg-surface px-5 py-4 sm:px-6 sm:py-5"
@@ -45,8 +45,8 @@ export function IndustryComparisons() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
                 </Link>
-              </li>
-            </AnimateIn>
+              </AnimateIn>
+            </li>
           ))}
         </ul>
       </div>
