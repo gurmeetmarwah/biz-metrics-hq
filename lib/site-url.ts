@@ -1,4 +1,4 @@
-/** Canonical origin without trailing slash (e.g. https://bizmetricshq.com). */
+/** Canonical origin without trailing slash (e.g. https://www.bizmetricshq.com). */
 export function getSiteOrigin(): string {
   const explicit = process.env.SITE_URL ?? process.env.NEXT_PUBLIC_SITE_URL;
   if (explicit) return explicit.replace(/\/$/, "");
@@ -7,13 +7,20 @@ export function getSiteOrigin(): string {
     return "https://gurmeetmarwah.github.io";
   }
 
-  return "https://bizmetricshq.com";
+  return "https://www.bizmetricshq.com";
 }
 
-/** Base path prefix for GitHub Pages project sites (e.g. /biz-metrics-hq). */
+/** Base path prefix for GitHub Pages project sites (e.g. /biz-metrics-hq). Empty for custom domains. */
 export function getBasePath(): string {
-  const isGithubPages = process.env.GITHUB_PAGES === "true";
-  return process.env.BASE_PATH ?? (isGithubPages ? "/biz-metrics-hq" : "");
+  if (process.env.BASE_PATH !== undefined) {
+    return process.env.BASE_PATH;
+  }
+
+  if (process.env.GITHUB_PAGES === "true") {
+    return "/biz-metrics-hq";
+  }
+
+  return "";
 }
 
 /** Full site URL including optional base path — use for sitemap and robots. */

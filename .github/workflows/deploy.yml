@@ -31,8 +31,8 @@ jobs:
       - name: Build static site
         run: npm run build
         env:
-          GITHUB_PAGES: "true"
-          SITE_URL: https://gurmeetmarwah.github.io
+          SITE_URL: https://www.bizmetricshq.com
+          BASE_PATH: ""
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
@@ -40,3 +40,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           force_orphan: true
+          cname: www.bizmetricshq.com
