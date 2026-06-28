@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/3gz9qcvkpooq2.js","/_next/static/chunks/1rxncug86bump.js"],""]
+3:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/3gz9qcvkpooq2.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[[["$","meta",null,{"httpEquiv":"refresh","content":"0;url=/industries/restaurant/valuation/"}],["$","main",null,{"className":"mx-auto max-w-lg px-4 py-24 text-center","children":["$","p",null,{"className":"text-ink-muted","children":["This page has moved."," ",["$","$L2",null,{"href":"/industries/restaurant/valuation/","className":"text-accent hover:underline","children":"Go to Restaurant Valuation Calculator"}]]}]}]],[["$","script","script-0",{"src":"/_next/static/chunks/1rxncug86bump.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"f1pqSSHAMKoLVrYMvSxSz"}
+5:null
