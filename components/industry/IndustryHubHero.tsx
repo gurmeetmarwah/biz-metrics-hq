@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HashLink } from "@/components/ui/HashLink";
 import { SiteSearch } from "@/components/ui/SiteSearch";
 
 type IndustryHubHeroProps = {
@@ -68,13 +69,13 @@ export function IndustryHubHero({
 
         <div className="relative z-0 mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
           {searchQuickLinks.map((item) => (
-            <Link
-              key={item.href}
+            <HashLink
+              key={item.label}
               href={item.href}
               className="chip rounded-full border border-border bg-surface px-3.5 py-1 font-medium text-ink-muted hover:border-accent/30 hover:bg-accent-soft hover:text-accent"
             >
               {item.label}
-            </Link>
+            </HashLink>
           ))}
         </div>
       </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { HashLink } from "@/components/ui/HashLink";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { IndustryHubHero } from "@/components/industry/IndustryHubHero";
@@ -242,9 +243,9 @@ export default function BakeryHubPage() {
           <CostStructureFlow items={costStructureFlow} />
           <p className="mt-6 text-center text-sm text-ink-muted">
             Target net margin: 10–14%. Top performers reach 15–18%.{" "}
-            <Link href="#calculators" className="font-medium text-accent hover:underline">
+            <HashLink href="#calculators" className="font-medium text-accent hover:underline">
               Use the profit margin calculator →
-            </Link>
+            </HashLink>
           </p>
         </HubSection>
 

@@ -3,26 +3,37 @@ export type IndustrySlug =
   | "coffee-shop"
   | "bakery"
   | "food-truck"
+  | "ice-cream-shop"
   | "dental-practice"
   | "veterinary-clinic"
   | "physical-therapy-clinic"
   | "chiropractic-clinic"
+  | "optometry"
+  | "med-spa"
   | "hvac"
   | "plumbing"
   | "electrical"
   | "roofing"
   | "landscaping"
   | "pest-control"
-  | "cleaning-business";
+  | "cleaning-business"
+  | "painting"
+  | "tree-service"
+  | "pool-service"
+  | "gym"
+  | "pilates-studio"
+  | "yoga-studio"
+  | "martial-arts-school"
+  | "crossfit-gym";
 
-export type CategoryKey = "food" | "healthcare" | "home-services";
+export type CategoryKey = "food" | "healthcare" | "home-services" | "fitness";
 
 export const categoryStyles: Record<
   CategoryKey,
   {
     name: string;
     accentClass: string;
-    icon: "utensils" | "heart-pulse" | "home-wrench";
+    icon: "utensils" | "heart-pulse" | "home-wrench" | "dumbbell";
   }
 > = {
   food: {
@@ -40,6 +51,11 @@ export const categoryStyles: Record<
     accentClass: "category-accent-home",
     icon: "home-wrench",
   },
+  fitness: {
+    name: "Fitness & Wellness",
+    accentClass: "category-accent-fitness",
+    icon: "dumbbell",
+  },
 };
 
 export const industryCategoryMap: Record<IndustrySlug, CategoryKey> = {
@@ -47,10 +63,13 @@ export const industryCategoryMap: Record<IndustrySlug, CategoryKey> = {
   "coffee-shop": "food",
   bakery: "food",
   "food-truck": "food",
+  "ice-cream-shop": "food",
   "dental-practice": "healthcare",
   "veterinary-clinic": "healthcare",
   "physical-therapy-clinic": "healthcare",
   "chiropractic-clinic": "healthcare",
+  optometry: "healthcare",
+  "med-spa": "healthcare",
   hvac: "home-services",
   plumbing: "home-services",
   electrical: "home-services",
@@ -58,6 +77,14 @@ export const industryCategoryMap: Record<IndustrySlug, CategoryKey> = {
   landscaping: "home-services",
   "pest-control": "home-services",
   "cleaning-business": "home-services",
+  painting: "home-services",
+  "tree-service": "home-services",
+  "pool-service": "home-services",
+  gym: "fitness",
+  "pilates-studio": "fitness",
+  "yoga-studio": "fitness",
+  "martial-arts-school": "fitness",
+  "crossfit-gym": "fitness",
 };
 
 export function slugFromHref(href: string): IndustrySlug {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HashLink } from "@/components/ui/HashLink";
 import { SiteSearch } from "@/components/ui/SiteSearch";
 
 type MetricHubHeroProps = {
@@ -64,13 +65,13 @@ export function MetricHubHero({
         </div>
         <div className="relative z-0 mt-4 flex flex-wrap justify-center gap-2">
           {quickLinks.map((link) => (
-            <Link
+            <HashLink
               key={link.href}
               href={link.href}
               className="rounded-full border border-border bg-surface/80 px-3 py-1 text-xs font-medium text-ink-muted transition-colors hover:border-accent/30 hover:text-accent"
             >
               {link.label}
-            </Link>
+            </HashLink>
           ))}
         </div>
       </div>

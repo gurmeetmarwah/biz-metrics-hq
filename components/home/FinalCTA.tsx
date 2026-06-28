@@ -1,4 +1,4 @@
-import { platformStats } from "@/lib/data";
+import { platformStats } from "@/lib/platform-stats.server";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { AnimateIn } from "@/components/ui/AnimateIn";
 
@@ -17,7 +17,7 @@ export function FinalCTA() {
             Find Your Industry Benchmarks
           </h2>
           <p className="mx-auto mt-4 max-w-md text-base text-white/60">
-            Search {platformStats.benchmarks}+ benchmarks across {platformStats.dataPages}+
+            Search {platformStats.benchmarks} benchmarks across {platformStats.dataPages}{" "}
             data pages — revenue, margin, salary, and valuation ranges with sources
             and sample sizes disclosed.
           </p>

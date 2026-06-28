@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HashLink } from "@/components/ui/HashLink";
 import { IndustryFaq } from "@/components/industry/IndustryFaq";
 
 export function PestControlCalculatorFooter({
@@ -19,10 +20,10 @@ export function PestControlCalculatorFooter({
           <ul className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {dataLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="card-interactive block rounded-2xl border border-border bg-surface p-5">
+                <HashLink href={link.href} prefetch={false} className="card-interactive block rounded-2xl border border-border bg-surface p-5">
                   <span className="font-semibold text-ink">{link.label}</span>
                   <p className="mt-1 text-sm text-ink-muted">{link.description}</p>
-                </Link>
+                </HashLink>
               </li>
             ))}
           </ul>

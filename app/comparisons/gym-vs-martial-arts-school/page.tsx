@@ -1,0 +1,12 @@
+import type { Metadata } from "next";
+import { FitnessDualComparisonPage } from "@/components/comparison/FitnessDualComparisonPage";
+import { comparisonMeta, fitnessDualComparisonData } from "@/lib/industries/comparisons/gym-vs-martial-arts-school";
+
+export const metadata: Metadata = {
+  title: `${comparisonMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
+  description: comparisonMeta.subtitle,
+};
+
+export default function Page() {
+  return <FitnessDualComparisonPage data={fitnessDualComparisonData} />;
+}

@@ -38,7 +38,13 @@ function StarRating({
   );
 }
 
-export function IndustryBusinessScorecard({ scorecard }: { scorecard: BusinessScorecard }) {
+export function IndustryBusinessScorecard({
+  scorecard,
+  className = "",
+}: {
+  scorecard: BusinessScorecard;
+  className?: string;
+}) {
   const favorableItems = scorecard.items.filter((item) => !item.higherIsWorse);
   const averageRating =
     favorableItems.length > 0
@@ -54,7 +60,7 @@ export function IndustryBusinessScorecard({ scorecard }: { scorecard: BusinessSc
           : "Challenging";
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-sm">
+    <div className={`overflow-hidden rounded-2xl border border-border bg-surface shadow-sm ${className}`}>
       <div className="border-b border-border-subtle bg-gradient-to-r from-surface-muted/80 via-surface to-accent-soft/20 px-5 py-4 sm:px-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>

@@ -1,5 +1,7 @@
+import { industryDirectory } from "@/lib/industry-directory";
+
 export const navLinks = [
-  { label: "Industries", href: "/" },
+  { label: "Industries", href: "/industries/" },
   { label: "Revenue", href: "/revenue/" },
   { label: "Margins", href: "/margins/" },
   { label: "Valuation", href: "/valuation/" },
@@ -12,53 +14,16 @@ export const popularIndustries = [
   { label: "Dental", href: "/industries/healthcare/dental-practice/" },
 ] as const;
 
-/** Live platform counts — update when adding industries, pages, or benchmark data. */
-export const platformStats = {
-  industries: 6,
-  benchmarks: 350,
-  dataPages: 45,
-  coreMetrics: 4,
-} as const;
-
-export const quickStats = [
-  { value: `${platformStats.industries}+`, label: "Industries" },
-  { value: `${platformStats.benchmarks}+`, label: "Benchmarks" },
-  { value: `${platformStats.dataPages}+`, label: "Data Pages" },
-  { value: "4 Core", label: "Metrics" },
-] as const;
-
-export const industryCategories = [
-  {
-    name: "Food & Beverage",
-    industries: [
-      { label: "Restaurant", href: "/industries/restaurant/" },
-      { label: "Coffee Shop", href: "/industries/restaurant-types/coffee-shop/" },
-      { label: "Bakery", href: "/industries/food-beverage/bakery/" },
-      { label: "Food Truck", href: "/industries/food-beverage/food-truck/" },
-    ],
-  },
-  {
-    name: "Healthcare",
-    industries: [
-      { label: "Dental Practice", href: "/industries/healthcare/dental-practice/" },
-      { label: "Veterinary Clinic", href: "/industries/healthcare/veterinary-clinic/" },
-      { label: "Physical Therapy Clinic", href: "/industries/healthcare/physical-therapy-clinic/" },
-      { label: "Chiropractic Clinic", href: "/industries/healthcare/chiropractic-clinic/" },
-    ],
-  },
-  {
-    name: "Home Services",
-    industries: [
-      { label: "HVAC", href: "/industries/hvac/" },
-      { label: "Plumbing", href: "/industries/plumbing/" },
-      { label: "Electrical", href: "/industries/electrical/" },
-      { label: "Roofing", href: "/industries/roofing/" },
-      { label: "Landscaping", href: "/industries/landscaping/" },
-      { label: "Pest Control", href: "/industries/pest-control/" },
-      { label: "Cleaning Business", href: "/industries/cleaning-business/" },
-    ],
-  },
-] as const;
+export const industryCategories = industryDirectory.map((category) => ({
+  name: category.name,
+  key: category.key,
+  industries: category.industries.map((industry) => ({
+    label: industry.label,
+    slug: industry.slug,
+    href: industry.href,
+    ...(industry.comingSoon ? { comingSoon: true as const } : {}),
+  })),
+}));
 
 export const metrics = [
   {

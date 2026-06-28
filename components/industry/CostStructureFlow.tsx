@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { HashLink } from "@/components/ui/HashLink";
 
 type FlowItem = {
   label: string;
@@ -13,7 +13,7 @@ export function CostStructureFlow({ items }: { items: readonly FlowItem[] }) {
       <ul className="space-y-0">
         {items.map((item, i) => (
           <li key={item.label}>
-            <Link
+            <HashLink
               href={item.href}
               className="group block rounded-xl border border-transparent px-4 py-3 transition-colors hover:border-border hover:bg-surface-muted/50"
             >
@@ -42,7 +42,7 @@ export function CostStructureFlow({ items }: { items: readonly FlowItem[] }) {
                   }}
                 />
               </div>
-            </Link>
+            </HashLink>
             {i < items.length - 1 && (
               <div className="flex justify-center py-1 text-ink-faint" aria-hidden="true">
                 ↓

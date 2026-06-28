@@ -187,6 +187,7 @@ body {
 .category-accent-food { --card-accent: var(--metric-salary); }
 .category-accent-healthcare { --card-accent: var(--metric-revenue); }
 .category-accent-home { --card-accent: var(--metric-margin); }
+.category-accent-fitness { --card-accent: var(--accent); }
 
 /* ── Hero background mesh ── */
 .hero-mesh {

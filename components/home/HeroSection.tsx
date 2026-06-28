@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { platformStats, popularIndustries } from "@/lib/data";
+import { platformStats } from "@/lib/platform-stats.server";
+import { popularIndustries } from "@/lib/data";
 import { SiteSearch } from "@/components/ui/SiteSearch";
 
 export function HeroSection() {
@@ -36,8 +37,8 @@ export function HeroSection() {
 
         <p className="hero-fade-up hero-fade-up-delay-3 mx-auto mt-5 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
           Interquartile ranges for revenue, margins, owner salaries, and
-          valuation multiples across {platformStats.industries} food & beverage
-          industries and {platformStats.dataPages}+ data pages
+          valuation multiples across {platformStats.industries} industries and{" "}
+          {platformStats.dataPages} data pages
         </p>
 
         <div className="hero-fade-up hero-fade-up-delay-4 relative z-10 mx-auto mt-10 max-w-xl">

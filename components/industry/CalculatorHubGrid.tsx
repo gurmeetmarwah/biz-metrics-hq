@@ -26,6 +26,7 @@ export function CalculatorHubGrid({ items }: { items: readonly CalculatorItem[] 
           ) : (
             <Link
               href={item.href ?? "#"}
+              prefetch={false}
               className="card-interactive group flex h-full flex-col rounded-2xl border border-border bg-surface p-6"
             >
               <h3 className="font-display font-semibold text-ink transition-colors group-hover:text-accent">

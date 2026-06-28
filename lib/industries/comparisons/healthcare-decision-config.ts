@@ -71,6 +71,10 @@ import {
   decisionToolCopy as vetMedicalCopy,
   getRecommendation as getVetMedicalRecommendation,
 } from "./veterinary-clinic-vs-medical-practice";
+import {
+  decisionToolCopy as pilatesPtCopy,
+  getRecommendation as getPilatesPtRecommendation,
+} from "./pilates-studio-vs-physical-therapy-clinic";
 
 const configs: Record<string, HealthcareDecisionConfig> = {
   "dental-practice-vs-orthodontic-practice": {
@@ -198,6 +202,13 @@ const configs: Record<string, HealthcareDecisionConfig> = {
     leftCopy: cashInsuranceChiroCopy.left,
     rightCopy: cashInsuranceChiroCopy.right,
     getRecommendation: getCashInsuranceChiroRecommendation,
+  },
+  "pilates-studio-vs-physical-therapy-clinic": {
+    leftLabel: "Pilates Studio",
+    rightLabel: "Physical Therapy Clinic",
+    leftCopy: pilatesPtCopy.left,
+    rightCopy: pilatesPtCopy.right,
+    getRecommendation: getPilatesPtRecommendation,
   },
 };
 

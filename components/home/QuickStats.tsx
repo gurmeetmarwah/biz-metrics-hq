@@ -1,4 +1,4 @@
-import { quickStats } from "@/lib/data";
+import { platformQuickStats } from "@/lib/platform-stats.server";
 import { AnimateIn } from "@/components/ui/AnimateIn";
 
 const statColors = [
@@ -13,7 +13,7 @@ export function QuickStats() {
     <section aria-label="Platform statistics" className="border-b border-border/60 bg-surface">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-4">
-          {quickStats.map((stat, index) => (
+          {platformQuickStats.map((stat, index) => (
             <AnimateIn key={stat.label} delay={index * 80}>
               <div className="flex h-full flex-col items-center justify-center bg-surface px-4 py-8 text-center sm:py-10">
                 <span

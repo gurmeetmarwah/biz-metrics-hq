@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { LinkCardGrid } from "@/components/industry/LinkCardGrid";
 import { IndustryFaq } from "@/components/industry/IndustryFaq";
 import { HomeServicesDualDecisionTool } from "@/components/comparison/HomeServicesDualDecisionTool";
+import { FitnessDualDecisionTool } from "@/components/comparison/FitnessDualDecisionTool";
 import type { HealthcareDualComparisonData } from "@/lib/industries/comparisons/healthcare-comparison-types";
 
 type StartupItem = { item: string; percent: number };
@@ -181,8 +182,15 @@ function WinnerScorecard({
   );
 }
 
-export function HomeServicesDualComparisonPage({ data }: { data: HealthcareDualComparisonData }) {
+export function HomeServicesDualComparisonPage({
+  data,
+  variant = "home-services",
+}: {
+  data: HealthcareDualComparisonData;
+  variant?: "home-services" | "fitness";
+}) {
   const { left, right } = data.comparisonLabels;
+  const isFitness = variant === "fitness";
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -338,7 +346,15 @@ export function HomeServicesDualComparisonPage({ data }: { data: HealthcareDualC
           </div>
         </Section>
 
-        <Section id="customer-economics" title="Customer & Job Economics" subtitle="Lifetime value and job economics — the core financial differentiator.">
+        <Section
+          id="customer-economics"
+          title={isFitness ? "Member Economics Comparison" : "Customer & Job Economics"}
+          subtitle={
+            isFitness
+              ? "Lifetime value, retention, and revenue per member — the core financial differentiator."
+              : "Lifetime value and job economics — the core financial differentiator."
+          }
+        >
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="rounded-2xl border border-border bg-surface p-6">
               <h3 className="font-display font-semibold text-metric-salary">{left}</h3>
@@ -364,7 +380,16 @@ export function HomeServicesDualComparisonPage({ data }: { data: HealthcareDualC
           </div>
         </Section>
 
-        <Section id="technician-productivity" title="Technician Productivity Comparison" subtitle="Revenue per technician and field productivity." className="bg-surface-muted/50">
+        <Section
+          id="technician-productivity"
+          title={isFitness ? "Staff & Capacity Comparison" : "Technician Productivity Comparison"}
+          subtitle={
+            isFitness
+              ? "Revenue per member and membership capacity by format."
+              : "Revenue per technician and field productivity."
+          }
+          className="bg-surface-muted/50"
+        >
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="rounded-2xl border border-border bg-surface p-6">
               <h3 className="font-display font-semibold text-metric-salary">{left}</h3>
@@ -403,7 +428,16 @@ export function HomeServicesDualComparisonPage({ data }: { data: HealthcareDualC
           </div>
         </Section>
 
-        <Section id="recurring-revenue" title="Recurring Revenue & Demand Analysis" subtitle="Maintenance contracts and emergency demand shape margin stability." className="bg-surface-muted/50">
+        <Section
+          id="recurring-revenue"
+          title={isFitness ? "Recurring Revenue & Retention Analysis" : "Recurring Revenue & Demand Analysis"}
+          subtitle={
+            isFitness
+              ? "Membership MRR and retention shape margin stability and valuation."
+              : "Maintenance contracts and emergency demand shape margin stability."
+          }
+          className="bg-surface-muted/50"
+        >
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border border-border bg-surface p-6 text-center">
               <p className="font-display font-semibold text-metric-salary">{left}</p>
@@ -443,7 +477,7 @@ export function HomeServicesDualComparisonPage({ data }: { data: HealthcareDualC
           </div>
         </Section>
 
-        <Section id="startup-costs" title="Startup Cost Comparison" subtitle="Investment required to launch or acquire each home services business." className="bg-surface-muted/50">
+        <Section id="startup-costs" title="Startup Cost Comparison" subtitle={isFitness ? "Investment required to launch each fitness business format." : "Investment required to launch or acquire each home services business."} className="bg-surface-muted/50">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <StartupVisual title={left} items={data.leftStartupItems} color="var(--metric-salary)" />
             <StartupVisual title={right} items={data.rightStartupItems} color="var(--metric-margin)" />
@@ -587,7 +621,11 @@ export function HomeServicesDualComparisonPage({ data }: { data: HealthcareDualC
         </Section>
 
         <Section id="decision-tool" title="Interactive Decision Tool" className="bg-surface-muted/50">
-          <HomeServicesDualDecisionTool slug={data.comparisonMeta.slug} />
+          {isFitness ? (
+            <FitnessDualDecisionTool slug={data.comparisonMeta.slug} />
+          ) : (
+            <HomeServicesDualDecisionTool slug={data.comparisonMeta.slug} />
+          )}
         </Section>
 
         <Section id="calculators" title="Related Calculators">

@@ -5,10 +5,21 @@ import { dentalReportSlugs } from "@/lib/industries/healthcare/dental-reports";
 import { physicalTherapyReportSlugs } from "@/lib/industries/healthcare/physical-therapy-reports";
 import { veterinaryReportSlugs } from "@/lib/industries/healthcare/veterinary-reports";
 
+import { fitnessReportSlugs } from "@/lib/industries/fitness-reports";
+import { pilatesReportSlugs } from "@/lib/industries/pilates-reports";
+import { martialArtsReportSlugs } from "@/lib/industries/martial-arts-reports";
+import { yogaReportSlugs } from "@/lib/industries/yoga-reports";
+import { crossfitReportSlugs } from "@/lib/industries/crossfit-reports";
+
 const APP_DIR = path.join(process.cwd(), "app");
 
 /** Parent route segments (no leading slash) mapped to slug lists for [slug] pages. */
 const DYNAMIC_SLUG_ROUTES: Record<string, readonly string[]> = {
+  "industries/gym/reports": fitnessReportSlugs,
+  "industries/pilates-studio/reports": pilatesReportSlugs,
+  "industries/yoga-studio/reports": yogaReportSlugs,
+  "industries/martial-arts-school/reports": martialArtsReportSlugs,
+  "industries/crossfit-gym/reports": crossfitReportSlugs,
   "industries/healthcare/dental-practice/reports": dentalReportSlugs,
   "industries/healthcare/chiropractic-clinic/reports": chiropracticReportSlugs,
   "industries/healthcare/veterinary-clinic/reports": veterinaryReportSlugs,
