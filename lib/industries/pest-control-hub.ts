@@ -25,6 +25,11 @@ import {
   valuationDefaults,
   valuationMultiples,
 } from "@/lib/industries/pest-control";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { pestControlProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = pestControlProfitabilitySeo;
+
 
 export const hubMeta = {
   slug: "pest-control",
@@ -157,7 +162,7 @@ export const relatedHomeServiceIndustries = [
   { label: "Lawn Care", href: "/industries/lawn-care/", comingSoon: true },
 ] as const;
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable is a pest control business?",
     answer:
@@ -194,6 +199,8 @@ export const hubFaqs = [
       "Strong pest control operators maintain 82–88% annual account retention. Top-quartile companies achieve 85%+ renewal rates through proactive communication, service quality, and bundled termite and mosquito programs. Retention above 80% is a key indicator of a healthy, acquisition-ready business.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export {
   benchmarkDefaults,

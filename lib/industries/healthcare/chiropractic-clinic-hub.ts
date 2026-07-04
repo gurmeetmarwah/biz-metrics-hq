@@ -15,6 +15,11 @@ import {
   wellnessPlanFlow,
   wellnessPlanTopics,
 } from "@/lib/industries/chiropractic-clinic";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { chiropracticClinicProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = chiropracticClinicProfitabilitySeo;
+
 
 export const hubMeta = {
   slug: "chiropractic-clinic",
@@ -264,7 +269,7 @@ export const popularMetrics = [
 
 export { industryInsights } from "@/lib/industries/healthcare/chiropractic-reports";
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable are chiropractic clinics?",
     answer:
@@ -296,6 +301,8 @@ export const hubFaqs = [
       "A productive chiropractor typically handles 20–35 patient visits per day. Clinics maintain 600–1,500 active patients with 1–4 full-time chiropractors. New patient flow of 30–70 per month supports growth in competitive markets.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export const hubSectionNav = [
   { id: "explore", label: "Explore" },

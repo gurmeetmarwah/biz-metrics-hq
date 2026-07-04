@@ -21,6 +21,11 @@ import {
   valuationDefaults,
   valuationMultiples,
 } from "@/lib/industries/plumbing";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { plumbingProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = plumbingProfitabilitySeo;
+
 
 export const hubMeta = {
   slug: "plumbing",
@@ -149,7 +154,7 @@ export const relatedHomeServiceIndustries = [
   { label: "Cleaning Business", href: "/industries/cleaning-business/" },
 ] as const;
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable is a plumbing business?",
     answer:
@@ -181,6 +186,8 @@ export const hubFaqs = [
       "Plumbing is highly recession-resistant. Water and sewer failures require immediate repair regardless of economic conditions, and emergency calls often increase as deferred maintenance catches up. Companies with commercial maintenance contracts add stability during construction slowdowns.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export {
   benchmarkDefaults,

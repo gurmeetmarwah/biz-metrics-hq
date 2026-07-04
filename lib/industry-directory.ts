@@ -27,8 +27,8 @@ export const industryDirectory: DirectoryCategory[] = [
       { label: "Pest Control", slug: "pest-control", href: "/industries/pest-control/" },
       { label: "Cleaning Business", slug: "cleaning-business", href: "/industries/cleaning-business/" },
       { label: "Painting", slug: "painting", href: "/industries/painting/", comingSoon: true },
-      { label: "Tree Service", slug: "tree-service", href: "/industries/tree-service/", comingSoon: true },
-      { label: "Pool Service", slug: "pool-service", href: "/industries/pool-service/", comingSoon: true },
+      { label: "Tree Service", slug: "tree-service", href: "/industries/tree-service/" },
+      { label: "Pool Service", slug: "pool-service", href: "/industries/pool-service/" },
     ],
   },
   {
@@ -37,7 +37,7 @@ export const industryDirectory: DirectoryCategory[] = [
     industries: [
       { label: "Dental Practice", slug: "dental-practice", href: "/industries/healthcare/dental-practice/" },
       { label: "Veterinary Clinic", slug: "veterinary-clinic", href: "/industries/healthcare/veterinary-clinic/" },
-      { label: "Optometry", slug: "optometry", href: "/industries/healthcare/optometry/", comingSoon: true },
+      { label: "Optometry", slug: "optometry-practice", href: "/industries/optometry-practice/" },
       { label: "Physical Therapy Clinic", slug: "physical-therapy-clinic", href: "/industries/healthcare/physical-therapy-clinic/" },
       { label: "Chiropractic Clinic", slug: "chiropractic-clinic", href: "/industries/healthcare/chiropractic-clinic/" },
       { label: "Med Spa", slug: "med-spa", href: "/industries/healthcare/med-spa/", comingSoon: true },
@@ -62,7 +62,7 @@ export const industryDirectory: DirectoryCategory[] = [
       { label: "Restaurant", slug: "restaurant", href: "/industries/restaurant/" },
       { label: "Bakery", slug: "bakery", href: "/industries/food-beverage/bakery/" },
       { label: "Food Truck", slug: "food-truck", href: "/industries/food-beverage/food-truck/" },
-      { label: "Ice Cream Shop", slug: "ice-cream-shop", href: "/industries/food-beverage/ice-cream-shop/", comingSoon: true },
+      { label: "Ice Cream Shop", slug: "ice-cream-shop", href: "/industries/ice-cream-shop/" },
     ],
   },
 ];

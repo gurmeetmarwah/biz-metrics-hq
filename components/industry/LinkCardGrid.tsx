@@ -17,8 +17,8 @@ export function LinkCardGrid({ items, columns = 2 }: LinkCardGridProps) {
 
   return (
     <ul className={`grid grid-cols-1 gap-3 ${colClass}`}>
-      {items.map((item) => (
-        <li key={item.label}>
+      {items.map((item, index) => (
+        <li key={item.href ?? `${item.label}-${index}`}>
           {item.comingSoon ? (
             <div
               aria-disabled="true"

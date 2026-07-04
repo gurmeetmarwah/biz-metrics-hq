@@ -22,6 +22,11 @@ import {
   valuationDefaults,
   valuationMultiples,
 } from "@/lib/industries/electrical";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { electricalProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = electricalProfitabilitySeo;
+
 
 export const hubMeta = {
   slug: "electrical",
@@ -146,7 +151,7 @@ export const relatedHomeServiceIndustries = [
   { label: "Cleaning Business", href: "/industries/cleaning-business/" },
 ] as const;
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable is an electrical business?",
     answer:
@@ -178,6 +183,8 @@ export const hubFaqs = [
       "The median electrical contractor generates $165K–$295K revenue per full-time electrician, with a midpoint near $230K. Commercial-focused firms with larger project tickets often exceed $280K per electrician; residential service-heavy shops may run $165K–$220K.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export {
   benchmarkDefaults,

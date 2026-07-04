@@ -7,6 +7,11 @@ import {
   quickSummary,
   valuationMultiples,
 } from "@/lib/industries/dental-practice";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { dentalPracticeProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = dentalPracticeProfitabilitySeo;
+
 
 export { industryInsights } from "@/lib/industries/healthcare/dental-reports";
 
@@ -243,7 +248,7 @@ export const popularMetrics = [
   { label: "Revenue Per Patient", href: "#patient-economics" },
 ] as const;
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable are dental practices?",
     answer:
@@ -275,6 +280,8 @@ export const hubFaqs = [
       "A solo general dentist typically maintains 1,200–1,800 active patients and sees 12–18 patients per day. New patient flow of 25–45 per month supports growth. Retention rates above 80% indicate a healthy recall and hygiene program.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export const hubSectionNav = [
   { id: "explore", label: "Explore" },

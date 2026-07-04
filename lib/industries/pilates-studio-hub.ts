@@ -7,7 +7,7 @@ import {
   clientEconomicsMethodology,
   expenseBreakdown,
   fitnessBenchmarkRankings,
-  hubFaqs,
+  hubFaqs as industryFaqs,
   industryInsights,
   industryOpportunities,
   industryRisks,
@@ -26,6 +26,13 @@ import {
   valuationDefaults,
   valuationMultiples,
 } from "@/lib/industries/pilates-studio";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { pilatesStudioProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = pilatesStudioProfitabilitySeo;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, industryFaqs);
+
 
 export const hubMeta = {
   slug: pilatesStudioMeta.slug,
@@ -180,7 +187,6 @@ export {
   clientEconomicsMethodology,
   expenseBreakdown,
   fitnessBenchmarkRankings,
-  hubFaqs,
   industryInsights,
   industryOpportunities,
   industryRisks,

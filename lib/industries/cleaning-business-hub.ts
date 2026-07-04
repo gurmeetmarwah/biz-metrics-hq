@@ -26,6 +26,11 @@ import {
   valuationDefaults,
   valuationMultiples,
 } from "@/lib/industries/cleaning-business";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { cleaningBusinessProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = cleaningBusinessProfitabilitySeo;
+
 
 export const hubMeta = {
   slug: "cleaning-business",
@@ -159,7 +164,7 @@ export const relatedHomeServiceIndustries = [
   { label: "Property Management", href: "/industries/property-management/", comingSoon: true },
 ] as const;
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable is a cleaning business?",
     answer:
@@ -196,6 +201,8 @@ export const hubFaqs = [
       "Productive cleaning businesses generate $80K–$150K annual revenue per field cleaner, with a median near $115K. Commercial operators with larger teams may run lower per-cleaner revenue but higher total scale. Route density and labor utilization are the key drivers.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export {
   benchmarkDefaults,

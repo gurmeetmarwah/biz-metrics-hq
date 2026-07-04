@@ -14,6 +14,7 @@ import { CalculatorHubGrid } from "@/components/industry/CalculatorHubGrid";
 import { LinkCardGrid } from "@/components/industry/LinkCardGrid";
 import { IndustryFaq } from "@/components/industry/IndustryFaq";
 import { DataSourcesAttribution } from "@/components/shared/DataSourcesAttribution";
+import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import { hvacAttribution } from "@/lib/data-sources/hvac";
 import {
   benchmarkThresholds,
@@ -31,6 +32,7 @@ import {
   marginMetrics,
   marginTiers,
   ownerEconomicsCards,
+  profitabilitySeo,
   relatedHomeServiceIndustries,
   relatedMetrics,
   revenueDistribution,
@@ -44,9 +46,8 @@ import {
 } from "@/lib/industries/hvac-hub";
 
 export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "HVAC industry data hub: revenue benchmarks, profit margins, owner salaries, technician productivity, valuation multiples, geographic variation, calculators, and benchmark tools.",
+  title: `${profitabilitySeo.sectionTitle} Profit Margins & Benchmarks | BizMetricsHQ`,
+  description: profitabilitySeo.lead,
 };
 
 function HubSection({
@@ -166,11 +167,17 @@ export default function HvacHubPage() {
 
         <HubSection
           id="profitability"
-          title="Average HVAC Profit Margin"
-          subtitle="Gross and net margin benchmarks, cost structure, and expense ratios for HVAC contractors."
+          title={profitabilitySeo.sectionTitle}
+          subtitle={profitabilitySeo.sectionSubtitle}
           className="bg-surface-muted/50"
         >
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <IndustryProfitabilitySeo content={profitabilitySeo} />
+
+          <h3 className="mt-12 font-display text-lg font-semibold text-ink">
+            Average HVAC Profit Margin Benchmarks
+          </h3>
+
+          <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-2">
             <HvacMarginGauge
               poor={marginTiers.poor}
               average={marginTiers.average}
@@ -228,6 +235,15 @@ export default function HvacHubPage() {
               </tbody>
             </table>
           </div>
+
+          <p className="mt-8 text-sm text-ink-muted">
+            <Link
+              href="/calculators/hvac-profit-margin/"
+              className="font-medium text-accent hover:underline"
+            >
+              HVAC profit margin calculator →
+            </Link>
+          </p>
         </HubSection>
 
         <HubSection
@@ -408,7 +424,7 @@ export default function HvacHubPage() {
           </div>
         </HubSection>
 
-        <HubSection id="faqs" title="Frequently Asked Questions" className="bg-surface-muted/50">
+        <HubSection id="faqs" title={profitabilitySeo.faqSectionTitle} className="bg-surface-muted/50">
           <IndustryFaq faqs={hubFaqs} />
         </HubSection>
 

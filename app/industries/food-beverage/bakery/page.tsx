@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { HashLink } from "@/components/ui/HashLink";
 import { Header } from "@/components/layout/Header";
@@ -27,6 +28,7 @@ import {
   hubCalculators,
   hubComparisons,
   hubFaqs,
+  profitabilitySeo,
   hubKpis,
   hubMeta,
   hubSectionNav,
@@ -239,7 +241,15 @@ export default function BakeryHubPage() {
           </div>
         </HubSection>
 
-        <HubSection id="profitability" title="Cost Structure Dashboard" subtitle="How revenue flows through ingredients, labor, rent, packaging, and profit." className="bg-surface-muted/50">
+        <HubSection
+          id="profitability"
+          title={profitabilitySeo.sectionTitle}
+          subtitle={profitabilitySeo.sectionSubtitle}
+          className="bg-surface-muted/50"
+        >
+          <IndustryProfitabilitySeo content={profitabilitySeo} />
+          <div className="mt-12" />
+
           <CostStructureFlow items={costStructureFlow} />
           <p className="mt-6 text-center text-sm text-ink-muted">
             Target net margin: 10–14%. Top performers reach 15–18%.{" "}
@@ -349,7 +359,7 @@ export default function BakeryHubPage() {
           <DataSourcesAttribution attribution={bakeryAttribution} showMacroSources />
         </HubSection>
 
-        <HubSection id="faqs" title="Frequently Asked Questions">
+        <HubSection id="faqs" title={profitabilitySeo.faqSectionTitle}>
           <IndustryFaq faqs={hubFaqs} />
         </HubSection>
       </main>

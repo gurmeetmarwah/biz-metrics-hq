@@ -3,7 +3,7 @@ export const hvacMeta = {
   name: "HVAC",
   title: "HVAC Industry Benchmarks",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and key economics for HVAC businesses in the United States.",
+    "See how profitable an HVAC business is — average profit margins, owner salaries, revenue, valuation multiples, and key economics for HVAC companies in the United States.",
   dataVintage: "2025–2026",
   sampleSize: "420+ HVAC businesses",
   geography: "United States",
@@ -56,8 +56,8 @@ export const marginTiers = {
 } as const;
 
 export const marginMetrics = [
-  { metric: "Gross Margin", value: "45 – 55%" },
-  { metric: "Net Margin", value: "8 – 16%" },
+  { metric: "Gross Profit Margin", value: "45 – 55%" },
+  { metric: "Net Profit Margin", value: "8 – 16%" },
   { metric: "Owner Salary (normalized)", value: "$95K – $185K" },
 ] as const;
 

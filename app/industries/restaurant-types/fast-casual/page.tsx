@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import { KpiDashboard } from "@/components/industry/KpiDashboard";
 import { QuickSummaryTable } from "@/components/industry/QuickSummaryTable";
 import { IndustrySectionNav } from "@/components/industry/IndustrySectionNav";
@@ -38,7 +39,12 @@ import {
   valuationExample,
   valuationMultiples,
 } from "@/lib/industries/fast-casual";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { fastCasualProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
 import { formatCurrency } from "@/lib/numbers";
+
+const profitabilitySeo = fastCasualProfitabilitySeo;
+const allFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, faqs);
 
 export const metadata: Metadata = {
   title: `${fastCasualMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
@@ -107,7 +113,7 @@ export default function FastCasualEconomicsPage() {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
+    mainEntity: allFaqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: { "@type": "Answer", text: faq.answer },
@@ -272,9 +278,11 @@ export default function FastCasualEconomicsPage() {
         {/* Profit margins */}
         <Section
           id="profit-margins"
-          title="Profit Margin Benchmarks"
-          subtitle="Net margin tiers, cost drivers, and comparison to other restaurant formats."
+          title={profitabilitySeo.sectionTitle}
+          subtitle={profitabilitySeo.sectionSubtitle}
         >
+          <IndustryProfitabilitySeo content={profitabilitySeo} />
+          <div className="mt-12" />
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <MarginTierFourChart />
             <DataTable
@@ -622,8 +630,8 @@ export default function FastCasualEconomicsPage() {
         </Section>
 
         {/* FAQs */}
-        <Section id="faqs" title="Frequently Asked Questions">
-          <IndustryFaq faqs={faqs} />
+        <Section id="faqs" title={profitabilitySeo.faqSectionTitle}>
+          <IndustryFaq faqs={allFaqs} />
         </Section>
       </main>
       <Footer />

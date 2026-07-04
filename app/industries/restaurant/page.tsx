@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { IndustryHero } from "@/components/industry/IndustryHero";
 import { IndustrySectionNav } from "@/components/industry/IndustrySectionNav";
+import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import { KpiDashboard } from "@/components/industry/KpiDashboard";
 import { QuickSummaryTable } from "@/components/industry/QuickSummaryTable";
 import { DistributionBar } from "@/components/industry/DistributionBar";
@@ -37,6 +38,11 @@ import {
   sectionNav,
   popularIndustries,
 } from "@/lib/industries/restaurant";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { restaurantProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+const profitabilitySeo = restaurantProfitabilitySeo;
+const allFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, faqs);
 
 export const metadata: Metadata = {
   title: "Restaurant Industry Benchmarks — Revenue, Margins & Valuation | BizMetricsHQ",
@@ -77,7 +83,7 @@ export default function RestaurantIndustryPage() {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
+    mainEntity: allFaqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: { "@type": "Answer", text: faq.answer },
@@ -161,10 +167,12 @@ export default function RestaurantIndustryPage() {
         {/* Profit Margins */}
         <Section
           id="profit-margins"
-          title="Restaurant Profit Margins"
-          subtitle="Net margin benchmarks by performance tier and restaurant type."
+          title={profitabilitySeo.sectionTitle}
+          subtitle={profitabilitySeo.sectionSubtitle}
           className="bg-surface-muted/50"
         >
+          <IndustryProfitabilitySeo content={profitabilitySeo} />
+          <div className="mt-12" />
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <MarginTierChart
               poor={marginDistribution.poor}
@@ -315,8 +323,8 @@ export default function RestaurantIndustryPage() {
         </Section>
 
         {/* FAQs */}
-        <Section id="faqs" title="Frequently Asked Questions">
-          <IndustryFaq faqs={faqs} />
+        <Section id="faqs" title={profitabilitySeo.faqSectionTitle}>
+          <IndustryFaq faqs={allFaqs} />
         </Section>
 
         {/* Related Industries */}

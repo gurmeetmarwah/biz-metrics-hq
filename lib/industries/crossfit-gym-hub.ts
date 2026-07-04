@@ -7,7 +7,7 @@ import {
   expenseBreakdown,
   fitnessBenchmarkRankings,
   functionalFitnessBenchmarkMatrix,
-  hubFaqs,
+  hubFaqs as industryFaqs,
   industryInsights,
   industryOpportunities,
   industryRisks,
@@ -27,6 +27,13 @@ import {
   valuationDefaults,
   valuationMultiples,
 } from "@/lib/industries/crossfit-gym";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { crossfitGymProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = crossfitGymProfitabilitySeo;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, industryFaqs);
+
 
 export const hubMeta = {
   slug: crossfitGymMeta.slug,
@@ -187,7 +194,6 @@ export {
   expenseBreakdown,
   fitnessBenchmarkRankings,
   functionalFitnessBenchmarkMatrix,
-  hubFaqs,
   industryInsights,
   industryOpportunities,
   industryRisks,

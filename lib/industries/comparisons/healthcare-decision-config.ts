@@ -75,6 +75,26 @@ import {
   decisionToolCopy as pilatesPtCopy,
   getRecommendation as getPilatesPtRecommendation,
 } from "./pilates-studio-vs-physical-therapy-clinic";
+import {
+  decisionToolCopy as optometryDentistryCopy,
+  getRecommendation as getOptometryDentistryRecommendation,
+} from "./optometry-vs-dentistry";
+import {
+  decisionToolCopy as optometryChiroCopy,
+  getRecommendation as getOptometryChiroRecommendation,
+} from "./optometry-vs-chiropractic";
+import {
+  decisionToolCopy as optometryPtCopy,
+  getRecommendation as getOptometryPtRecommendation,
+} from "./optometry-vs-physical-therapy";
+import {
+  decisionToolCopy as optometryDermCopy,
+  getRecommendation as getOptometryDermRecommendation,
+} from "./optometry-vs-dermatology";
+import {
+  decisionToolCopy as optometryVetCopy,
+  getRecommendation as getOptometryVetRecommendation,
+} from "./optometry-vs-veterinary";
 
 const configs: Record<string, HealthcareDecisionConfig> = {
   "dental-practice-vs-orthodontic-practice": {
@@ -209,6 +229,41 @@ const configs: Record<string, HealthcareDecisionConfig> = {
     leftCopy: pilatesPtCopy.left,
     rightCopy: pilatesPtCopy.right,
     getRecommendation: getPilatesPtRecommendation,
+  },
+  "optometry-vs-dentistry": {
+    leftLabel: "Optometry Practice",
+    rightLabel: "Dental Practice",
+    leftCopy: optometryDentistryCopy.left,
+    rightCopy: optometryDentistryCopy.right,
+    getRecommendation: getOptometryDentistryRecommendation,
+  },
+  "optometry-vs-chiropractic": {
+    leftLabel: "Optometry Practice",
+    rightLabel: "Chiropractic Clinic",
+    leftCopy: optometryChiroCopy.left,
+    rightCopy: optometryChiroCopy.right,
+    getRecommendation: getOptometryChiroRecommendation,
+  },
+  "optometry-vs-physical-therapy": {
+    leftLabel: "Optometry Practice",
+    rightLabel: "Physical Therapy Clinic",
+    leftCopy: optometryPtCopy.left,
+    rightCopy: optometryPtCopy.right,
+    getRecommendation: getOptometryPtRecommendation,
+  },
+  "optometry-vs-dermatology": {
+    leftLabel: "Optometry Practice",
+    rightLabel: "Dermatology Practice",
+    leftCopy: optometryDermCopy.left,
+    rightCopy: optometryDermCopy.right,
+    getRecommendation: getOptometryDermRecommendation,
+  },
+  "optometry-vs-veterinary": {
+    leftLabel: "Optometry Practice",
+    rightLabel: "Veterinary Clinic",
+    leftCopy: optometryVetCopy.left,
+    rightCopy: optometryVetCopy.right,
+    getRecommendation: getOptometryVetRecommendation,
   },
 };
 

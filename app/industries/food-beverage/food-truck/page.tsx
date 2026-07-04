@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { HashLink } from "@/components/ui/HashLink";
 import { Header } from "@/components/layout/Header";
@@ -31,6 +32,7 @@ import {
   hubCalculators,
   hubComparisons,
   hubFaqs,
+  profitabilitySeo,
   hubKpis,
   hubMeta,
   hubSectionNav,
@@ -261,7 +263,14 @@ export default function FoodTruckHubPage() {
           </p>
         </HubSection>
 
-        <HubSection id="profitability" title="Cost Structure Dashboard" subtitle="How revenue flows through food cost, labor, fuel, permits, and profit.">
+        <HubSection
+          id="profitability"
+          title={profitabilitySeo.sectionTitle}
+          subtitle={profitabilitySeo.sectionSubtitle}
+        >
+          <IndustryProfitabilitySeo content={profitabilitySeo} />
+          <div className="mt-12" />
+
           <CostStructureFlow items={costStructureFlow} />
           <p className="mt-6 text-center text-sm text-ink-muted">
             Target net margin: 12–15%. Top performers reach 16–18% with strong event mix.{" "}
@@ -376,7 +385,7 @@ export default function FoodTruckHubPage() {
           <DataSourcesAttribution attribution={foodTruckAttribution} />
         </HubSection>
 
-        <HubSection id="faqs" title="Frequently Asked Questions">
+        <HubSection id="faqs" title={profitabilitySeo.faqSectionTitle}>
           <IndustryFaq faqs={hubFaqs} />
         </HubSection>
       </main>

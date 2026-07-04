@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -26,6 +27,7 @@ import {
   hubCalculators,
   hubComparisons,
   hubFaqs,
+  profitabilitySeo,
   hubKpis,
   hubMeta,
   hubSectionNav,
@@ -313,9 +315,12 @@ export default function DentalPracticeHubPage() {
 
         <HubSection
           id="profitability"
-          title="Cost Structure Dashboard"
-          subtitle="How collections flow through clinical labor, supplies, facility costs, admin, and profit."
+          title={profitabilitySeo.sectionTitle}
+          subtitle={profitabilitySeo.sectionSubtitle}
         >
+          <IndustryProfitabilitySeo content={profitabilitySeo} />
+          <div className="mt-12" />
+
           <CostStructureFlow items={costStructureFlow} />
           <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-surface">
             <h3 className="border-b border-border-subtle bg-surface-muted/50 px-5 py-3.5 font-display font-semibold text-ink">
@@ -447,7 +452,7 @@ export default function DentalPracticeHubPage() {
           <DataSourcesAttribution attribution={dentalAttribution} />
         </HubSection>
 
-        <HubSection id="faqs" title="Frequently Asked Questions">
+        <HubSection id="faqs" title={profitabilitySeo.faqSectionTitle}>
           <IndustryFaq faqs={hubFaqs} />
         </HubSection>
       </main>

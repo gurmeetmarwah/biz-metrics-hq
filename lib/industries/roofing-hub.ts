@@ -24,6 +24,11 @@ import {
   valuationDefaults,
   valuationMultiples,
 } from "@/lib/industries/roofing";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { roofingProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = roofingProfitabilitySeo;
+
 
 export const hubMeta = {
   slug: "roofing",
@@ -149,7 +154,7 @@ export const relatedHomeServiceIndustries = [
   { label: "Cleaning Business", href: "/industries/cleaning-business/" },
 ] as const;
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable is a roofing business?",
     answer:
@@ -186,6 +191,8 @@ export const hubFaqs = [
       "Dependence varies by market. In hail and hurricane corridors, insurance restoration can represent 20–40% of annual revenue. Storm events can double or triple monthly revenue temporarily. Operators outside storm markets rely more on aging housing stock and replacement cycles.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export {
   benchmarkDefaults,

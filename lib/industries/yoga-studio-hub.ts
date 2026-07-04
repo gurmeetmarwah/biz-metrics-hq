@@ -9,7 +9,7 @@ import {
   communityHealthBenchmarks,
   expenseBreakdown,
   fitnessBenchmarkRankings,
-  hubFaqs,
+  hubFaqs as industryFaqs,
   industryInsights,
   industryOpportunities,
   industryRisks,
@@ -27,6 +27,13 @@ import {
   valuationMultiples,
   yogaStudioMeta,
 } from "@/lib/industries/yoga-studio";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { yogaStudioProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = yogaStudioProfitabilitySeo;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, industryFaqs);
+
 
 export const hubMeta = {
   slug: yogaStudioMeta.slug,
@@ -183,7 +190,6 @@ export {
   communityHealthBenchmarks,
   expenseBreakdown,
   fitnessBenchmarkRankings,
-  hubFaqs,
   industryInsights,
   industryOpportunities,
   industryRisks,

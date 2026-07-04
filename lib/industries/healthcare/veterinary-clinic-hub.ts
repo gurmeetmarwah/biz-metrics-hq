@@ -13,6 +13,11 @@ import {
   valuationMultiples,
   vetProductivityMetrics,
 } from "@/lib/industries/veterinary-clinic";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { veterinaryClinicProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = veterinaryClinicProfitabilitySeo;
+
 
 export const hubMeta = {
   slug: "veterinary-clinic",
@@ -286,7 +291,7 @@ export const popularMetrics = [
 
 export { industryInsights } from "@/lib/industries/healthcare/veterinary-reports";
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable are veterinary clinics?",
     answer:
@@ -318,6 +323,8 @@ export const hubFaqs = [
       "A general veterinary clinic typically maintains 2,000–4,500 active clients with 1–3 full-time veterinarians. New client flow of 35–75 per month supports growth. Retention rates above 75% indicate a healthy wellness and recall program.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export const hubSectionNav = [
   { id: "explore", label: "Explore" },

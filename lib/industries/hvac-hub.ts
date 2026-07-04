@@ -16,6 +16,10 @@ import {
   technicianProductivityMetrics,
   valuationMultiples,
 } from "@/lib/industries/hvac";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { hvacProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = hvacProfitabilitySeo;
 
 export const hubMeta = {
   slug: "hvac",
@@ -23,7 +27,7 @@ export const hubMeta = {
   parentLabel: "Industries",
   title: "HVAC Industry Benchmarks",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and key economics for HVAC businesses in the United States.",
+    "See how profitable an HVAC business is — average profit margins, owner salaries, revenue, valuation multiples, and key economics for HVAC companies in the United States.",
   dataVintage: "2025–2026",
   sampleSize: "420+ HVAC businesses",
 };
@@ -39,9 +43,9 @@ export const hubKpis = [
   },
   {
     id: "margin",
-    label: "Margin",
+    label: "Profit Margin",
     value: "12%",
-    sublabel: "median net margin",
+    sublabel: "median net profit margin",
     href: "#profitability",
     accent: "metric-margin",
   },
@@ -85,7 +89,7 @@ export const industrySnapshot = quickSummary;
 
 export const hubSectionNav = [
   { id: "revenue-benchmark", label: "Revenue" },
-  { id: "profitability", label: "Margins" },
+  { id: "profitability", label: "Profitability" },
   { id: "owner-economics", label: "Owner Pay" },
   { id: "valuation", label: "Valuation" },
   { id: "geography", label: "Geography" },
@@ -109,7 +113,7 @@ export const hubCalculators = [
   },
   {
     label: "Profit Margin Calculator",
-    description: "Calculate net margin and compare to HVAC benchmarks.",
+    description: "Calculate how profitable your HVAC business is and compare net margin to industry benchmarks.",
     href: "/calculators/hvac-profit-margin/",
   },
   {
@@ -126,7 +130,7 @@ export const hubCalculators = [
 
 export const relatedMetrics = [
   { label: "HVAC Revenue", href: "#revenue-benchmark" },
-  { label: "HVAC Profit Margin", href: "/calculators/hvac-profit-margin/" },
+  { label: "HVAC Profit Margin", href: "#profitability" },
   { label: "HVAC Owner Salary", href: "#owner-economics" },
   { label: "HVAC Valuation", href: "/calculators/hvac-valuation/" },
   { label: "HVAC Startup Costs", href: "#startup-costs", comingSoon: true },
@@ -141,12 +145,7 @@ export const relatedHomeServiceIndustries = [
   { label: "Painting", href: "/industries/painting/", comingSoon: true },
 ] as const;
 
-export const hubFaqs = [
-  {
-    question: "How profitable is an HVAC business?",
-    answer:
-      "Healthy HVAC companies typically achieve 8–16% net profit margin, with a median around 12%. Top-quartile operators with strong maintenance contract penetration and disciplined labor management can reach 17–22%. Gross margins usually run 45–55% before overhead.",
-  },
+const baseFaqs = [
   {
     question: "What is average HVAC revenue?",
     answer:
@@ -168,6 +167,8 @@ export const hubFaqs = [
       "HVAC is moderately recession-resistant. Emergency repairs and essential heating/cooling needs persist in downturns, and maintenance contracts provide recurring revenue stability. However, discretionary installations and commercial new construction can slow. Companies with 35%+ maintenance revenue tend to weather cycles better.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export {
   benchmarkThresholds,

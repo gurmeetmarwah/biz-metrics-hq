@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import { KpiDashboard } from "@/components/industry/KpiDashboard";
 import { QuickSummaryTable } from "@/components/industry/QuickSummaryTable";
 import { IndustrySectionNav } from "@/components/industry/IndustrySectionNav";
@@ -43,7 +44,12 @@ import {
   valuationMultiples,
   marginTiers,
 } from "@/lib/industries/coffee-shop";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { coffeeShopProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
 import { formatCurrency } from "@/lib/numbers";
+
+const profitabilitySeo = coffeeShopProfitabilitySeo;
+const allFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, faqs);
 
 export const metadata: Metadata = {
   title: `${coffeeShopMeta.title} — Revenue, Margins & Startup Costs | BizMetricsHQ`,
@@ -112,7 +118,7 @@ export default function CoffeeShopEconomicsPage() {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
+    mainEntity: allFaqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: { "@type": "Answer", text: faq.answer },
@@ -365,9 +371,11 @@ export default function CoffeeShopEconomicsPage() {
 
         <Section
           id="profit-margins"
-          title="Profit Margin Benchmarks"
-          subtitle="Margin tiers, cost structure, and profit drivers for cafe operators."
+          title={profitabilitySeo.sectionTitle}
+          subtitle={profitabilitySeo.sectionSubtitle}
         >
+          <IndustryProfitabilitySeo content={profitabilitySeo} />
+          <div className="mt-12" />
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <MarginTierFourChart />
             <DataTable
@@ -701,8 +709,8 @@ export default function CoffeeShopEconomicsPage() {
           <LinkCardGrid items={calculators} columns={2} />
         </Section>
 
-        <Section id="faqs" title="Frequently Asked Questions">
-          <IndustryFaq faqs={faqs} />
+        <Section id="faqs" title={profitabilitySeo.faqSectionTitle}>
+          <IndustryFaq faqs={allFaqs} />
         </Section>
       </main>
       <Footer />

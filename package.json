@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "WATCHPACK_POLLING=true next dev --hostname 127.0.0.1 -p 8080",
+    "generate:sitemap": "npx tsx scripts/generate-sitemap.ts",
     "build": "next build",
     "build:pages": "GITHUB_PAGES=true next build",
     "start": "next start",

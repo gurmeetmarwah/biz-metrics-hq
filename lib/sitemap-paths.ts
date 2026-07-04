@@ -10,8 +10,14 @@ import { pilatesReportSlugs } from "@/lib/industries/pilates-reports";
 import { martialArtsReportSlugs } from "@/lib/industries/martial-arts-reports";
 import { yogaReportSlugs } from "@/lib/industries/yoga-reports";
 import { crossfitReportSlugs } from "@/lib/industries/crossfit-reports";
+import { foodReportSlugs } from "@/lib/industries/food-reports";
+import { homeReportSlugs } from "@/lib/industries/home-reports";
+import { treeServiceReportSlugs } from "@/lib/industries/tree-service-reports";
 
 const APP_DIR = path.join(process.cwd(), "app");
+
+/** Short URL aliases — canonical routes live under /comparisons/. */
+const EXCLUDED_ROUTE_SEGMENTS = new Set(["compare"]);
 
 /** Parent route segments (no leading slash) mapped to slug lists for [slug] pages. */
 const DYNAMIC_SLUG_ROUTES: Record<string, readonly string[]> = {
@@ -20,6 +26,9 @@ const DYNAMIC_SLUG_ROUTES: Record<string, readonly string[]> = {
   "industries/yoga-studio/reports": yogaReportSlugs,
   "industries/martial-arts-school/reports": martialArtsReportSlugs,
   "industries/crossfit-gym/reports": crossfitReportSlugs,
+  "industries/ice-cream-shop/reports": foodReportSlugs,
+  "industries/pool-service/reports": homeReportSlugs,
+  "industries/tree-service/reports": treeServiceReportSlugs,
   "industries/healthcare/dental-practice/reports": dentalReportSlugs,
   "industries/healthcare/chiropractic-clinic/reports": chiropracticReportSlugs,
   "industries/healthcare/veterinary-clinic/reports": veterinaryReportSlugs,
@@ -49,6 +58,7 @@ function collectPaths(dir: string, segments: string[]): string[] {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
     if (entry.name.startsWith("_") || entry.name === "api") continue;
+    if (EXCLUDED_ROUTE_SEGMENTS.has(entry.name)) continue;
     paths.push(...collectPaths(path.join(dir, entry.name), [...segments, entry.name]));
   }
 

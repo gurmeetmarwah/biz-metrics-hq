@@ -23,6 +23,11 @@ import {
   valuationDefaults,
   valuationMultiples,
 } from "@/lib/industries/landscaping";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { landscapingProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = landscapingProfitabilitySeo;
+
 
 export const hubMeta = {
   slug: "landscaping",
@@ -154,7 +159,7 @@ export const relatedHomeServiceIndustries = [
   { label: "Cleaning Business", href: "/industries/cleaning-business/" },
 ] as const;
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable is a landscaping business?",
     answer:
@@ -191,6 +196,8 @@ export const hubFaqs = [
       "Most landscaping companies need 3–4 productive field crews to reach $1M annual revenue, assuming ~$275K revenue per crew. Maintenance-heavy operators with efficient routing may achieve $1M with fewer crews; design-build focused companies may need more crews due to project scheduling gaps.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export {
   benchmarkDefaults,

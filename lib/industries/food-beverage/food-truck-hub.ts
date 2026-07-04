@@ -7,6 +7,11 @@ import {
   startupCosts,
   valuationMultiples,
 } from "@/lib/industries/food-truck";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { foodTruckProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = foodTruckProfitabilitySeo;
+
 
 export const hubMeta = {
   slug: "food-truck",
@@ -306,7 +311,7 @@ export const industryInsights = [
   },
 ] as const;
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable are food trucks?",
     answer:
@@ -338,6 +343,8 @@ export const hubFaqs = [
       "Food trucks sell for 1.8x–2.8x SDE, with a median of 2.25x. A truck with $300K revenue and $80K SDE might be valued around $180K. Asset value (truck + equipment $40K–$80K) plus goodwill based on routes, permits, and catering contracts.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export const hubSectionNav = [
   { id: "explore", label: "Explore" },

@@ -1,5 +1,10 @@
 import { benchmarkThresholds, quickSummary } from "@/lib/industries/bakery";
 import { industryInsights } from "@/lib/industries/food-beverage/bakery-us-industry-report-2026";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { bakeryProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = bakeryProfitabilitySeo;
+
 
 export { industryInsights };
 
@@ -260,7 +265,7 @@ export const popularMetrics = [
   { label: "Bakery Break-Even Metrics", href: "#break-even" },
 ] as const;
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable are bakeries?",
     answer:
@@ -292,6 +297,8 @@ export const hubFaqs = [
       "Independent bakeries sell for 2.0x–3.2x SDE, with a median of 2.8x. A bakery with $500K revenue and $100K SDE might be valued around $300K. Strong custom cake reputation and wholesale contracts command the high end.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export const hubSectionNav = [
   { id: "explore", label: "Explore" },

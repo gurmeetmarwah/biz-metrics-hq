@@ -1,0 +1,391 @@
+import { buildProfitabilitySeo } from "@/lib/industries/profitability-seo";
+
+export const hvacProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "an HVAC business",
+  companiesPhrase: "HVAC companies",
+  profitEntityPhrase: "an HVAC company",
+  marginPhrase: "HVAC profit margin",
+  marginRange: "8 – 16%",
+  medianMargin: "12%",
+  topMargin: "17 – 22%",
+  grossMargin: "45 – 55%",
+  medianRevenue: "$2.4M",
+  profitRange: "$190K – $380K",
+  medianProfit: "$288K",
+  costDriver: "payroll stays 28–38% of revenue and maintenance is 25%+ of mix",
+});
+
+export const plumbingProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a plumbing business",
+  companiesPhrase: "plumbing companies",
+  profitEntityPhrase: "a plumbing company",
+  marginPhrase: "plumbing profit margin",
+  marginRange: "8 – 15%",
+  medianMargin: "11%",
+  topMargin: "16 – 20%",
+  grossMargin: "45 – 55%",
+  medianRevenue: "$1.6M",
+  profitRange: "$130K – $240K",
+  medianProfit: "$176K",
+  costDriver: "plumber payroll and materials stay in benchmark ranges",
+});
+
+export const electricalProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "an electrical business",
+  companiesPhrase: "electrical companies",
+  profitEntityPhrase: "an electrical company",
+  marginPhrase: "electrical profit margin",
+  marginRange: "7 – 14%",
+  medianMargin: "10%",
+  topMargin: "15 – 18%",
+  grossMargin: "40 – 50%",
+  medianRevenue: "$2.0M",
+  profitRange: "$140K – $280K",
+  medianProfit: "$200K",
+  costDriver: "technician payroll and job costing stay disciplined",
+});
+
+export const roofingProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a roofing business",
+  companiesPhrase: "roofing companies",
+  profitEntityPhrase: "a roofing company",
+  marginPhrase: "roofing profit margin",
+  marginRange: "6 – 14%",
+  medianMargin: "9%",
+  topMargin: "15 – 18%",
+  grossMargin: "35 – 45%",
+  medianRevenue: "$2.0M",
+  profitRange: "$120K – $280K",
+  medianProfit: "$180K",
+  costDriver: "materials, crew labor, and storm-job costing stay controlled",
+});
+
+export const landscapingProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a landscaping business",
+  companiesPhrase: "landscaping companies",
+  profitEntityPhrase: "a landscaping company",
+  marginPhrase: "landscaping profit margin",
+  marginRange: "5 – 12%",
+  medianMargin: "8%",
+  topMargin: "13 – 15%",
+  grossMargin: "40 – 50%",
+  medianRevenue: "$1.1M",
+  profitRange: "$55K – $130K",
+  medianProfit: "$88K",
+  costDriver: "route density and crew labor stay efficient",
+});
+
+export const pestControlProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a pest control business",
+  companiesPhrase: "pest control companies",
+  profitEntityPhrase: "a pest control company",
+  marginPhrase: "pest control profit margin",
+  marginRange: "14 – 24%",
+  medianMargin: "18%",
+  topMargin: "25 – 30%",
+  grossMargin: "55 – 65%",
+  medianRevenue: "$900K",
+  profitRange: "$125K – $215K",
+  medianProfit: "$162K",
+  costDriver: "recurring routes and technician utilization stay strong",
+});
+
+export const cleaningBusinessProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a cleaning business",
+  companiesPhrase: "cleaning companies",
+  profitEntityPhrase: "a cleaning company",
+  marginPhrase: "cleaning business profit margin",
+  marginRange: "10 – 20%",
+  medianMargin: "15%",
+  topMargin: "21 – 25%",
+  grossMargin: "45 – 55%",
+  medianRevenue: "$500K",
+  profitRange: "$50K – $100K",
+  medianProfit: "$75K",
+  costDriver: "labor utilization and route density stay high",
+});
+
+export const poolServiceProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a pool service business",
+  companiesPhrase: "pool service companies",
+  profitEntityPhrase: "a pool service company",
+  marginPhrase: "pool service profit margin",
+  marginRange: "18 – 26%",
+  medianMargin: "22%",
+  topMargin: "27 – 32%",
+  grossMargin: "55 – 65%",
+  medianRevenue: "$950K",
+  profitRange: "$170K – $245K",
+  medianProfit: "$209K",
+  costDriver: "route density and chemical costs stay controlled",
+});
+
+export const treeServiceProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a tree service business",
+  companiesPhrase: "tree service companies",
+  profitEntityPhrase: "a tree service company",
+  marginPhrase: "tree service profit margin",
+  marginRange: "16 – 26%",
+  medianMargin: "21%",
+  topMargin: "27 – 32%",
+  grossMargin: "50 – 60%",
+  medianRevenue: "$1.25M",
+  profitRange: "$200K – $325K",
+  medianProfit: "$262K",
+  costDriver: "crew utilization and equipment costs stay disciplined",
+});
+
+export const gymProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a gym business",
+  companiesPhrase: "gyms",
+  profitEntityPhrase: "a gym",
+  marginPhrase: "gym profit margin",
+  marginRange: "12 – 24%",
+  medianMargin: "18%",
+  topMargin: "25 – 30%",
+  grossMargin: "60 – 75%",
+  medianRevenue: "$1.2M",
+  profitRange: "$145K – $290K",
+  medianProfit: "$216K",
+  costDriver: "membership retention and staffing stay in range",
+});
+
+export const pilatesStudioProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a Pilates studio",
+  companiesPhrase: "Pilates studios",
+  profitEntityPhrase: "a Pilates studio",
+  marginPhrase: "Pilates studio profit margin",
+  marginRange: "16 – 28%",
+  medianMargin: "22%",
+  topMargin: "29 – 34%",
+  grossMargin: "65 – 80%",
+  medianRevenue: "$850K",
+  profitRange: "$135K – $240K",
+  medianProfit: "$187K",
+  costDriver: "class utilization and instructor costs stay efficient",
+});
+
+export const yogaStudioProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a yoga studio",
+  companiesPhrase: "yoga studios",
+  profitEntityPhrase: "a yoga studio",
+  marginPhrase: "yoga studio profit margin",
+  marginRange: "14 – 24%",
+  medianMargin: "19%",
+  topMargin: "25 – 30%",
+  grossMargin: "65 – 80%",
+  medianRevenue: "$620K",
+  profitRange: "$85K – $150K",
+  medianProfit: "$118K",
+  costDriver: "membership mix and rent stay controlled",
+});
+
+export const martialArtsSchoolProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a martial arts school",
+  companiesPhrase: "martial arts schools",
+  profitEntityPhrase: "a martial arts school",
+  marginPhrase: "martial arts school profit margin",
+  marginRange: "18 – 30%",
+  medianMargin: "24%",
+  topMargin: "31 – 36%",
+  grossMargin: "70 – 85%",
+  medianRevenue: "$780K",
+  profitRange: "$140K – $235K",
+  medianProfit: "$187K",
+  costDriver: "student retention and instructor payroll stay strong",
+});
+
+export const crossfitGymProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a CrossFit gym",
+  companiesPhrase: "CrossFit gyms",
+  profitEntityPhrase: "a CrossFit gym",
+  marginPhrase: "CrossFit gym profit margin",
+  marginRange: "15 – 27%",
+  medianMargin: "21%",
+  topMargin: "28 – 33%",
+  grossMargin: "65 – 80%",
+  medianRevenue: "$950K",
+  profitRange: "$140K – $255K",
+  medianProfit: "$200K",
+  costDriver: "membership density and coach costs stay efficient",
+});
+
+export const iceCreamShopProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "an ice cream shop",
+  companiesPhrase: "ice cream shops",
+  profitEntityPhrase: "an ice cream shop",
+  marginPhrase: "ice cream shop profit margin",
+  marginRange: "12 – 22%",
+  medianMargin: "17%",
+  topMargin: "23 – 28%",
+  grossMargin: "55 – 70%",
+  medianRevenue: "$720K",
+  profitRange: "$85K – $160K",
+  medianProfit: "$122K",
+  costDriver: "food cost and seasonal labor stay controlled",
+});
+
+export const optometryPracticeProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "an optometry practice",
+  companiesPhrase: "optometry practices",
+  profitEntityPhrase: "an optometry practice",
+  marginPhrase: "optometry practice profit margin",
+  marginRange: "18 – 28%",
+  medianMargin: "24%",
+  topMargin: "29 – 32%",
+  grossMargin: "58 – 72%",
+  medianRevenue: "$1.35M",
+  profitRange: "$245K – $380K",
+  medianProfit: "$324K",
+  costDriver: "optical capture and payroll stay in benchmark ranges",
+});
+
+export const bakeryProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a bakery",
+  companiesPhrase: "bakeries",
+  profitEntityPhrase: "a bakery",
+  marginPhrase: "bakery profit margin",
+  marginRange: "10 – 14%",
+  medianMargin: "12%",
+  topMargin: "15 – 18%",
+  grossMargin: "55 – 65%",
+  medianRevenue: "$450K",
+  profitRange: "$45K – $65K",
+  medianProfit: "$54K",
+  costDriver: "ingredient cost and labor stay disciplined",
+});
+
+export const coffeeShopProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a coffee shop",
+  companiesPhrase: "coffee shops",
+  profitEntityPhrase: "a coffee shop",
+  marginPhrase: "coffee shop profit margin",
+  marginRange: "10 – 15%",
+  medianMargin: "12%",
+  topMargin: "16 – 18%",
+  grossMargin: "60 – 70%",
+  medianRevenue: "$550K",
+  profitRange: "$55K – $85K",
+  medianProfit: "$66K",
+  costDriver: "labor and rent stay under control",
+});
+
+export const foodTruckProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a food truck",
+  companiesPhrase: "food trucks",
+  profitEntityPhrase: "a food truck",
+  marginPhrase: "food truck profit margin",
+  marginRange: "12 – 15%",
+  medianMargin: "13%",
+  topMargin: "16 – 18%",
+  grossMargin: "55 – 65%",
+  medianRevenue: "$280K",
+  profitRange: "$35K – $45K",
+  medianProfit: "$36K",
+  costDriver: "food cost and route mix stay efficient",
+});
+
+export const dentalPracticeProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a dental practice",
+  companiesPhrase: "dental practices",
+  profitEntityPhrase: "a dental practice",
+  marginPhrase: "dental practice profit margin",
+  marginRange: "18 – 30%",
+  medianMargin: "24%",
+  topMargin: "28 – 32%",
+  grossMargin: "60 – 70%",
+  medianRevenue: "$1.8M",
+  profitRange: "$325K – $540K",
+  medianProfit: "$432K",
+  costDriver: "clinical payroll and supply costs stay in range",
+});
+
+export const chiropracticClinicProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a chiropractic clinic",
+  companiesPhrase: "chiropractic clinics",
+  profitEntityPhrase: "a chiropractic clinic",
+  marginPhrase: "chiropractic clinic profit margin",
+  marginRange: "25 – 35%",
+  medianMargin: "30%",
+  topMargin: "36 – 40%",
+  grossMargin: "70 – 80%",
+  medianRevenue: "$500K",
+  profitRange: "$125K – $175K",
+  medianProfit: "$150K",
+  costDriver: "visit volume and overhead stay efficient",
+});
+
+export const physicalTherapyClinicProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a physical therapy clinic",
+  companiesPhrase: "physical therapy clinics",
+  profitEntityPhrase: "a physical therapy clinic",
+  marginPhrase: "physical therapy clinic profit margin",
+  marginRange: "18 – 28%",
+  medianMargin: "23%",
+  topMargin: "29 – 34%",
+  grossMargin: "55 – 65%",
+  medianRevenue: "$850K",
+  profitRange: "$155K – $240K",
+  medianProfit: "$195K",
+  costDriver: "therapist utilization and payer mix stay strong",
+});
+
+export const veterinaryClinicProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a veterinary clinic",
+  companiesPhrase: "veterinary clinics",
+  profitEntityPhrase: "a veterinary clinic",
+  marginPhrase: "veterinary clinic profit margin",
+  marginRange: "15 – 22%",
+  medianMargin: "18%",
+  topMargin: "23 – 28%",
+  grossMargin: "50 – 60%",
+  medianRevenue: "$1.2M",
+  profitRange: "$180K – $265K",
+  medianProfit: "$216K",
+  costDriver: "clinical payroll and medical supplies stay controlled",
+});
+
+export const restaurantProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a restaurant",
+  companiesPhrase: "restaurants",
+  profitEntityPhrase: "a restaurant",
+  marginPhrase: "restaurant profit margin",
+  marginRange: "6 – 10%",
+  medianMargin: "8%",
+  topMargin: "10 – 14%",
+  grossMargin: "60 – 70%",
+  medianRevenue: "$850K",
+  profitRange: "$50K – $85K",
+  medianProfit: "$68K",
+  costDriver: "food cost and labor (prime cost) stay under control",
+});
+
+export const fineDiningProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a fine dining restaurant",
+  companiesPhrase: "fine dining restaurants",
+  profitEntityPhrase: "a fine dining restaurant",
+  marginPhrase: "fine dining profit margin",
+  marginRange: "6 – 12%",
+  medianMargin: "9%",
+  topMargin: "12 – 14%",
+  grossMargin: "62 – 70%",
+  medianRevenue: "$2.8M",
+  profitRange: "$170K – $335K",
+  medianProfit: "$252K",
+  costDriver: "wine program, private events, and labor stay efficient",
+});
+
+export const fastCasualProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a fast casual restaurant",
+  companiesPhrase: "fast casual restaurants",
+  profitEntityPhrase: "a fast casual restaurant",
+  marginPhrase: "fast casual profit margin",
+  marginRange: "8 – 15%",
+  medianMargin: "12%",
+  topMargin: "14 – 18%",
+  grossMargin: "60 – 70%",
+  medianRevenue: "$1.4M",
+  profitRange: "$110K – $210K",
+  medianProfit: "$168K",
+  costDriver: "food cost and labor stay in the 28–32% and 26–30% bands",
+});

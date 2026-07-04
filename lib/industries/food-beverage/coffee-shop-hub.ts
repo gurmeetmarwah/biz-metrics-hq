@@ -1,4 +1,9 @@
 import { benchmarkThresholds, quickSummary, businessScorecard } from "@/lib/industries/coffee-shop";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { coffeeShopProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = coffeeShopProfitabilitySeo;
+
 
 export { businessScorecard };
 
@@ -246,7 +251,7 @@ export const industryInsights = [
   },
 ] as const;
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable are coffee shops?",
     answer:
@@ -278,6 +283,8 @@ export const hubFaqs = [
       "Most independent coffee shops sell for 2.5x–3.5x SDE, with a median of 3.0x. A cafe with $600K revenue and $120K SDE might be valued around $360K. Revenue multiples (0.5x–0.8x) apply to high-volume locations with transferable leases.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export const hubSectionNav = [
   { id: "explore", label: "Explore" },

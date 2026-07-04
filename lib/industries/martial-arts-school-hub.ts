@@ -4,7 +4,7 @@ import {
   businessQualityScorecard,
   expenseBreakdown,
   fitnessBenchmarkRankings,
-  hubFaqs,
+  hubFaqs as industryFaqs,
   industryInsights,
   industryOpportunities,
   industryRisks,
@@ -27,6 +27,13 @@ import {
   valuationMultiples,
   youthActivityBenchmarkMatrix,
 } from "@/lib/industries/martial-arts-school";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { martialArtsSchoolProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = martialArtsSchoolProfitabilitySeo;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, industryFaqs);
+
 
 export const hubMeta = {
   slug: martialArtsSchoolMeta.slug,
@@ -185,7 +192,6 @@ export {
   businessQualityScorecard,
   expenseBreakdown,
   fitnessBenchmarkRankings,
-  hubFaqs,
   industryInsights,
   industryOpportunities,
   industryRisks,

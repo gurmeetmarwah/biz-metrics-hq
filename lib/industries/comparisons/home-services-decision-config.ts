@@ -87,6 +87,46 @@ import {
   decisionToolCopy as cleaningVsJanitorialCopy,
   getRecommendation as getCleaningVsJanitorialRecommendation,
 } from "./cleaning-business-vs-janitorial-business";
+import {
+  decisionToolCopy as poolServiceVsLandscapingCopy,
+  getRecommendation as getPoolServiceVsLandscapingRecommendation,
+} from "./pool-service-vs-landscaping";
+import {
+  decisionToolCopy as poolServiceVsHvacCopy,
+  getRecommendation as getPoolServiceVsHvacRecommendation,
+} from "./pool-service-vs-hvac";
+import {
+  decisionToolCopy as poolServiceVsPlumbingCopy,
+  getRecommendation as getPoolServiceVsPlumbingRecommendation,
+} from "./pool-service-vs-plumbing";
+import {
+  decisionToolCopy as poolServiceVsPestControlCopy,
+  getRecommendation as getPoolServiceVsPestControlRecommendation,
+} from "./pool-service-vs-pest-control";
+import {
+  decisionToolCopy as poolServiceVsPressureWashingCopy,
+  getRecommendation as getPoolServiceVsPressureWashingRecommendation,
+} from "./pool-service-vs-pressure-washing";
+import {
+  decisionToolCopy as poolServiceVsWindowCleaningCopy,
+  getRecommendation as getPoolServiceVsWindowCleaningRecommendation,
+} from "./pool-service-vs-window-cleaning";
+import {
+  decisionToolCopy as treeServiceVsLandscapingCopy,
+  getRecommendation as getTreeServiceVsLandscapingRecommendation,
+} from "./tree-service-vs-landscaping";
+import {
+  decisionToolCopy as treeServiceVsLawnCareCopy,
+  getRecommendation as getTreeServiceVsLawnCareRecommendation,
+} from "./tree-service-vs-lawn-care";
+import {
+  decisionToolCopy as treeServiceVsPoolServiceCopy,
+  getRecommendation as getTreeServiceVsPoolServiceRecommendation,
+} from "./tree-service-vs-pool-service";
+import {
+  decisionToolCopy as treeServiceVsExcavationCopy,
+  getRecommendation as getTreeServiceVsExcavationRecommendation,
+} from "./tree-service-vs-excavation";
 
 const configs: Record<string, HealthcareDecisionConfig> = {
   "hvac-vs-plumbing": {
@@ -242,6 +282,76 @@ const configs: Record<string, HealthcareDecisionConfig> = {
     leftCopy: cleaningVsJanitorialCopy.left,
     rightCopy: cleaningVsJanitorialCopy.right,
     getRecommendation: getCleaningVsJanitorialRecommendation,
+  },
+  "pool-service-vs-landscaping": {
+    leftLabel: "Pool Service",
+    rightLabel: "Landscaping",
+    leftCopy: poolServiceVsLandscapingCopy.left,
+    rightCopy: poolServiceVsLandscapingCopy.right,
+    getRecommendation: getPoolServiceVsLandscapingRecommendation,
+  },
+  "pool-service-vs-hvac": {
+    leftLabel: "Pool Service",
+    rightLabel: "HVAC",
+    leftCopy: poolServiceVsHvacCopy.left,
+    rightCopy: poolServiceVsHvacCopy.right,
+    getRecommendation: getPoolServiceVsHvacRecommendation,
+  },
+  "pool-service-vs-plumbing": {
+    leftLabel: "Pool Service",
+    rightLabel: "Plumbing",
+    leftCopy: poolServiceVsPlumbingCopy.left,
+    rightCopy: poolServiceVsPlumbingCopy.right,
+    getRecommendation: getPoolServiceVsPlumbingRecommendation,
+  },
+  "pool-service-vs-pest-control": {
+    leftLabel: "Pool Service",
+    rightLabel: "Pest Control",
+    leftCopy: poolServiceVsPestControlCopy.left,
+    rightCopy: poolServiceVsPestControlCopy.right,
+    getRecommendation: getPoolServiceVsPestControlRecommendation,
+  },
+  "pool-service-vs-pressure-washing": {
+    leftLabel: "Pool Service",
+    rightLabel: "Pressure Washing",
+    leftCopy: poolServiceVsPressureWashingCopy.left,
+    rightCopy: poolServiceVsPressureWashingCopy.right,
+    getRecommendation: getPoolServiceVsPressureWashingRecommendation,
+  },
+  "pool-service-vs-window-cleaning": {
+    leftLabel: "Pool Service",
+    rightLabel: "Window Cleaning",
+    leftCopy: poolServiceVsWindowCleaningCopy.left,
+    rightCopy: poolServiceVsWindowCleaningCopy.right,
+    getRecommendation: getPoolServiceVsWindowCleaningRecommendation,
+  },
+  "tree-service-vs-landscaping": {
+    leftLabel: "Tree Service",
+    rightLabel: "Landscaping",
+    leftCopy: treeServiceVsLandscapingCopy.left,
+    rightCopy: treeServiceVsLandscapingCopy.right,
+    getRecommendation: getTreeServiceVsLandscapingRecommendation,
+  },
+  "tree-service-vs-lawn-care": {
+    leftLabel: "Tree Service",
+    rightLabel: "Lawn Care",
+    leftCopy: treeServiceVsLawnCareCopy.left,
+    rightCopy: treeServiceVsLawnCareCopy.right,
+    getRecommendation: getTreeServiceVsLawnCareRecommendation,
+  },
+  "tree-service-vs-pool-service": {
+    leftLabel: "Tree Service",
+    rightLabel: "Pool Service",
+    leftCopy: treeServiceVsPoolServiceCopy.left,
+    rightCopy: treeServiceVsPoolServiceCopy.right,
+    getRecommendation: getTreeServiceVsPoolServiceRecommendation,
+  },
+  "tree-service-vs-excavation": {
+    leftLabel: "Tree Service",
+    rightLabel: "Excavation",
+    leftCopy: treeServiceVsExcavationCopy.left,
+    rightCopy: treeServiceVsExcavationCopy.right,
+    getRecommendation: getTreeServiceVsExcavationRecommendation,
   },
 };
 

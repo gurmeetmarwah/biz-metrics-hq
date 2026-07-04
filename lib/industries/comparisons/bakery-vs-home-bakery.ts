@@ -304,7 +304,6 @@ export const relatedComparisons = [
   { label: "Bakery vs Fast Casual", href: "/compare/bakery-vs-fast-casual/" },
   { label: "Restaurant vs Bakery", href: "/comparisons/restaurant-vs-bakery/" },
   { label: "Coffee Shop vs Bakery", href: "/comparisons/coffee-shop-vs-bakery/" },
-  { label: "Bakery vs Fast Casual", href: "/compare/bakery-vs-fast-casual/" },
 ] as const;
 
 export const faqs = [

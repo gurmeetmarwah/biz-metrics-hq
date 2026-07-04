@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { HashLink } from "@/components/ui/HashLink";
 import { Header } from "@/components/layout/Header";
@@ -25,6 +26,7 @@ import {
   hubCalculators,
   hubComparisons,
   hubFaqs,
+  profitabilitySeo,
   hubKpis,
   hubMeta,
   hubSectionNav,
@@ -226,9 +228,12 @@ export default function CoffeeShopHubPage() {
 
         <HubSection
           id="profitability"
-          title="Cost Structure Dashboard"
-          subtitle="How revenue flows through ingredients, labor, rent, and profit."
+          title={profitabilitySeo.sectionTitle}
+          subtitle={profitabilitySeo.sectionSubtitle}
         >
+          <IndustryProfitabilitySeo content={profitabilitySeo} />
+          <div className="mt-12" />
+
           <CostStructureFlow items={costStructureFlow} />
           <p className="mt-6 text-center text-sm text-ink-muted">
             Target net margin: 12–15%. Top performers reach 16–18%.{" "}
@@ -357,7 +362,7 @@ export default function CoffeeShopHubPage() {
           <FeaturedInsights items={industryInsights} />
         </HubSection>
 
-        <HubSection id="faqs" title="Frequently Asked Questions">
+        <HubSection id="faqs" title={profitabilitySeo.faqSectionTitle}>
           <IndustryFaq faqs={hubFaqs} />
         </HubSection>
       </main>

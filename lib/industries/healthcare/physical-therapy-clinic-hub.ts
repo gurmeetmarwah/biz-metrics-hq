@@ -13,6 +13,11 @@ import {
   valuationMultiples,
   visitEconomicsMetrics,
 } from "@/lib/industries/physical-therapy-clinic";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { physicalTherapyClinicProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = physicalTherapyClinicProfitabilitySeo;
+
 
 export const hubMeta = {
   slug: "physical-therapy-clinic",
@@ -272,7 +277,7 @@ export const popularMetrics = [
 
 export { industryInsights } from "@/lib/industries/healthcare/physical-therapy-reports";
 
-export const hubFaqs = [
+const baseFaqs = [
   {
     question: "How profitable are physical therapy clinics?",
     answer:
@@ -304,6 +309,8 @@ export const hubFaqs = [
       "A productive outpatient PT typically handles 12–18 visits per day at 72–88% utilization. Clinics maintain 800–2,000 active patients with 2–6 full-time therapists. New patient flow of 25–55 per month supports growth.",
   },
 ] as const;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, baseFaqs);
 
 export const hubSectionNav = [
   { id: "explore", label: "Explore" },

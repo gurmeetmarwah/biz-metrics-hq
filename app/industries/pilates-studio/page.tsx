@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -36,6 +37,7 @@ import {
   hubCalculators,
   hubComparisons,
   hubFaqs,
+  profitabilitySeo,
   hubKpis,
   hubMeta,
   hubSectionNav,
@@ -245,10 +247,13 @@ export default function PilatesStudioHubPage() {
 
         <HubSection
           id="profitability"
-          title="Profit Margin Analysis"
-          subtitle="Gross, net, and EBITDA margin benchmarks for Pilates studio operators."
+          title={profitabilitySeo.sectionTitle}
+          subtitle={profitabilitySeo.sectionSubtitle}
           className="bg-surface-muted/50"
         >
+          <IndustryProfitabilitySeo content={profitabilitySeo} />
+          <div className="mt-12" />
+
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <IndustryMarginGauge tiers={marginGaugeTiers} />
             <div className="overflow-hidden rounded-2xl border border-border bg-surface">
@@ -475,7 +480,7 @@ export default function PilatesStudioHubPage() {
           <CalculatorHubGrid items={hubCalculators} />
         </HubSection>
 
-        <HubSection id="faqs" title="Frequently Asked Questions">
+        <HubSection id="faqs" title={profitabilitySeo.faqSectionTitle}>
           <IndustryFaq faqs={hubFaqs} />
         </HubSection>
 

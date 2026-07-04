@@ -5,7 +5,7 @@ import {
   expenseBreakdown,
   fitnessBenchmarkRankings,
   fitnessEconomicsComparison,
-  hubFaqs,
+  hubFaqs as industryFaqs,
   industryInsights,
   industryOpportunities,
   industryRisks,
@@ -24,6 +24,13 @@ import {
   valuationDefaults,
   valuationMultiples,
 } from "@/lib/industries/gym";
+import { mergeProfitabilityFaqs } from "@/lib/industries/profitability-seo";
+import { gymProfitabilitySeo } from "@/lib/industries/profitability-seo-data";
+
+export const profitabilitySeo = gymProfitabilitySeo;
+
+export const hubFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, industryFaqs);
+
 
 export const hubMeta = {
   slug: "gym",
@@ -166,7 +173,6 @@ export {
   expenseBreakdown,
   fitnessBenchmarkRankings,
   fitnessEconomicsComparison,
-  hubFaqs,
   industryInsights,
   industryOpportunities,
   industryRisks,
