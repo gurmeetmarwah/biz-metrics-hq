@@ -82,6 +82,12 @@ const comparisonSlugs = [
   "optometry-vs-physical-therapy",
   "optometry-vs-dermatology",
   "optometry-vs-veterinary",
+  "hair-salon-vs-barbershop",
+  "hair-salon-vs-nail-salon",
+  "hair-salon-vs-day-spa",
+  "hair-salon-vs-medical-spa",
+  "hair-salon-vs-franchise-salon",
+  "hair-salon-vs-mobile-salon",
 ] as const;
 
 const industryKeywords: Record<string, string[]> = {

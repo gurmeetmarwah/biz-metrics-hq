@@ -32,6 +32,17 @@ export const industryDirectory: DirectoryCategory[] = [
     ],
   },
   {
+    name: "Beauty & Personal Care",
+    key: "beauty",
+    industries: [
+      { label: "Hair Salon", slug: "hair-salon", href: "/industries/beauty/hair-salon/" },
+      { label: "Nail Salon", slug: "nail-salon", href: "/industries/nail-salon/", comingSoon: true },
+      { label: "Medical Spa", slug: "medical-spa", href: "/industries/medical-spa/", comingSoon: true },
+      { label: "Day Spa", slug: "day-spa", href: "/industries/day-spa/", comingSoon: true },
+      { label: "Barbershop", slug: "barbershop", href: "/industries/barbershop/", comingSoon: true },
+    ],
+  },
+  {
     name: "Healthcare",
     key: "healthcare",
     industries: [

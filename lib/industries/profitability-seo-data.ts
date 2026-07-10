@@ -1,5 +1,20 @@
 import { buildProfitabilitySeo } from "@/lib/industries/profitability-seo";
 
+export const hairSalonProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a hair salon",
+  companiesPhrase: "hair salons",
+  profitEntityPhrase: "a hair salon",
+  marginPhrase: "hair salon profit margin",
+  marginRange: "8 – 15%",
+  medianMargin: "11%",
+  topMargin: "16 – 22%",
+  grossMargin: "55 – 65%",
+  medianRevenue: "$320K",
+  profitRange: "$25K – $55K",
+  medianProfit: "$35K",
+  costDriver: "payroll stays 45–50% of revenue and retail attachment adds 8–12% of sales",
+});
+
 export const hvacProfitabilitySeo = buildProfitabilitySeo({
   businessPhrase: "an HVAC business",
   companiesPhrase: "HVAC companies",

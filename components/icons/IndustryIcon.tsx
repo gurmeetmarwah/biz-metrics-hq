@@ -139,6 +139,31 @@ export function IndustryIcon({ slug, className = "size-5" }: IndustryIconProps) 
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c1.5 2 2.25 4.5 2.25 6.75a2.25 2.25 0 0 1-4.5 0C9.75 7.5 10.5 5 12 3Zm0 10.5v7.5m-3-3h6" />
       </svg>
     ),
+    "hair-salon": (
+      <svg className={className} fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M7.848 8.25l11.416 11.416a2.25 2.25 0 0 1-3.182 3.182L8.25 15.182m-.402-6.932a2.25 2.25 0 1 0-3.182-3.182 2.25 2.25 0 0 0 3.182 3.182Zm0 0 3.75 3.75m3.612-3.612L19.5 4.5m-3.75 3.75a2.25 2.25 0 1 0 3.182 3.182 2.25 2.25 0 0 0-3.182-3.182Z" />
+      </svg>
+    ),
+    "nail-salon": (
+      <svg className={className} fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.75c1.243 0 2.25 1.007 2.25 2.25v9a2.25 2.25 0 0 1-4.5 0v-9c0-1.243 1.007-2.25 2.25-2.25Zm0 0v4.5m4.5 8.25 4.5 1.5m-4.5-5.25 4.5 1.5m-4.5-5.25 4.5 1.5" />
+      </svg>
+    ),
+    "medical-spa": (
+      <svg className={className} fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" />
+      </svg>
+    ),
+    "day-spa": (
+      <svg className={className} fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21c4.5-2.5 7.5-6 7.5-9.75C19.5 15 15.75 15.75 12 12c-3.75 3.75-7.5 3-7.5-.75C4.5 15 7.5 18.5 12 21Zm0 0c0-3 0-6.75 0-9.75" />
+      </svg>
+    ),
+    barbershop: (
+      <svg className={className} fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M7.848 8.25l11.416 11.416a2.25 2.25 0 0 1-3.182 3.182L8.25 15.182m-.402-6.932a2.25 2.25 0 1 0-3.182-3.182 2.25 2.25 0 0 0 3.182 3.182Zm0 0 3.75 3.75m3.612-3.612L19.5 4.5m-3.75 3.75a2.25 2.25 0 1 0 3.182 3.182 2.25 2.25 0 0 0-3.182-3.182Z" />
+      </svg>
+    ),
   };
 
   return icons[slug] ?? icons.restaurant;

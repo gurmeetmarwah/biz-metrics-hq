@@ -24,16 +24,21 @@ export type IndustrySlug =
   | "pilates-studio"
   | "yoga-studio"
   | "martial-arts-school"
-  | "crossfit-gym";
+  | "crossfit-gym"
+  | "hair-salon"
+  | "nail-salon"
+  | "medical-spa"
+  | "day-spa"
+  | "barbershop";
 
-export type CategoryKey = "food" | "healthcare" | "home-services" | "fitness";
+export type CategoryKey = "food" | "healthcare" | "home-services" | "fitness" | "beauty";
 
 export const categoryStyles: Record<
   CategoryKey,
   {
     name: string;
     accentClass: string;
-    icon: "utensils" | "heart-pulse" | "home-wrench" | "dumbbell";
+    icon: "utensils" | "heart-pulse" | "home-wrench" | "dumbbell" | "sparkles";
   }
 > = {
   food: {
@@ -55,6 +60,11 @@ export const categoryStyles: Record<
     name: "Fitness & Wellness",
     accentClass: "category-accent-fitness",
     icon: "dumbbell",
+  },
+  beauty: {
+    name: "Beauty & Personal Care",
+    accentClass: "category-accent-beauty",
+    icon: "sparkles",
   },
 };
 
@@ -85,6 +95,11 @@ export const industryCategoryMap: Record<IndustrySlug, CategoryKey> = {
   "yoga-studio": "fitness",
   "martial-arts-school": "fitness",
   "crossfit-gym": "fitness",
+  "hair-salon": "beauty",
+  "nail-salon": "beauty",
+  "medical-spa": "beauty",
+  "day-spa": "beauty",
+  barbershop: "beauty",
 };
 
 export function slugFromHref(href: string): IndustrySlug {

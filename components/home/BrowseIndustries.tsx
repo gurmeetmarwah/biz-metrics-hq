@@ -17,7 +17,7 @@ export function BrowseIndustries() {
           <SectionHeading
             id="browse-industries-heading"
             title="Browse Industries"
-            subtitle="Explore benchmarks across home services, healthcare, fitness, and food & beverage."
+            subtitle="Explore benchmarks across home services, healthcare, fitness, food & beverage, and beauty & personal care."
           />
         </AnimateIn>
 
