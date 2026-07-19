@@ -81,12 +81,12 @@ export function BrowseIndustries() {
                               >
                                 <IndustryIcon slug={slug} className="size-[18px]" />
                               </span>
-                              <span className="min-w-0 flex-1 text-sm leading-snug font-medium text-ink">
-                                {industry.label}
-                              </span>
-                              <span className="shrink-0 rounded-full bg-surface-muted px-2 py-0.5 text-[11px] font-semibold text-ink-muted">
-                                Coming soon
-                              </span>
+                              <div className="min-w-0 flex-1">
+                                <p className="text-sm leading-snug font-medium text-ink">{industry.label}</p>
+                                <span className="mt-1.5 inline-flex rounded-full bg-surface-muted px-2 py-0.5 text-[11px] font-semibold text-ink-muted">
+                                  Coming soon
+                                </span>
+                              </div>
                             </div>
                           ) : (
                             <Link

@@ -88,6 +88,21 @@ const comparisonSlugs = [
   "hair-salon-vs-medical-spa",
   "hair-salon-vs-franchise-salon",
   "hair-salon-vs-mobile-salon",
+  "nail-salon-vs-hair-salon",
+  "nail-salon-vs-lash-studio",
+  "nail-salon-vs-day-spa",
+  "nail-salon-vs-medical-spa",
+  "nail-salon-vs-waxing-salon",
+  "nail-salon-vs-barbershop",
+  "medical-spa-vs-dermatology-practice",
+  "medical-spa-vs-plastic-surgery-clinic",
+  "medical-spa-vs-day-spa",
+  "medical-spa-vs-hair-salon",
+  "medical-spa-vs-dental-practice",
+  "medical-spa-vs-wellness-clinic",
+  "day-spa-vs-massage-spa",
+  "day-spa-vs-wellness-clinic",
+  "day-spa-vs-facial-studio",
 ] as const;
 
 const industryKeywords: Record<string, string[]> = {
@@ -150,6 +165,142 @@ function buildIndex(): SiteSearchItem[] {
     href: "/calculators/",
     category: "Hub",
     keywords: ["calculator", "tools", "profit", "valuation", "revenue"],
+  });
+
+  add({
+    label: "Franchise Economics",
+    href: "/franchise/",
+    category: "Hub",
+    keywords: ["franchise", "franchise economics", "royalties", "franchise fee", "roi", "payback"],
+  });
+
+  add({
+    label: "Hair Salon Franchise Guide",
+    href: "/franchise/beauty/hair-salon/",
+    category: "Hub",
+    keywords: [
+      "hair salon franchise",
+      "great clips",
+      "sport clips",
+      "supercuts",
+      "franchise fee",
+      "royalty",
+      "salon franchise roi",
+    ],
+  });
+
+  add({
+    label: "Medical Spa Franchise Guide",
+    href: "/franchise/beauty/medical-spa/",
+    category: "Hub",
+    keywords: [
+      "medical spa franchise",
+      "med spa franchise cost",
+      "ideal image franchise",
+      "milan laser franchise",
+      "laser clinic franchise",
+    ],
+  });
+
+  add({
+    label: "Massage Franchise Guide",
+    href: "/franchise/beauty/massage/",
+    category: "Hub",
+    keywords: [
+      "massage franchise",
+      "massage envy franchise cost",
+      "elements massage franchise",
+      "hand and stone franchise",
+    ],
+  });
+
+  add({
+    label: "Waxing Franchise Guide",
+    href: "/franchise/beauty/waxing/",
+    category: "Hub",
+    keywords: [
+      "waxing franchise",
+      "european wax center franchise cost",
+      "waxing the city franchise",
+      "wax franchise roi",
+    ],
+  });
+
+  for (const item of [
+    {
+      label: "Best Medical Spa Franchises 2026",
+      href: "/franchise/beauty/medical-spa/rankings/best-medical-spa-franchises-2026/",
+      keywords: ["best medical spa franchises", "best med spa franchise"],
+    },
+    {
+      label: "Most Profitable Medical Spa Franchises 2026",
+      href: "/franchise/beauty/medical-spa/rankings/most-profitable-medical-spa-franchises-2026/",
+      keywords: ["most profitable medical spa franchise", "med spa franchise roi"],
+    },
+    {
+      label: "Best Massage Franchises 2026",
+      href: "/franchise/beauty/massage/rankings/best-massage-franchises-2026/",
+      keywords: ["best massage franchises", "massage envy franchise"],
+    },
+    {
+      label: "Most Profitable Massage Franchises 2026",
+      href: "/franchise/beauty/massage/rankings/most-profitable-massage-franchises-2026/",
+      keywords: ["most profitable massage franchise", "massage franchise roi"],
+    },
+    {
+      label: "Best Waxing Franchises 2026",
+      href: "/franchise/beauty/waxing/rankings/best-waxing-franchises-2026/",
+      keywords: ["best waxing franchises", "european wax center franchise"],
+    },
+    {
+      label: "Most Profitable Waxing Franchises 2026",
+      href: "/franchise/beauty/waxing/rankings/most-profitable-waxing-franchises-2026/",
+      keywords: ["most profitable waxing franchise", "wax franchise roi"],
+    },
+  ]) {
+    add({
+      label: item.label,
+      href: item.href,
+      category: "Report",
+      keywords: item.keywords,
+    });
+  }
+
+  add({
+    label: "Best Hair Salon Franchises 2026",
+    href: "/franchise/beauty/hair-salon/rankings/best-hair-salon-franchises-2026/",
+    category: "Report",
+    keywords: ["best hair salon franchises", "best salon franchise to buy", "top salon franchise"],
+  });
+  add({
+    label: "Lowest Cost Hair Salon Franchises 2026",
+    href: "/franchise/beauty/hair-salon/rankings/lowest-cost-hair-salon-franchises-2026/",
+    category: "Report",
+    keywords: ["cheapest salon franchise", "lowest cost hair salon franchise", "salon franchise under 200k"],
+  });
+  add({
+    label: "Highest Revenue Hair Salon Franchises 2026",
+    href: "/franchise/beauty/hair-salon/rankings/highest-revenue-hair-salon-franchises-2026/",
+    category: "Report",
+    keywords: ["highest revenue salon franchise", "franchise salon average sales", "how much does a salon franchise make"],
+  });
+  add({
+    label: "Fastest Growing Hair Salon Franchises 2026",
+    href: "/franchise/beauty/hair-salon/rankings/fastest-growing-hair-salon-franchises-2026/",
+    category: "Report",
+    keywords: ["fastest growing salon franchise", "salon franchise expansion", "growing hair salon franchises"],
+  });
+  add({
+    label: "Best Hair Salon Franchise for First-Time Owners 2026",
+    href: "/franchise/beauty/hair-salon/rankings/best-franchise-for-first-time-owners-2026/",
+    category: "Report",
+    keywords: ["best salon franchise for beginners", "first time franchisee salon", "salon franchise no experience"],
+  });
+  add({
+    label: "Most Profitable Hair Salon Franchises 2026",
+    href: "/franchise/beauty/hair-salon/rankings/most-profitable-hair-salon-franchises-2026/",
+    category: "Report",
+    keywords: ["most profitable salon franchise", "highest roi salon franchise", "salon franchise profit margin"],
   });
 
   add({

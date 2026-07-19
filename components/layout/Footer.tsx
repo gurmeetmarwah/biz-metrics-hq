@@ -36,7 +36,7 @@ export function Footer() {
             </p>
             <ul className="grid grid-cols-2 gap-x-8 gap-y-2 sm:grid-cols-3">
               {navLinks.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     className="text-sm text-ink-muted transition-colors duration-200 hover:text-accent"

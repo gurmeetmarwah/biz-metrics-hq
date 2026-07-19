@@ -28,7 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jakarta.variable} h-full scroll-smooth`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${jakarta.variable} h-full scroll-smooth`}
+      data-scroll-behavior="smooth"
+    >
       <body className="flex min-h-full flex-col bg-background font-sans text-ink antialiased">
         {children}
       </body>

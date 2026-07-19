@@ -2,10 +2,11 @@ import { industryDirectory } from "@/lib/industry-directory";
 
 export const navLinks = [
   { label: "Industries", href: "/industries/" },
-  { label: "Revenue", href: "/revenue/" },
-  { label: "Margins", href: "/margins/" },
-  { label: "Valuation", href: "/valuation/" },
   { label: "Calculators", href: "/calculators/" },
+  { label: "Benchmarks", href: "/revenue/" },
+  { label: "Reports", href: "/industries/" },
+  { label: "Comparisons", href: "/comparisons/hvac-vs-plumbing/" },
+  { label: "Franchise Economics", href: "/franchise/" },
 ] as const;
 
 export const popularIndustries = [

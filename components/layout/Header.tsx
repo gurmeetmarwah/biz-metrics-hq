@@ -5,6 +5,10 @@ import { useEffect, useState } from "react";
 import { navLinks } from "@/lib/data";
 import { SiteSearch } from "@/components/ui/SiteSearch";
 
+const headerNavLinks = navLinks.filter(
+  (link) => link.label !== "Benchmarks" && link.label !== "Comparisons",
+);
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
@@ -43,21 +47,21 @@ export function Header() {
           </Link>
 
           <nav
-            className="hidden items-center gap-0.5 lg:flex"
+            className="hidden min-w-0 flex-1 items-center justify-end gap-0.5 lg:flex xl:justify-center"
             aria-label="Main navigation"
           >
-            {navLinks.map((link) => (
+            {headerNavLinks.map((link) => (
               <Link
-                key={link.href}
+                key={link.label}
                 href={link.href}
-                className="nav-link rounded-lg px-3 py-2 text-sm font-medium text-ink-muted transition-colors duration-200 hover:text-ink"
+                className="nav-link shrink-0 rounded-lg px-2 py-2 text-sm font-medium whitespace-nowrap text-ink-muted transition-colors duration-200 hover:text-ink xl:px-3"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex shrink-0 items-center gap-2">
             <button
               type="button"
               onClick={() => setMobileSearchOpen((open) => !open)}
@@ -70,7 +74,7 @@ export function Header() {
               </svg>
             </button>
 
-            <div className="hidden w-52 lg:block">
+            <div className="hidden w-44 xl:block xl:w-52">
               <SiteSearch placeholder="Search" />
             </div>
 
@@ -109,8 +113,8 @@ export function Header() {
             aria-label="Mobile navigation"
           >
             <ul className="space-y-0.5">
-              {navLinks.map((link) => (
-                <li key={link.href}>
+              {headerNavLinks.map((link) => (
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}

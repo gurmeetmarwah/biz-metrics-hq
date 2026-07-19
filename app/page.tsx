@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/home/HeroSection";
 import { QuickStats } from "@/components/home/QuickStats";
 import { BrowseIndustries } from "@/components/home/BrowseIndustries";
+import { FranchiseEconomicsPromo } from "@/components/home/FranchiseEconomicsPromo";
 import { BrowseByMetric } from "@/components/home/BrowseByMetric";
 import { FeaturedBenchmarks } from "@/components/home/FeaturedBenchmarks";
 import { MethodologySection } from "@/components/home/MethodologySection";
@@ -19,6 +20,7 @@ export default function Home() {
         <HeroSection />
         <QuickStats />
         <BrowseIndustries />
+        <FranchiseEconomicsPromo />
         <BrowseByMetric />
         <FeaturedBenchmarks />
         <LatestReports />

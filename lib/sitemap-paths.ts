@@ -14,6 +14,8 @@ import { foodReportSlugs } from "@/lib/industries/food-reports";
 import { homeReportSlugs } from "@/lib/industries/home-reports";
 import { treeServiceReportSlugs } from "@/lib/industries/tree-service-reports";
 import { hairSalonReportSlugs } from "@/lib/industries/beauty/hair-salon-reports";
+import { medicalSpaReportSlugs } from "@/lib/industries/beauty/medical-spa-reports";
+import { nailSalonReportSlugs } from "@/lib/industries/beauty/nail-salon-reports";
 
 const APP_DIR = path.join(process.cwd(), "app");
 
@@ -35,6 +37,8 @@ const DYNAMIC_SLUG_ROUTES: Record<string, readonly string[]> = {
   "industries/healthcare/veterinary-clinic/reports": veterinaryReportSlugs,
   "industries/healthcare/physical-therapy-clinic/reports": physicalTherapyReportSlugs,
   "industries/beauty/hair-salon/reports": hairSalonReportSlugs,
+  "industries/beauty/medical-spa/reports": medicalSpaReportSlugs,
+  "industries/beauty/nail-salon/reports": nailSalonReportSlugs,
 };
 
 function collectPaths(dir: string, segments: string[]): string[] {

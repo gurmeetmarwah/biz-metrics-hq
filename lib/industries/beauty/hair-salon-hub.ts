@@ -15,10 +15,10 @@ export const hubMeta = {
 } as const;
 
 export const searchQuickLinks = [
-  { label: "Barbershop", href: "/industries/barbershop/", comingSoon: true },
-  { label: "Nail Salon", href: "/industries/nail-salon/", comingSoon: true },
-  { label: "Day Spa", href: "/industries/day-spa/", comingSoon: true },
-  { label: "Medical Spa", href: "/industries/medical-spa/", comingSoon: true },
+  { label: "Barbershop", href: "/industries/beauty/barbershop/" },
+  { label: "Nail Salon", href: "/industries/beauty/nail-salon/" },
+  { label: "Day Spa", href: "/industries/beauty/day-spa/" },
+  { label: "Medical Spa", href: "/industries/beauty/medical-spa/" },
 ] as const;
 
 export const hubKpis = [
@@ -323,13 +323,13 @@ export const hubComparisons = [
 ] as const;
 
 export const relatedBeautyBusinesses = [
-  { label: "Nail Salon", href: "/industries/nail-salon/", comingSoon: true },
-  { label: "Day Spa", href: "/industries/day-spa/", comingSoon: true },
-  { label: "Medical Spa", href: "/industries/medical-spa/", comingSoon: true },
+  { label: "Nail Salon", href: "/industries/beauty/nail-salon/" },
+  { label: "Day Spa", href: "/industries/beauty/day-spa/" },
+  { label: "Medical Spa", href: "/industries/beauty/medical-spa/" },
   { label: "Lash Studio", href: "/industries/lash-studio/", comingSoon: true },
   { label: "Waxing Salon", href: "/industries/waxing-salon/", comingSoon: true },
   { label: "Massage Spa", href: "/industries/massage-spa/", comingSoon: true },
-  { label: "Barbershop", href: "/industries/barbershop/", comingSoon: true },
+  { label: "Barbershop", href: "/industries/beauty/barbershop/" },
 ] as const;
 
 const industryFaqs = [

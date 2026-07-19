@@ -1,5 +1,65 @@
 import { buildProfitabilitySeo } from "@/lib/industries/profitability-seo";
 
+export const barbershopProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a barbershop",
+  companiesPhrase: "barbershops",
+  profitEntityPhrase: "a barbershop",
+  marginPhrase: "barbershop profit margin",
+  marginRange: "12 – 20%",
+  medianMargin: "16%",
+  topMargin: "18 – 24%",
+  grossMargin: "62 – 72%",
+  medianRevenue: "$280K",
+  profitRange: "$34K – $56K",
+  medianProfit: "$45K",
+  costDriver: "payroll stays 40–48% of revenue and chair utilization above 70% drives volume",
+});
+
+export const daySpaProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a day spa",
+  companiesPhrase: "day spas",
+  profitEntityPhrase: "a day spa",
+  marginPhrase: "day spa profit margin",
+  marginRange: "10 – 18%",
+  medianMargin: "14%",
+  topMargin: "18 – 24%",
+  grossMargin: "55 – 68%",
+  medianRevenue: "$750K",
+  profitRange: "$75K – $135K",
+  medianProfit: "$105K",
+  costDriver: "payroll stays 42–50% of revenue and membership plus package revenue drives margin",
+});
+
+export const medicalSpaProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a medical spa",
+  companiesPhrase: "medical spas",
+  profitEntityPhrase: "a medical spa",
+  marginPhrase: "medical spa profit margin",
+  marginRange: "15 – 30%",
+  medianMargin: "22%",
+  topMargin: "28 – 35%",
+  grossMargin: "60 – 75%",
+  medianRevenue: "$1.2M",
+  profitRange: "$180K – $360K",
+  medianProfit: "$264K",
+  costDriver: "payroll stays 30–40% of revenue and membership plus injectable volume drive margin",
+});
+
+export const nailSalonProfitabilitySeo = buildProfitabilitySeo({
+  businessPhrase: "a nail salon",
+  companiesPhrase: "nail salons",
+  profitEntityPhrase: "a nail salon",
+  marginPhrase: "nail salon profit margin",
+  marginRange: "10 – 17%",
+  medianMargin: "13%",
+  topMargin: "17 – 22%",
+  grossMargin: "58 – 68%",
+  medianRevenue: "$300K",
+  profitRange: "$28K – $60K",
+  medianProfit: "$39K",
+  costDriver: "payroll stays 42–50% of revenue and rebooking every 2–4 weeks drives volume",
+});
+
 export const hairSalonProfitabilitySeo = buildProfitabilitySeo({
   businessPhrase: "a hair salon",
   companiesPhrase: "hair salons",
