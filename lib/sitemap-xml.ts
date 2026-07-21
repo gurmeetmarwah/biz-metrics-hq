@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllSitemapPaths } from "@/lib/sitemap-paths";
 import { absoluteUrl } from "@/lib/site-url";
 
-export const SITEMAP_LAST_MODIFIED = new Date("2026-07-03");
+export const SITEMAP_LAST_MODIFIED = new Date("2026-07-21");
 
 export function getSitemapEntries(): MetadataRoute.Sitemap {
   return getAllSitemapPaths().map((path) => ({

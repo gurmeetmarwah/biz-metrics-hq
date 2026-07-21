@@ -5,7 +5,7 @@ import {
   popularCalculators,
 } from "@/lib/metric-hubs/calculators-hub-data";
 
-export type SearchCategory = "Industry" | "Calculator" | "Comparison" | "Hub" | "Page";
+export type SearchCategory = "Industry" | "Calculator" | "Comparison" | "Hub" | "Page" | "Report";
 
 export type SiteSearchItem = {
   label: string;
@@ -226,6 +226,169 @@ function buildIndex(): SiteSearchItem[] {
     ],
   });
 
+  add({
+    label: "HVAC Franchise Guide",
+    href: "/franchise/home-services/hvac/",
+    category: "Hub",
+    keywords: [
+      "hvac franchise",
+      "hvac franchise cost",
+      "one hour heating franchise",
+      "aire serv franchise",
+      "hvac franchise roi",
+      "hvac royalty fee",
+    ],
+  });
+
+  add({
+    label: "Plumbing Franchise Guide",
+    href: "/franchise/home-services/plumbing/",
+    category: "Hub",
+    keywords: [
+      "plumbing franchise",
+      "plumbing franchise cost",
+      "mr rooter franchise",
+      "benjamin franklin plumbing franchise",
+      "roto-rooter franchise",
+      "plumbing franchise roi",
+    ],
+  });
+
+  add({
+    label: "Cleaning Franchise Guide",
+    href: "/franchise/home-services/cleaning/",
+    category: "Hub",
+    keywords: [
+      "cleaning franchise",
+      "maid franchise",
+      "merry maids franchise",
+      "molly maid franchise",
+      "cleaning franchise cost",
+      "cleaning franchise roi",
+    ],
+  });
+
+  add({
+    label: "Pest Control Franchise Guide",
+    href: "/franchise/home-services/pest-control/",
+    category: "Hub",
+    keywords: [
+      "pest control franchise",
+      "orkin franchise",
+      "terminix franchise",
+      "aptive franchise",
+      "mosquito joe franchise",
+      "pest control franchise cost",
+    ],
+  });
+
+  add({
+    label: "Gym Franchise Guide",
+    href: "/franchise/fitness/gym/",
+    category: "Hub",
+    keywords: [
+      "gym franchise",
+      "gym franchise cost",
+      "anytime fitness franchise",
+      "planet fitness franchise",
+      "orangetheory franchise",
+      "snap fitness franchise",
+      "fitness franchise roi",
+    ],
+  });
+
+  add({
+    label: "Pilates Franchise Guide",
+    href: "/franchise/fitness/pilates/",
+    category: "Hub",
+    keywords: [
+      "pilates franchise",
+      "club pilates franchise",
+      "solidcore franchise",
+      "pilates franchise cost",
+      "pilates studio franchise",
+    ],
+  });
+
+  add({
+    label: "Yoga Franchise Guide",
+    href: "/franchise/fitness/yoga/",
+    category: "Hub",
+    keywords: [
+      "yoga franchise",
+      "yogasix franchise",
+      "hotworx franchise",
+      "corepower yoga franchise",
+      "yoga studio franchise cost",
+    ],
+  });
+
+  add({
+    label: "CrossFit Franchise Guide",
+    href: "/franchise/fitness/crossfit/",
+    category: "Hub",
+    keywords: [
+      "crossfit franchise",
+      "crossfit affiliate cost",
+      "f45 franchise",
+      "9round franchise",
+      "functional fitness franchise",
+    ],
+  });
+
+  add({
+    label: "Swim School Franchise Guide",
+    href: "/franchise/fitness/swim-school/",
+    category: "Hub",
+    keywords: [
+      "swim school franchise",
+      "british swim school franchise",
+      "goldfish swim school franchise",
+      "aqua-tots franchise",
+      "swim school franchise cost",
+    ],
+  });
+
+  for (const item of [
+    {
+      label: "Gym Franchise ROI Calculator",
+      href: "/franchise/fitness/gym/calculators/roi/",
+      keywords: ["gym franchise roi", "gym franchise return"],
+    },
+    {
+      label: "Gym Franchise Startup Cost Calculator",
+      href: "/franchise/fitness/gym/calculators/startup-cost/",
+      keywords: ["gym franchise startup cost", "gym franchise investment calculator"],
+    },
+    {
+      label: "Pilates Franchise ROI Calculator",
+      href: "/franchise/fitness/pilates/calculators/roi/",
+      keywords: ["pilates franchise roi", "club pilates roi calculator"],
+    },
+    {
+      label: "Yoga Franchise ROI Calculator",
+      href: "/franchise/fitness/yoga/calculators/roi/",
+      keywords: ["yoga franchise roi", "yogasix roi calculator"],
+    },
+    {
+      label: "CrossFit Franchise ROI Calculator",
+      href: "/franchise/fitness/crossfit/calculators/roi/",
+      keywords: ["crossfit franchise roi", "f45 roi calculator"],
+    },
+    {
+      label: "Swim School Franchise ROI Calculator",
+      href: "/franchise/fitness/swim-school/calculators/roi/",
+      keywords: ["swim school franchise roi", "british swim school calculator"],
+    },
+  ]) {
+    add({
+      label: item.label,
+      href: item.href,
+      category: "Calculator",
+      keywords: item.keywords,
+    });
+  }
+
   for (const item of [
     {
       label: "Best Medical Spa Franchises 2026",
@@ -302,6 +465,141 @@ function buildIndex(): SiteSearchItem[] {
     category: "Report",
     keywords: ["most profitable salon franchise", "highest roi salon franchise", "salon franchise profit margin"],
   });
+
+  for (const item of [
+    {
+      label: "Best HVAC Franchises 2026",
+      href: "/franchise/home-services/hvac/rankings/best-hvac-franchises-2026/",
+      keywords: ["best hvac franchises", "best hvac franchise to buy", "top hvac franchise"],
+    },
+    {
+      label: "Lowest Investment HVAC Franchises 2026",
+      href: "/franchise/home-services/hvac/rankings/lowest-cost-hvac-franchises-2026/",
+      keywords: ["lowest investment hvac franchise", "cheapest hvac franchise", "hvac franchise under 200k"],
+    },
+    {
+      label: "Highest ROI HVAC Franchises 2026",
+      href: "/franchise/home-services/hvac/rankings/highest-revenue-hvac-franchises-2026/",
+      keywords: ["highest roi hvac franchises", "hvac franchise roi", "most profitable hvac franchise"],
+    },
+    {
+      label: "Fastest Growing HVAC Franchises 2026",
+      href: "/franchise/home-services/hvac/rankings/fastest-growing-hvac-franchises-2026/",
+      keywords: ["fastest growing hvac franchises", "hvac franchise expansion"],
+    },
+    {
+      label: "Best HVAC Franchise for Veterans 2026",
+      href: "/franchise/home-services/hvac/rankings/best-franchise-for-first-time-owners-2026/",
+      keywords: ["best hvac franchise for veterans", "hvac franchise veterans", "military hvac franchise"],
+    },
+    {
+      label: "Best HVAC Franchise for Existing Contractors 2026",
+      href: "/franchise/home-services/hvac/rankings/most-profitable-hvac-franchises-2026/",
+      keywords: ["best hvac franchise for contractors", "hvac contractor franchise", "convert to hvac franchise"],
+    },
+    {
+      label: "Best Plumbing Franchises 2026",
+      href: "/franchise/home-services/plumbing/rankings/best-plumbing-franchises-2026/",
+      keywords: ["best plumbing franchises", "best plumbing franchise to buy", "mr rooter franchise"],
+    },
+    {
+      label: "Lowest Investment Plumbing Franchises 2026",
+      href: "/franchise/home-services/plumbing/rankings/lowest-cost-plumbing-franchises-2026/",
+      keywords: ["lowest investment plumbing franchise", "cheapest plumbing franchise"],
+    },
+    {
+      label: "Highest ROI Plumbing Franchises 2026",
+      href: "/franchise/home-services/plumbing/rankings/highest-revenue-plumbing-franchises-2026/",
+      keywords: ["highest roi plumbing franchises", "plumbing franchise roi"],
+    },
+    {
+      label: "Best Cleaning Franchises 2026",
+      href: "/franchise/home-services/cleaning/rankings/best-cleaning-franchises-2026/",
+      keywords: ["best cleaning franchises", "best maid franchise", "merry maids franchise"],
+    },
+    {
+      label: "Lowest Investment Cleaning Franchises 2026",
+      href: "/franchise/home-services/cleaning/rankings/lowest-cost-cleaning-franchises-2026/",
+      keywords: ["lowest investment cleaning franchise", "cheapest cleaning franchise"],
+    },
+    {
+      label: "Highest ROI Cleaning Franchises 2026",
+      href: "/franchise/home-services/cleaning/rankings/highest-revenue-cleaning-franchises-2026/",
+      keywords: ["highest roi cleaning franchises", "cleaning franchise roi"],
+    },
+    {
+      label: "Best Pest Control Franchises 2026",
+      href: "/franchise/home-services/pest-control/rankings/best-pest-control-franchises-2026/",
+      keywords: ["best pest control franchises", "orkin franchise", "terminix franchise"],
+    },
+    {
+      label: "Lowest Investment Pest Control Franchises 2026",
+      href: "/franchise/home-services/pest-control/rankings/lowest-cost-pest-control-franchises-2026/",
+      keywords: ["lowest investment pest control franchise", "cheapest pest control franchise"],
+    },
+    {
+      label: "Highest ROI Pest Control Franchises 2026",
+      href: "/franchise/home-services/pest-control/rankings/highest-revenue-pest-control-franchises-2026/",
+      keywords: ["highest roi pest control franchises", "pest control franchise roi"],
+    },
+    {
+      label: "Best Gym Franchises 2026",
+      href: "/franchise/fitness/gym/rankings/best-gym-franchises-2026/",
+      keywords: ["best gym franchises", "best gym franchise to buy", "anytime fitness franchise"],
+    },
+    {
+      label: "Lowest Cost Gym Franchises 2026",
+      href: "/franchise/fitness/gym/rankings/lowest-cost-gym-franchises-2026/",
+      keywords: ["lowest cost gym franchise", "cheapest gym franchise", "snap fitness franchise"],
+    },
+    {
+      label: "Highest ROI Gym Franchises 2026",
+      href: "/franchise/fitness/gym/rankings/highest-revenue-gym-franchises-2026/",
+      keywords: ["highest roi gym franchises", "gym franchise roi", "most profitable gym franchise"],
+    },
+    {
+      label: "Fastest Growing Gym Franchises 2026",
+      href: "/franchise/fitness/gym/rankings/fastest-growing-gym-franchises-2026/",
+      keywords: ["fastest growing gym franchises", "gym franchise expansion"],
+    },
+    {
+      label: "Best Gym Franchise for First-Time Owners 2026",
+      href: "/franchise/fitness/gym/rankings/best-franchise-for-first-time-owners-2026/",
+      keywords: ["best gym franchise for beginners", "first time gym franchise"],
+    },
+    {
+      label: "Best Boutique Fitness Franchises 2026",
+      href: "/franchise/fitness/gym/rankings/most-profitable-gym-franchises-2026/",
+      keywords: ["best boutique fitness franchises", "orangetheory franchise", "boutique gym franchise"],
+    },
+    {
+      label: "Best Pilates Franchises 2026",
+      href: "/franchise/fitness/pilates/rankings/best-pilates-franchises-2026/",
+      keywords: ["best pilates franchises", "club pilates franchise"],
+    },
+    {
+      label: "Best Yoga Franchises 2026",
+      href: "/franchise/fitness/yoga/rankings/best-yoga-franchises-2026/",
+      keywords: ["best yoga franchises", "yogasix franchise", "hotworx franchise"],
+    },
+    {
+      label: "Best CrossFit Franchises 2026",
+      href: "/franchise/fitness/crossfit/rankings/best-crossfit-franchises-2026/",
+      keywords: ["best crossfit franchises", "f45 franchise", "crossfit affiliate"],
+    },
+    {
+      label: "Best Swim School Franchises 2026",
+      href: "/franchise/fitness/swim-school/rankings/best-swim-school-franchises-2026/",
+      keywords: ["best swim school franchises", "british swim school", "goldfish swim school"],
+    },
+  ]) {
+    add({
+      label: item.label,
+      href: item.href,
+      category: "Report",
+      keywords: item.keywords,
+    });
+  }
 
   add({
     label: "Methodology",
@@ -410,4 +708,5 @@ export const searchCategoryLabels: Record<SearchCategory, string> = {
   Comparison: "Comparisons",
   Hub: "Intelligence Hubs",
   Page: "Pages",
+  Report: "Reports",
 };

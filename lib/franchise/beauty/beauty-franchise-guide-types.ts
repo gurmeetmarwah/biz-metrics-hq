@@ -96,3 +96,27 @@ export type BeautyFranchiseGuideData = {
   relatedFranchiseIndustries: readonly FranchiseGuideLinkCard[];
   franchiseFaqs: readonly FranchiseGuideFaq[];
 };
+
+/** Home-services / fitness franchise guides add an investment diligence section (HVAC-style). */
+export type HomeServicesFranchiseGuideData = BeautyFranchiseGuideData & {
+  investmentConsiderations: readonly { title: string; detail: string }[];
+  investmentGuideSubtitle: string;
+  relatedTitle?: string;
+  relatedSubtitle?: string;
+  shouldBuyCtaLabel?: string;
+  compareCtaLabel?: string;
+  roiCtaLabel?: string;
+  economicsTitle?: string;
+  calculatorsTitle?: string;
+  rankingsTitle?: string;
+  /** Category anchor on /franchise/ (e.g. "fitness", "home-services"). */
+  categoryId?: string;
+  featuredProfiles?: readonly {
+    label: string;
+    href: string;
+    investmentScore: number;
+    blurb: string;
+  }[];
+  featuredProfilesTitle?: string;
+  featuredProfilesSubtitle?: string;
+};

@@ -17,6 +17,37 @@ import { hairSalonReportSlugs } from "@/lib/industries/beauty/hair-salon-reports
 import { medicalSpaReportSlugs } from "@/lib/industries/beauty/medical-spa-reports";
 import { nailSalonReportSlugs } from "@/lib/industries/beauty/nail-salon-reports";
 
+import { brandSlugs as hairSalonFranchiseBrandSlugs } from "@/lib/franchise/beauty/hair-salon-franchise";
+import { hairSalonFranchiseQuestionSlugs } from "@/lib/franchise/beauty/hair-salon-questions";
+import { hairSalonFranchiseRankingSlugs } from "@/lib/franchise/beauty/hair-salon-rankings";
+import { massageFranchiseBrandSlugs } from "@/lib/franchise/beauty/massage-franchise";
+import { massageFranchiseRankingSlugs } from "@/lib/franchise/beauty/massage-rankings";
+import { medicalSpaFranchiseBrandSlugs } from "@/lib/franchise/beauty/medical-spa-franchise";
+import { medicalSpaFranchiseRankingSlugs } from "@/lib/franchise/beauty/medical-spa-rankings";
+import { waxingFranchiseBrandSlugs } from "@/lib/franchise/beauty/waxing-franchise";
+import { waxingFranchiseRankingSlugs } from "@/lib/franchise/beauty/waxing-rankings";
+
+import { fitnessFranchiseCalculatorSlugs } from "@/lib/franchise/fitness/franchise-calculators";
+import { crossfitFranchiseBrandSlugs } from "@/lib/franchise/fitness/crossfit-franchise";
+import { crossfitFranchiseRankingSlugs } from "@/lib/franchise/fitness/crossfit-rankings";
+import { gymFranchiseBrandSlugs } from "@/lib/franchise/fitness/gym-franchise";
+import { gymFranchiseRankingSlugs } from "@/lib/franchise/fitness/gym-rankings";
+import { pilatesFranchiseBrandSlugs } from "@/lib/franchise/fitness/pilates-franchise";
+import { pilatesFranchiseRankingSlugs } from "@/lib/franchise/fitness/pilates-rankings";
+import { swimSchoolFranchiseBrandSlugs } from "@/lib/franchise/fitness/swim-school-franchise";
+import { swimSchoolFranchiseRankingSlugs } from "@/lib/franchise/fitness/swim-school-rankings";
+import { yogaFranchiseBrandSlugs } from "@/lib/franchise/fitness/yoga-franchise";
+import { yogaFranchiseRankingSlugs } from "@/lib/franchise/fitness/yoga-rankings";
+
+import { cleaningFranchiseBrandSlugs } from "@/lib/franchise/home-services/cleaning-franchise";
+import { cleaningFranchiseRankingSlugs } from "@/lib/franchise/home-services/cleaning-rankings";
+import { hvacFranchiseBrandSlugs } from "@/lib/franchise/home-services/hvac-franchise";
+import { hvacFranchiseRankingSlugs } from "@/lib/franchise/home-services/hvac-rankings";
+import { pestControlFranchiseBrandSlugs } from "@/lib/franchise/home-services/pest-control-franchise";
+import { pestControlFranchiseRankingSlugs } from "@/lib/franchise/home-services/pest-control-rankings";
+import { plumbingFranchiseBrandSlugs } from "@/lib/franchise/home-services/plumbing-franchise";
+import { plumbingFranchiseRankingSlugs } from "@/lib/franchise/home-services/plumbing-rankings";
+
 const APP_DIR = path.join(process.cwd(), "app");
 
 /** Short URL aliases — canonical routes live under /comparisons/. */
@@ -39,6 +70,41 @@ const DYNAMIC_SLUG_ROUTES: Record<string, readonly string[]> = {
   "industries/beauty/hair-salon/reports": hairSalonReportSlugs,
   "industries/beauty/medical-spa/reports": medicalSpaReportSlugs,
   "industries/beauty/nail-salon/reports": nailSalonReportSlugs,
+
+  "franchise/beauty/hair-salon/brands": hairSalonFranchiseBrandSlugs,
+  "franchise/beauty/hair-salon/rankings": hairSalonFranchiseRankingSlugs,
+  "franchise/beauty/hair-salon/questions": hairSalonFranchiseQuestionSlugs,
+  "franchise/beauty/massage/brands": massageFranchiseBrandSlugs,
+  "franchise/beauty/massage/rankings": massageFranchiseRankingSlugs,
+  "franchise/beauty/medical-spa/brands": medicalSpaFranchiseBrandSlugs,
+  "franchise/beauty/medical-spa/rankings": medicalSpaFranchiseRankingSlugs,
+  "franchise/beauty/waxing/brands": waxingFranchiseBrandSlugs,
+  "franchise/beauty/waxing/rankings": waxingFranchiseRankingSlugs,
+
+  "franchise/fitness/crossfit/brands": crossfitFranchiseBrandSlugs,
+  "franchise/fitness/crossfit/rankings": crossfitFranchiseRankingSlugs,
+  "franchise/fitness/crossfit/calculators": fitnessFranchiseCalculatorSlugs,
+  "franchise/fitness/gym/brands": gymFranchiseBrandSlugs,
+  "franchise/fitness/gym/rankings": gymFranchiseRankingSlugs,
+  "franchise/fitness/gym/calculators": fitnessFranchiseCalculatorSlugs,
+  "franchise/fitness/pilates/brands": pilatesFranchiseBrandSlugs,
+  "franchise/fitness/pilates/rankings": pilatesFranchiseRankingSlugs,
+  "franchise/fitness/pilates/calculators": fitnessFranchiseCalculatorSlugs,
+  "franchise/fitness/swim-school/brands": swimSchoolFranchiseBrandSlugs,
+  "franchise/fitness/swim-school/rankings": swimSchoolFranchiseRankingSlugs,
+  "franchise/fitness/swim-school/calculators": fitnessFranchiseCalculatorSlugs,
+  "franchise/fitness/yoga/brands": yogaFranchiseBrandSlugs,
+  "franchise/fitness/yoga/rankings": yogaFranchiseRankingSlugs,
+  "franchise/fitness/yoga/calculators": fitnessFranchiseCalculatorSlugs,
+
+  "franchise/home-services/cleaning/brands": cleaningFranchiseBrandSlugs,
+  "franchise/home-services/cleaning/rankings": cleaningFranchiseRankingSlugs,
+  "franchise/home-services/hvac/brands": hvacFranchiseBrandSlugs,
+  "franchise/home-services/hvac/rankings": hvacFranchiseRankingSlugs,
+  "franchise/home-services/pest-control/brands": pestControlFranchiseBrandSlugs,
+  "franchise/home-services/pest-control/rankings": pestControlFranchiseRankingSlugs,
+  "franchise/home-services/plumbing/brands": plumbingFranchiseBrandSlugs,
+  "franchise/home-services/plumbing/rankings": plumbingFranchiseRankingSlugs,
 };
 
 function collectPaths(dir: string, segments: string[]): string[] {
