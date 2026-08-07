@@ -17,9 +17,10 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "BizMetricsHQ — Business Benchmarks For Entrepreneurs",
+  title:
+    "BizMetricsHQ — How to Track Business Profitability Metrics & KPIs",
   description:
-    "Interquartile ranges and medians for revenue, profit margins, owner salaries, and valuation multiples across 100+ industries. Transparent methodology published.",
+    "Learn how to track business profitability metrics with industry benchmarks, an easy small business profit margin calculator, and key financial performance indicators for small business owners.",
 };
 
 export default function RootLayout({

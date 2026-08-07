@@ -22,23 +22,24 @@ export function HeroSection() {
       <div className="relative mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 sm:py-28">
         <p className="hero-fade-up hero-fade-up-delay-1 mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-4 py-1.5 text-xs font-medium text-ink-muted shadow-sm backdrop-blur-sm">
           <span className="size-1.5 rounded-full bg-metric-revenue" aria-hidden="true" />
-          Ranges & medians · published methodology
+          Profitability metrics · published methodology
         </p>
 
         <h1
           id="hero-heading"
           className="hero-fade-up hero-fade-up-delay-2 font-display text-3xl font-bold tracking-tight text-ink sm:text-5xl sm:leading-[1.15]"
         >
-          Business Benchmarks{" "}
+          How to Track Business{" "}
           <span className="bg-gradient-to-r from-accent to-metric-revenue bg-clip-text text-transparent">
-            For Entrepreneurs
+            Profitability Metrics
           </span>
         </h1>
 
-        <p className="hero-fade-up hero-fade-up-delay-3 mx-auto mt-5 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
-          Interquartile ranges for revenue, margins, owner salaries, and
-          valuation multiples across {platformStats.industries} industries and{" "}
-          {platformStats.dataPages} data pages
+        <p className="hero-fade-up hero-fade-up-delay-3 mx-auto mt-5 max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg">
+          Clear ranges for revenue, profit margins, owner pay, and valuation—plus
+          key financial performance indicators for small business—across{" "}
+          {platformStats.industries} industries and {platformStats.dataPages}{" "}
+          data pages
         </p>
 
         <div className="hero-fade-up hero-fade-up-delay-4 relative z-10 mx-auto mt-10 max-w-xl">

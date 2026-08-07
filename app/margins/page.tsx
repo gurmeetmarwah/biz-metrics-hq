@@ -43,16 +43,16 @@ export default function MarginsHubPage() {
 
         <MetricHubSection
           id="rankings"
-          title="Margin Rankings"
-          subtitle="Industries ranked by median net profit margin."
+          title="Profitability Metric Rankings by Industry"
+          subtitle="How to track business profitability metrics starts with peer medians—industries ranked by net profit margin."
         >
           <RankingTable rows={marginRankings} valueLabel="Net Margin" />
         </MetricHubSection>
 
         <MetricHubSection
           id="highest"
-          title="Highest Margin Businesses"
-          subtitle="Industries where operators consistently achieve strong bottom-line profitability."
+          title="Highest Margin Small Businesses"
+          subtitle="Industries where owners consistently achieve strong bottom-line profitability."
           className="bg-surface-muted/50"
         >
           <IndustryCardGrid items={highestMarginBusinesses} />
@@ -60,8 +60,8 @@ export default function MarginsHubPage() {
 
         <MetricHubSection
           id="lowest"
-          title="Lowest Margin Businesses"
-          subtitle="Industries with thinner margins — often offset by volume or lifestyle factors."
+          title="Lowest Margin Small Businesses"
+          subtitle="Thinner margins—often offset by volume. Still useful when you track profitability metrics against peers."
         >
           <IndustryCardGrid items={lowestMarginBusinesses} />
         </MetricHubSection>
@@ -69,7 +69,7 @@ export default function MarginsHubPage() {
         <MetricHubSection
           id="leaderboard"
           title="Margin Leaderboard"
-          subtitle="Industries grouped by profitability tier."
+          subtitle="Industries grouped by profitability tier so you can spot where your business fits."
           className="bg-surface-muted/50"
         >
           <MarginLeaderboard bands={marginLeaderboardBands} />
@@ -78,15 +78,15 @@ export default function MarginsHubPage() {
         <MetricHubSection
           id="comparisons"
           title="Margin Comparisons"
-          subtitle="Compare profit margins across related industries."
+          subtitle="Compare profit margins across related industries side by side."
         >
           <ComparisonLinkGrid items={marginComparisons} />
         </MetricHubSection>
 
         <MetricHubSection
           id="drivers"
-          title="What Drives Margins?"
-          subtitle="The operational levers that separate top-quartile operators from the rest."
+          title="Understanding Cash Flow vs Profitability for Owners"
+          subtitle="The operational levers—and the cash vs profit distinction—that separate top-quartile operators from the rest."
           className="bg-surface-muted/50"
         >
           <DriverEducationCards drivers={marginDrivers} />

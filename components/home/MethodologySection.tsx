@@ -22,7 +22,7 @@ export function MethodologySection() {
           <SectionHeading
             id="methodology-heading"
             title="Our Methodology"
-            subtitle="Transparent, reproducible benchmarks built for trust. We publish how every number is sourced, calculated, and limited."
+            subtitle="Transparent benchmarks for owners who want to track business profitability metrics with confidence—how every number is sourced, calculated, and limited."
           />
         </AnimateIn>
 

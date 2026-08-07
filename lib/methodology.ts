@@ -67,12 +67,17 @@ export const metricDefinitions = [
   {
     term: "Revenue Range",
     definition:
-      "25th to 75th percentile of annual gross revenue across sampled businesses in the industry.",
+      "25th to 75th percentile of annual gross revenue across sampled businesses in the industry—one of the key financial performance indicators for small business planning.",
   },
   {
     term: "Net Margin Range",
     definition:
-      "25th to 75th percentile of net profit margin (net income ÷ revenue) after owner compensation.",
+      "25th to 75th percentile of net profit margin (net income ÷ revenue) after owner compensation. Use this when you want to track business profitability metrics against peers.",
+  },
+  {
+    term: "Cash Flow vs Profitability",
+    definition:
+      "Profitability is accounting profit after expenses. Cash flow is money moving in and out of the business. Understanding cash flow vs profitability for owners matters because a profitable month can still leave you short on cash if customers pay slowly or you buy inventory up front.",
   },
   {
     term: "Owner Salary Range",

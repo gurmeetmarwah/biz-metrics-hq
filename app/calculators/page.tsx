@@ -40,16 +40,16 @@ export default function CalculatorsHubPage() {
 
         <MetricHubSection
           id="popular"
-          title="Most Popular Tools"
-          subtitle="Start here — benchmarked calculators used most by business owners and buyers."
+          title="Most Popular Tools for Busy Owners"
+          subtitle="Start here—an easy small business profit margin calculator, valuation tools, and break-even models used most by owners and buyers."
         >
           <PopularCalculatorsGrid calculators={popularCalculators} />
         </MetricHubSection>
 
         <MetricHubSection
           id="industry-tools"
-          title="Industry Specific Tools"
-          subtitle="Flagship calculators tailored to each industry's key operating metric."
+          title="Industry-Specific Profitability Tools"
+          subtitle="Flagship calculators tailored to each industry's key financial performance indicators."
           className="bg-surface-muted/50"
         >
           <IndustrySpecificTools tools={industrySpecificTools} />
@@ -58,7 +58,7 @@ export default function CalculatorsHubPage() {
         <MetricHubSection
           id="categories"
           title="Calculator Categories"
-          subtitle="Browse all tools by business economics topic."
+          subtitle="Browse tools by topic—revenue, profitability, valuation, growth, and operations."
         >
           <CalculatorCategoryGrid categories={calculatorCategories} />
         </MetricHubSection>

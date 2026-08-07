@@ -6,9 +6,9 @@ import { MethodologySection } from "@/components/home/MethodologySection";
 import { methodologySummary } from "@/lib/methodology";
 
 export const metadata: Metadata = {
-  title: "Benchmark Methodology — BizMetricsHQ",
+  title: "How We Calculate Business Profitability Metrics — BizMetricsHQ",
   description:
-    "How BizMetricsHQ calculates industry benchmarks: data sources, interquartile ranges, median values, sample sizes, and limitations. Built for transparency and E-E-A-T.",
+    "How BizMetricsHQ tracks business profitability metrics: data sources, ranges, key financial performance indicators for small business, and cash flow vs profitability definitions.",
 };
 
 export default function MethodologyPage() {
@@ -59,12 +59,13 @@ export default function MethodologyPage() {
               <span className="text-ink-muted">Methodology</span>
             </nav>
             <h1 className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              Benchmark Methodology
+              How We Track Business Profitability Metrics
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg">
-              Every figure on BizMetricsHQ is a range with a disclosed median —
-              not a false-precision single number. This page documents our data
-              sources, calculation steps, and known limitations. Last updated{" "}
+              Every figure on BizMetricsHQ is a range with a disclosed median—
+              not a false-precision single number. This page explains how we
+              define key financial performance indicators for small business,
+              including cash flow vs profitability for owners. Last updated{" "}
               {methodologySummary.lastUpdated}.
             </p>
           </div>

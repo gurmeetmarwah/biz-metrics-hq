@@ -14,12 +14,13 @@ export function FinalCTA() {
             id="final-cta-heading"
             className="font-display text-2xl font-bold tracking-tight text-white sm:text-4xl"
           >
-            Find Your Industry Benchmarks
+            Track Your Business Profitability Metrics
           </h2>
-          <p className="mx-auto mt-4 max-w-md text-base text-white/60">
-            Search {platformStats.benchmarks} benchmarks across {platformStats.dataPages}{" "}
-            data pages — revenue, margin, salary, and valuation ranges with sources
-            and sample sizes disclosed.
+          <p className="mx-auto mt-4 max-w-lg text-base text-white/60">
+            Search {platformStats.benchmarks} benchmarks across{" "}
+            {platformStats.dataPages} data pages—revenue, margins, salary, and
+            valuation, the key financial performance indicators for small
+            business owners.
           </p>
         </AnimateIn>
 

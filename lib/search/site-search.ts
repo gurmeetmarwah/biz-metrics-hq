@@ -161,10 +161,18 @@ function buildIndex(): SiteSearchItem[] {
   }
 
   add({
-    label: "Calculators Hub",
+    label: "Easy Small Business Profit Margin Calculators",
     href: "/calculators/",
     category: "Hub",
-    keywords: ["calculator", "tools", "profit", "valuation", "revenue"],
+    keywords: [
+      "calculator",
+      "tools",
+      "profit",
+      "valuation",
+      "revenue",
+      "easy small business profit margin calculator",
+      "profitability metrics",
+    ],
   });
 
   add({
@@ -602,10 +610,17 @@ function buildIndex(): SiteSearchItem[] {
   }
 
   add({
-    label: "Methodology",
+    label: "How We Track Business Profitability Metrics",
     href: "/methodology/",
     category: "Page",
-    keywords: ["methodology", "data sources", "how we calculate"],
+    keywords: [
+      "methodology",
+      "data sources",
+      "how we calculate",
+      "how to track business profitability metrics",
+      "cash flow vs profitability",
+      "key financial performance indicators for small business",
+    ],
   });
 
   for (const calc of popularCalculators) {

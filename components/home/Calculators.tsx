@@ -12,8 +12,8 @@ export function Calculators() {
         <AnimateIn>
           <SectionHeading
             id="calculators-heading"
-            title="Calculators"
-            subtitle="Run the numbers on profit, valuation, break-even, and more."
+            title="Easy Small Business Profit Margin Calculators"
+            subtitle="Run the numbers on margins, valuation, and break-even—benchmarked to your industry."
           />
         </AnimateIn>
 

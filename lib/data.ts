@@ -29,17 +29,17 @@ export const industryCategories = industryDirectory.map((category) => ({
 export const metrics = [
   {
     label: "Revenue",
-    description: "Interquartile revenue ranges by industry",
+    description: "See typical top-line ranges so you can track growth with confidence",
     href: "/revenue/",
   },
   {
     label: "Profit Margin",
-    description: "Net margin ranges with median benchmarks",
+    description: "How to track business profitability metrics against peer margins",
     href: "/margins/",
   },
   {
     label: "Valuation",
-    description: "SDE multiple ranges with methodology",
+    description: "What buyers pay—and how cash flow vs profitability shapes value",
     href: "/valuation/",
   },
 ] as const;
@@ -52,7 +52,7 @@ export const comparisons = [
 
 export const calculators = [
   { label: "Business Valuation Calculator", href: "/calculators/pest-control-valuation/" },
-  { label: "Profit Margin Calculator", href: "/calculators/hvac-profit-margin/" },
+  { label: "Easy Small Business Profit Margin Calculator", href: "/calculators/hvac-profit-margin/" },
   { label: "Break-even Calculator", href: "/calculators/restaurant-break-even/" },
   { label: "Revenue Per Technician", href: "/calculators/hvac-revenue-per-technician/" },
 ] as const;

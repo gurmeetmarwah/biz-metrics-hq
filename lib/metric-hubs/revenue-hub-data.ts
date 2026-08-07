@@ -1,8 +1,9 @@
 import { sortByRevenue } from "./industry-benchmarks";
 
 export const revenueHubMeta = {
-  title: "Revenue Benchmarks by Industry",
-  subtitle: "Search and compare average revenue across hundreds of businesses.",
+  title: "Small Business Revenue Benchmarks & Growth Metrics",
+  subtitle:
+    "Compare average revenue across hundreds of businesses—and pair top-line data with key financial performance indicators for small business planning.",
   dataVintage: "2025–2026",
   sampleSize: "350+ businesses",
 } as const;

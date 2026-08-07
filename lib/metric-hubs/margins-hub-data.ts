@@ -1,8 +1,9 @@
 import { sortByMargin } from "./industry-benchmarks";
 
 export const marginsHubMeta = {
-  title: "Profit Margin Benchmarks by Industry",
-  subtitle: "Compare profit margins across hundreds of businesses.",
+  title: "How to Track Business Profitability Metrics by Industry",
+  subtitle:
+    "Compare profit margins across hundreds of businesses and get clear on cash flow vs profitability for owners—with benchmarks you can act on.",
   dataVintage: "2025–2026",
   sampleSize: "350+ businesses",
 } as const;
@@ -56,10 +57,14 @@ export const marginComparisons = [
 ] as const;
 
 export const marginDrivers = [
+  {
+    title: "Cash Flow vs Profitability",
+    description:
+      "Understanding cash flow vs profitability for owners starts here: profit is what's left after expenses; cash flow is money in the bank. Strong margins with weak collections still create cash crunches.",
+  },
   { title: "Labor Efficiency", description: "Revenue per employee and utilization rates are the primary margin lever in service businesses." },
   { title: "Recurring Revenue", description: "Predictable contract income reduces marketing costs and stabilizes margins." },
   { title: "Route Density", description: "Clustered stops and tight scheduling minimize drive time and labor waste." },
-  { title: "Commercial Accounts", description: "B2B contracts offer volume but often trade margin for stability." },
   { title: "Pricing Power", description: "Specialized skills, licensing, and brand reputation enable premium pricing." },
 ] as const;
 

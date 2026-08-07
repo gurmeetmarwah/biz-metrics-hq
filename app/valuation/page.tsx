@@ -44,15 +44,15 @@ export default function ValuationHubPage() {
         <MetricHubSection
           id="rankings"
           title="Most Valuable Industries"
-          subtitle="Industries ranked by median SDE multiple — what buyers pay at exit."
+          subtitle="Industries ranked by median SDE multiple—what buyers pay when cash flow and profitability look strong."
         >
           <RankingTable rows={valuationRankings} valueLabel="SDE Multiple" />
         </MetricHubSection>
 
         <MetricHubSection
           id="by-industry"
-          title="Valuation Rankings"
-          subtitle="SDE multiples and valuation benchmarks by industry."
+          title="Valuation Rankings by Industry"
+          subtitle="SDE multiples and valuation benchmarks—key financial performance indicators for owners planning an exit."
           className="bg-surface-muted/50"
         >
           <IndustryCardGrid
@@ -66,8 +66,8 @@ export default function ValuationHubPage() {
 
         <MetricHubSection
           id="drivers"
-          title="Valuation Drivers"
-          subtitle="What buyers and brokers weigh when pricing a business."
+          title="What Buyers Weigh: Cash Flow, Margins & Growth"
+          subtitle="Understanding cash flow vs profitability for owners—and the other factors brokers use when pricing a business."
         >
           <DriverEducationCards drivers={valuationDrivers} />
         </MetricHubSection>
@@ -75,7 +75,7 @@ export default function ValuationHubPage() {
         <MetricHubSection
           id="calculator"
           title="Business Worth Calculator"
-          subtitle="Estimate your company's market value in seconds."
+          subtitle="Estimate your company's market value in minutes using industry multiples."
           className="bg-surface-muted/50"
         >
           <BusinessValuationMiniTool calculatorHref={featuredCalculator.href} />

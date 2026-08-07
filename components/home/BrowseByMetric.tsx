@@ -37,8 +37,8 @@ export function BrowseByMetric() {
         <AnimateIn>
           <SectionHeading
             id="browse-metrics-heading"
-            title="Browse Industry Data"
-            subtitle="Jump straight to the metric that matters most to your business."
+            title="Key Financial Performance Indicators for Small Business"
+            subtitle="Jump to the metrics busy owners check first—revenue, profit margins, and valuation."
           />
         </AnimateIn>
 

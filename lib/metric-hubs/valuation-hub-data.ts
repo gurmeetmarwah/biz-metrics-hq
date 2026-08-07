@@ -1,8 +1,9 @@
 import { sortByValuation } from "./industry-benchmarks";
 
 export const valuationHubMeta = {
-  title: "Business Valuation Benchmarks",
-  subtitle: "Discover what businesses are worth and how valuation multiples compare.",
+  title: "Business Valuation Benchmarks for Small Business Owners",
+  subtitle:
+    "See what businesses are worth—and how understanding cash flow vs profitability for owners shapes what buyers will pay.",
   dataVintage: "2025–2026",
   sampleSize: "350+ businesses",
 } as const;
@@ -25,6 +26,11 @@ export const valuationIndustryCards = [
 
 export const valuationDrivers = [
   { title: "Recurring Revenue", description: "Maintenance plans and subscription contracts command premium multiples at exit." },
+  {
+    title: "Cash Flow vs Profitability",
+    description:
+      "Buyers price durable cash—not just accounting profit. Understanding cash flow vs profitability for owners helps you present a cleaner, more bankable story at sale.",
+  },
   { title: "Customer Retention", description: "Low churn signals durable cash flow and reduces buyer risk." },
   { title: "Growth Rate", description: "Consistent year-over-year revenue growth supports higher valuation ranges." },
   { title: "Profit Margin", description: "Strong SDE margins relative to industry peers increase buyer confidence." },

@@ -44,15 +44,15 @@ export default function RevenueHubPage() {
         <MetricHubSection
           id="rankings"
           title="Revenue Rankings"
-          subtitle="Industries ranked by median annual revenue — based on 350+ owner-operated businesses."
+          subtitle="Industries ranked by median annual revenue—pair with profitability metrics to see the full picture."
         >
           <RankingTable rows={revenueRankings} valueLabel="Median Revenue" />
         </MetricHubSection>
 
         <MetricHubSection
           id="browse"
-          title="Browse Revenue By Industry"
-          subtitle="Jump to revenue benchmarks by sector."
+          title="Browse Revenue by Industry"
+          subtitle="Jump to revenue benchmarks—a core financial performance indicator for small business owners."
           className="bg-surface-muted/50"
         >
           <BrowseByCategory categories={browseByCategory} />
@@ -85,8 +85,8 @@ export default function RevenueHubPage() {
 
         <MetricHubSection
           id="drivers"
-          title="Revenue Drivers"
-          subtitle="The five factors that most influence how much a business earns."
+          title="What Drives Small Business Revenue?"
+          subtitle="The five factors that most influence how much a business earns—and how to track them."
           className="bg-surface-muted/50"
         >
           <DriverEducationCards drivers={revenueDrivers} />

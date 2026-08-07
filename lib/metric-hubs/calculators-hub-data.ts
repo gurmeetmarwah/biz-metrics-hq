@@ -1,6 +1,7 @@
 export const calculatorsHubMeta = {
-  title: "Business Economics Calculators",
-  subtitle: "Estimate revenue, profit, and business value with industry-benchmarked tools.",
+  title: "Easy Small Business Profit Margin Calculators",
+  subtitle:
+    "Estimate revenue, profit, and business value with free, industry-benchmarked tools—including an easy small business profit margin calculator you can use in minutes.",
   dataVintage: "2025–2026",
   sampleSize: "70+ calculators",
 } as const;
@@ -15,7 +16,8 @@ export const popularCalculators = [
   },
   {
     label: "Profit Margin Calculator",
-    description: "Calculate net margin and compare against industry cost structure.",
+    description:
+      "Easy small business profit margin calculator—see net margin and compare your cost structure to peers.",
     href: "/calculators/hvac-profit-margin/",
     accent: "metric-margin",
     featured: true,
@@ -76,7 +78,8 @@ export const calculatorCategories = [
   },
   {
     name: "Profitability",
-    description: "Analyze margins, cost structure, and bottom-line performance.",
+    description:
+      "Analyze margins, cost structure, and cash flow vs profitability for owners who want clearer bottom-line answers.",
     calculators: [
       { label: "HVAC Profit Margin", href: "/calculators/hvac-profit-margin/" },
       { label: "Pest Control Profit Margin", href: "/calculators/pest-control-profit-margin/" },
