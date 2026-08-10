@@ -83,6 +83,20 @@ export const franchiseCategories: readonly FranchiseCategory[] = [
     ],
   },
   {
+    id: "food",
+    name: "Food",
+    icon: "food",
+    description: "Restaurant and food service franchise economics.",
+    franchises: [
+      { label: "Restaurant Franchise", slug: "restaurant-franchise", href: franchiseHref("food", "restaurant-franchise") },
+      { label: "Coffee Shop Franchise", slug: "coffee-shop-franchise", href: franchiseHref("food", "coffee-shop-franchise"), comingSoon: true },
+      { label: "Bakery Franchise", slug: "bakery-franchise", href: franchiseHref("food", "bakery-franchise"), comingSoon: true },
+      { label: "Food Truck Franchise", slug: "food-truck-franchise", href: franchiseHref("food", "food-truck-franchise"), comingSoon: true },
+      { label: "Ice Cream Franchise", slug: "ice-cream-franchise", href: franchiseHref("food", "ice-cream-franchise"), comingSoon: true },
+      { label: "Fast Casual Franchise", slug: "fast-casual-franchise", href: franchiseHref("food", "fast-casual-franchise"), comingSoon: true },
+    ],
+  },
+  {
     id: "healthcare",
     name: "Healthcare",
     icon: "healthcare",
@@ -94,20 +108,6 @@ export const franchiseCategories: readonly FranchiseCategory[] = [
       { label: "Chiropractic Franchise", slug: "chiropractic-franchise", href: franchiseHref("healthcare", "chiropractic-franchise"), comingSoon: true },
       { label: "Optometry Franchise", slug: "optometry-franchise", href: franchiseHref("healthcare", "optometry-franchise"), comingSoon: true },
       { label: "Urgent Care Franchise", slug: "urgent-care-franchise", href: franchiseHref("healthcare", "urgent-care-franchise"), comingSoon: true },
-    ],
-  },
-  {
-    id: "food",
-    name: "Food",
-    icon: "food",
-    description: "Restaurant and food service franchise economics.",
-    franchises: [
-      { label: "Restaurant Franchise", slug: "restaurant-franchise", href: franchiseHref("food", "restaurant-franchise"), comingSoon: true },
-      { label: "Coffee Shop Franchise", slug: "coffee-shop-franchise", href: franchiseHref("food", "coffee-shop-franchise"), comingSoon: true },
-      { label: "Bakery Franchise", slug: "bakery-franchise", href: franchiseHref("food", "bakery-franchise"), comingSoon: true },
-      { label: "Food Truck Franchise", slug: "food-truck-franchise", href: franchiseHref("food", "food-truck-franchise"), comingSoon: true },
-      { label: "Ice Cream Franchise", slug: "ice-cream-franchise", href: franchiseHref("food", "ice-cream-franchise"), comingSoon: true },
-      { label: "Fast Casual Franchise", slug: "fast-casual-franchise", href: franchiseHref("food", "fast-casual-franchise"), comingSoon: true },
     ],
   },
   {

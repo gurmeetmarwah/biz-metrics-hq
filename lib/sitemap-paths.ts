@@ -48,6 +48,8 @@ import { pestControlFranchiseRankingSlugs } from "@/lib/franchise/home-services/
 import { plumbingFranchiseBrandSlugs } from "@/lib/franchise/home-services/plumbing-franchise";
 import { plumbingFranchiseRankingSlugs } from "@/lib/franchise/home-services/plumbing-rankings";
 
+import { restaurantFranchiseBrandSlugs } from "@/lib/franchise/food/restaurant-franchise";
+
 const APP_DIR = path.join(process.cwd(), "app");
 
 /** Short URL aliases — canonical routes live under /comparisons/. */
@@ -105,6 +107,8 @@ const DYNAMIC_SLUG_ROUTES: Record<string, readonly string[]> = {
   "franchise/home-services/pest-control/rankings": pestControlFranchiseRankingSlugs,
   "franchise/home-services/plumbing/brands": plumbingFranchiseBrandSlugs,
   "franchise/home-services/plumbing/rankings": plumbingFranchiseRankingSlugs,
+
+  "franchise/food/restaurant-franchise/brands": restaurantFranchiseBrandSlugs,
 };
 
 function collectPaths(dir: string, segments: string[]): string[] {
