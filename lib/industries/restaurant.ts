@@ -219,6 +219,8 @@ export const faqs = [
 ] as const;
 
 export const relatedIndustries = [
+  { label: "Restaurant Franchise", href: "/franchise/food/restaurant-franchise/" },
+  { label: "Fast Food Franchise", href: "/franchise/food/restaurant-franchise/fast-food/" },
   { label: "Coffee Shop", href: "/industries/food-beverage/coffee-shop/" },
   { label: "Bakery", href: "/industries/food-beverage/bakery/" },
   { label: "Food Truck", href: "/industries/restaurant-types/food-truck/" },

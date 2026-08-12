@@ -5,8 +5,11 @@ import { IndustrySectionNav } from "@/components/industry/IndustrySectionNav";
 import { IndustryFaq } from "@/components/industry/IndustryFaq";
 import { LinkCardGrid } from "@/components/industry/LinkCardGrid";
 import { HashLink } from "@/components/ui/HashLink";
-import { RestaurantFranchiseInvestmentCalculator } from "@/components/franchise/RestaurantFranchiseInvestmentCalculator";
-import { restaurantFranchiseGuide as data } from "@/lib/franchise/food/restaurant-franchise";
+import { FastFoodFranchiseInvestmentCalculator } from "@/components/franchise/FastFoodFranchiseInvestmentCalculator";
+import { FastFoodBreakEvenCalculator } from "@/components/franchise/FastFoodBreakEvenCalculator";
+import { DataSourcesAttribution } from "@/components/shared/DataSourcesAttribution";
+import { fastFoodFranchiseGuide as data } from "@/lib/franchise/food/fast-food-franchise";
+import { fastFoodFranchiseAttribution } from "@/lib/data-sources/fast-food-franchise";
 
 function HubSection({
   id,
@@ -42,7 +45,7 @@ function HubSection({
   );
 }
 
-export function RestaurantFranchiseGuide() {
+export function FastFoodFranchiseGuide() {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -88,12 +91,18 @@ export function RestaurantFranchiseGuide() {
               <span className="mx-2" aria-hidden="true">
                 /
               </span>
+              <Link href={data.meta.parentHref} className="hover:text-accent">
+                {data.meta.parentLabel}
+              </Link>
+              <span className="mx-2" aria-hidden="true">
+                /
+              </span>
               <span className="text-ink-muted">{data.meta.shortName}</span>
             </nav>
 
             <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-4 py-1.5 text-xs font-medium text-ink-muted shadow-sm backdrop-blur-sm">
               <span className="size-1.5 rounded-full bg-accent" aria-hidden="true" />
-              Franchise Guide · {data.meta.dataVintage} · {data.meta.sampleSize}
+              Fast Food Franchise Guide · {data.meta.dataVintage} · {data.meta.sampleSize}
             </p>
 
             <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-[2.5rem] lg:leading-tight">
@@ -105,28 +114,28 @@ export function RestaurantFranchiseGuide() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <HashLink
-                href="#calculator"
+                href="#compare-brands"
                 className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
               >
-                Investment Calculator
+                Compare Fast Food Franchises
               </HashLink>
               <HashLink
-                href="#compare-brands"
+                href="#calculator"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
               >
-                Compare Franchises
+                Investment Calculator
               </HashLink>
             </div>
           </div>
         </section>
 
-        {/* Benchmark strip */}
-        <section aria-label="Restaurant franchise benchmarks" className="border-b border-border/60 bg-surface">
+        {/* Benchmark bar */}
+        <section aria-label="Fast food franchise benchmarks" className="border-b border-border/60 bg-surface">
           <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
             <div className="mb-6">
-              <p className="text-xs font-semibold tracking-wider text-accent uppercase">Benchmark Strip</p>
+              <p className="text-xs font-semibold tracking-wider text-accent uppercase">Benchmark Bar</p>
               <h2 className="mt-1 font-display text-lg font-semibold text-ink sm:text-xl">
-                Restaurant Franchise Economics at a Glance
+                Fast Food Franchise Economics at a Glance
               </h2>
             </div>
             <div className="overflow-x-auto rounded-2xl border border-border bg-surface shadow-sm">
@@ -152,7 +161,8 @@ export function RestaurantFranchiseGuide() {
               </table>
             </div>
             <p className="mt-3 text-xs text-ink-faint">
-              Small = compact sandwich/coffee formats · Medium = typical fast casual / mid-QSR · Large = full QSR builds
+              Small = compact sandwich / limited-service · Medium = established QSR · Large = freestanding /
+              drive-through formats
             </p>
           </div>
         </section>
@@ -162,19 +172,19 @@ export function RestaurantFranchiseGuide() {
         {/* 2. Calculator */}
         <HubSection
           id="calculator"
-          title="Restaurant Franchise Investment Calculator"
-          subtitle="Model restaurant franchise startup costs, cash required, loan payments, break-even revenue, and payback before you buy."
+          title="Fast Food Franchise Investment Calculator: Cost, Cash Required & Payback"
+          subtitle="Model total startup investment, how much cash you need to open a fast food franchise, revenue, operating profit, owner income, break-even, and payback."
           featured
           className="bg-surface-muted/30"
         >
-          <RestaurantFranchiseInvestmentCalculator />
+          <FastFoodFranchiseInvestmentCalculator />
         </HubSection>
 
         {/* 3. Costs */}
         <HubSection
           id="costs"
-          title="How Much Does a Restaurant Franchise Cost?"
-          subtitle="Restaurant franchise investment is a stack of CapEx and working-capital line items — not a single sticker price."
+          title="How Much Does a Fast Food Franchise Cost?"
+          subtitle="Fast food franchise cost is a stack of CapEx and working-capital line items — not a single sticker price."
         >
           <ul className="grid gap-4 sm:grid-cols-2">
             {data.costBreakdown.map((item) => (
@@ -200,7 +210,7 @@ export function RestaurantFranchiseGuide() {
           </ul>
           <div className="mt-8 rounded-2xl border border-border bg-accent-soft/40 px-6 py-8">
             <p className="text-center text-xs font-semibold tracking-wider text-accent uppercase">
-              Typical Total Investment
+              Total Initial Investment
             </p>
             <dl className="mt-5 grid gap-3 sm:grid-cols-3">
               <div className="rounded-xl bg-surface/80 px-4 py-5 text-center">
@@ -228,56 +238,24 @@ export function RestaurantFranchiseGuide() {
           </div>
         </HubSection>
 
-        {/* 4. Fees */}
-        <HubSection
-          id="fees"
-          title="Restaurant Franchise Fees & Royalties"
-          subtitle="Ongoing fees compound every year — underwrite the full stack, not just the initial franchise fee."
-          className="bg-surface-muted/30"
-        >
-          <div className="overflow-x-auto rounded-2xl border border-border bg-surface shadow-sm">
-            <table className="w-full min-w-[760px] text-sm">
-              <thead>
-                <tr className="border-b border-border-subtle bg-surface-muted/50">
-                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Cost</th>
-                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Small</th>
-                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Medium</th>
-                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Large</th>
-                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Profitability impact</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.feeRows.map((row) => (
-                  <tr key={row.cost} className="border-b border-border-subtle last:border-0">
-                    <td className="px-4 py-3.5 font-medium text-ink sm:px-5">{row.cost}</td>
-                    <td className="px-4 py-3.5 tabular-nums text-ink sm:px-5">{row.small}</td>
-                    <td className="px-4 py-3.5 tabular-nums text-ink sm:px-5">{row.medium}</td>
-                    <td className="px-4 py-3.5 tabular-nums text-ink sm:px-5">{row.large}</td>
-                    <td className="px-4 py-3.5 text-ink-muted sm:px-5">{row.impact}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </HubSection>
-
-        {/* 5. Opportunities / brands */}
+        {/* 4. Brands */}
         <HubSection
           id="compare-brands"
-          title="Restaurant Franchise Opportunities to Compare"
-          subtitle="Side-by-side economics for national restaurant franchise brands — open a profile for deeper diligence."
+          title="Fast Food Franchise Opportunities to Compare"
+          subtitle="Side-by-side economics for national QSR brands — open a profile for deeper diligence, not a generic “best of” ranking."
           featured
+          className="bg-surface-muted/30"
         >
           <div className="overflow-x-auto rounded-2xl border border-border bg-surface shadow-sm">
             <table className="w-full min-w-[800px] text-sm">
               <thead>
                 <tr className="border-b border-border-subtle bg-surface-muted/50">
                   <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Franchise</th>
-                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Initial Investment</th>
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Investment</th>
                   <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Franchise Fee</th>
                   <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Royalty</th>
                   <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Revenue</th>
-                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Size</th>
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Investment Level</th>
                 </tr>
               </thead>
               <tbody>
@@ -303,12 +281,71 @@ export function RestaurantFranchiseGuide() {
           </p>
         </HubSection>
 
-        {/* 6. Revenue */}
+        {/* 5. Investment levels */}
+        <HubSection
+          id="investment-levels"
+          title="Cheapest Fast Food Franchises & Investment Levels"
+          subtitle="Find fast food franchises under $250K, under $500K, $500K–$1M, and $1M+ drive-through formats."
+        >
+          <ul className="grid gap-4 sm:grid-cols-2">
+            {data.investmentLevels.map((level) => (
+              <li key={level.label}>
+                <HashLink
+                  href={level.href}
+                  className="card-interactive flex h-full flex-col rounded-2xl border border-border bg-surface p-6"
+                >
+                  <p className="font-display text-lg font-semibold text-ink">{level.label}</p>
+                  <p className="mt-2 text-sm text-ink-muted">{level.detail}</p>
+                  <span className="mt-4 text-sm font-semibold text-accent">
+                    View {level.filter} brands →
+                  </span>
+                </HashLink>
+              </li>
+            ))}
+          </ul>
+        </HubSection>
+
+        {/* 6. Fees */}
+        <HubSection
+          id="fees"
+          title="Fast Food Franchise Fees & Royalties"
+          subtitle="Ongoing fees compound every year — underwrite the full stack, not just the initial franchise fee."
+          className="bg-surface-muted/30"
+        >
+          <div className="overflow-x-auto rounded-2xl border border-border bg-surface shadow-sm">
+            <table className="w-full min-w-[760px] text-sm">
+              <thead>
+                <tr className="border-b border-border-subtle bg-surface-muted/50">
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Cost</th>
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Small</th>
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Medium</th>
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Large</th>
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Economics impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.feeRows.map((row) => (
+                  <tr key={row.cost} className="border-b border-border-subtle last:border-0">
+                    <td className="px-4 py-3.5 font-medium text-ink sm:px-5">{row.cost}</td>
+                    <td className="px-4 py-3.5 tabular-nums text-ink sm:px-5">{row.small}</td>
+                    <td className="px-4 py-3.5 tabular-nums text-ink sm:px-5">{row.medium}</td>
+                    <td className="px-4 py-3.5 tabular-nums text-ink sm:px-5">{row.large}</td>
+                    <td className="px-4 py-3.5 text-ink-muted sm:px-5">{row.impact}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-6 rounded-2xl border border-border bg-surface px-5 py-4 text-sm leading-relaxed text-ink-muted">
+            {data.feeInsight}
+          </p>
+        </HubSection>
+
+        {/* 7. Revenue */}
         <HubSection
           id="revenue"
-          title="How Much Revenue Does a Restaurant Franchise Generate?"
-          subtitle="Franchise sales vary widely by concept, location maturity, and daypart — do not treat AUV as a guarantee."
-          className="bg-surface-muted/30"
+          title="How Much Revenue Does a Fast Food Franchise Generate?"
+          subtitle="Distinguish systemwide average unit volume (AUV) from actual owner economics — not every location earns the same amount."
         >
           <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {data.revenuePoints.map((point) => (
@@ -318,40 +355,46 @@ export function RestaurantFranchiseGuide() {
               </li>
             ))}
           </ul>
-          <div className="mt-8 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3">
+          <div className="mx-auto mt-10 max-w-md">
             {(
               [
-                { label: "Small", value: data.revenueBenchmark.small },
-                { label: "Medium", value: data.revenueBenchmark.medium },
-                { label: "Large", value: data.revenueBenchmark.large },
+                { label: "Lower-performing location", value: data.revenueBenchmark.small },
+                { label: "Typical location", value: data.revenueBenchmark.medium },
+                { label: "High-performing location", value: data.revenueBenchmark.large },
               ] as const
-            ).map((tier) => (
-              <div key={tier.label} className="bg-surface px-5 py-6 text-center">
-                <p className="text-xs font-semibold tracking-wider text-ink-faint uppercase">{tier.label}</p>
-                <p
-                  className="mt-2 font-display text-2xl font-bold tabular-nums text-ink"
-                  style={{ color: "var(--metric-revenue)" }}
-                >
-                  {tier.value}
-                </p>
+            ).map((tier, i) => (
+              <div key={tier.label}>
+                {i > 0 && (
+                  <div className="flex justify-center py-2" aria-hidden="true">
+                    <span className="text-ink-faint">↓</span>
+                  </div>
+                )}
+                <div className="rounded-2xl border border-border bg-surface px-6 py-5 text-center">
+                  <p className="text-xs font-semibold tracking-wider text-ink-faint uppercase">{tier.label}</p>
+                  <p
+                    className="mt-2 font-display text-2xl font-bold tabular-nums"
+                    style={{ color: "var(--metric-revenue)" }}
+                  >
+                    {tier.value}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
-          <p className="mt-3 text-center text-xs text-ink-faint">
-            Revenue by store size — not every franchise earns the same amount.
-          </p>
+          <p className="mt-4 text-center text-xs text-ink-faint">{data.revenueBenchmark.note}</p>
         </HubSection>
 
-        {/* 7. Profitability */}
+        {/* 8. Profit */}
         <HubSection
           id="profitability"
-          title="How Profitable Is a Restaurant Franchise? Average Profit Margin Explained"
-          subtitle="A simplified P&L shows where franchise fees and operating costs consume revenue before owner income — and what average restaurant franchise profit margins look like by size."
+          title="How Profitable Is a Fast Food Franchise?"
+          subtitle="A simplified P&L shows where food, labor, rent, and royalties consume revenue before owner income."
+          className="bg-surface-muted/30"
         >
           <div className="mx-auto max-w-xl rounded-2xl border border-border bg-surface p-6 shadow-sm sm:p-8">
             <ol className="space-y-0">
               {data.pnlRows.map((row, i) => (
-                <li key={row.label} className="relative">
+                <li key={row.label}>
                   {i > 0 && (
                     <div className="flex justify-center py-1" aria-hidden="true">
                       <span className="text-ink-faint">↓</span>
@@ -363,7 +406,7 @@ export function RestaurantFranchiseGuide() {
                         ? "bg-accent-soft/50 font-semibold"
                         : row.kind === "revenue"
                           ? "bg-surface-muted/60"
-                          : "bg-transparent"
+                          : ""
                     }`}
                   >
                     <span className={row.kind === "expense" ? "text-ink-muted" : "text-ink"}>{row.label}</span>
@@ -387,44 +430,67 @@ export function RestaurantFranchiseGuide() {
           </div>
           <div className="mt-8">
             <p className="text-center text-xs font-semibold tracking-wider text-accent uppercase">
-              Typical Restaurant Franchise Profit Margin
+              Estimated Operating Margin
             </p>
             <dl className="mt-4 grid gap-3 sm:grid-cols-3">
-              <div className="rounded-2xl border border-border bg-surface-muted/40 px-5 py-5 text-center">
+              <div className="rounded-2xl border border-border bg-surface px-5 py-5 text-center">
                 <dt className="text-xs text-ink-faint">Small</dt>
                 <dd className="mt-2 font-display text-2xl font-bold" style={{ color: "var(--metric-margin)" }}>
                   {data.profitMarginBenchmark.small}
                 </dd>
               </div>
-              <div className="rounded-2xl border border-border bg-surface-muted/40 px-5 py-5 text-center">
+              <div className="rounded-2xl border border-border bg-surface px-5 py-5 text-center">
                 <dt className="text-xs text-ink-faint">Medium</dt>
                 <dd className="mt-2 font-display text-2xl font-bold" style={{ color: "var(--metric-margin)" }}>
                   {data.profitMarginBenchmark.medium}
                 </dd>
               </div>
-              <div className="rounded-2xl border border-border bg-surface-muted/40 px-5 py-5 text-center">
+              <div className="rounded-2xl border border-border bg-surface px-5 py-5 text-center">
                 <dt className="text-xs text-ink-faint">Large</dt>
                 <dd className="mt-2 font-display text-2xl font-bold" style={{ color: "var(--metric-margin)" }}>
                   {data.profitMarginBenchmark.large}
                 </dd>
               </div>
             </dl>
-            <ul className="mt-4 space-y-2 text-center text-sm text-ink-muted">
-              <li>{data.profitExample.small}</li>
-              <li>{data.profitExample.medium}</li>
-              <li>{data.profitExample.large}</li>
-            </ul>
+            <div className="mt-6 rounded-2xl border border-border bg-surface px-5 py-5 text-center">
+              <p className="text-xs font-semibold tracking-wider text-accent uppercase">
+                $1M Revenue Could Produce
+              </p>
+              <ul className="mt-3 space-y-1.5 text-sm text-ink-muted">
+                <li>{data.profitExample.small}</li>
+                <li>{data.profitExample.medium}</li>
+                <li>{data.profitExample.large}</li>
+              </ul>
+            </div>
+            <p className="mt-4 text-center text-xs text-ink-faint">{data.profitDisclaimer}</p>
           </div>
         </HubSection>
 
-        {/* 8. Owner income */}
+        {/* 9. Owner income */}
         <HubSection
           id="owner-income"
-          title="How Much Does a Restaurant Franchise Owner Make?"
-          subtitle="Do not equate restaurant revenue with personal income — operating profit still has to cover compensation, debt service, and reserves."
-          className="bg-surface-muted/30"
+          title="How Much Does a Fast Food Franchise Owner Make?"
+          subtitle="Revenue ≠ Profit ≠ Owner Income — follow cash from sales through debt service to take-home."
         >
-          <div className="rounded-2xl border border-border bg-surface px-6 py-8 text-center">
+          <div className="overflow-x-auto rounded-2xl border border-border bg-surface shadow-sm">
+            <table className="w-full min-w-[420px] text-sm">
+              <thead>
+                <tr className="border-b border-border-subtle bg-surface-muted/50">
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Metric</th>
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.ownerIncomeExample.map((row) => (
+                  <tr key={row.metric} className="border-b border-border-subtle last:border-0">
+                    <td className="px-4 py-3.5 text-ink-muted sm:px-5">{row.metric}</td>
+                    <td className="px-4 py-3.5 font-semibold tabular-nums text-ink sm:px-5">{row.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-8 rounded-2xl border border-border bg-surface-muted/40 px-6 py-8 text-center">
             <p className="text-xs font-semibold tracking-wider text-accent uppercase">Owner Income Benchmark</p>
             <div className="mt-4 flex flex-wrap items-end justify-center gap-6 sm:gap-10">
               <div>
@@ -448,102 +514,88 @@ export function RestaurantFranchiseGuide() {
             </div>
             <p className="mx-auto mt-4 max-w-lg text-sm text-ink-muted">{data.ownerIncomeBenchmark.note}</p>
           </div>
+          <div className="mt-6">
+            <p className="text-sm font-semibold text-ink">Owner income varies dramatically depending on:</p>
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+              {data.ownerIncomeDrivers.map((driver) => (
+                <li key={driver} className="flex items-center gap-2 text-sm text-ink-muted">
+                  <span className="size-1.5 rounded-full bg-accent" aria-hidden="true" />
+                  {driver}
+                </li>
+              ))}
+            </ul>
+          </div>
         </HubSection>
 
-        {/* 9. Break-even */}
+        {/* 10. Break-even */}
         <HubSection
           id="break-even"
-          title="How Long Does It Take to Break Even on a Restaurant Franchise?"
-          subtitle="Payback connects initial restaurant franchise investment to monthly profit until cumulative cash recovers CapEx."
-        >
-          <div className="mx-auto max-w-md">
-            {(
-              [
-                { label: "Initial Investment", value: data.breakEvenExample.investment },
-                { label: "Monthly Profit", value: data.breakEvenExample.monthlyProfit },
-                { label: "Annual Profit", value: data.breakEvenExample.annualProfit },
-                { label: "Estimated Payback", value: data.breakEvenExample.paybackYears },
-              ] as const
-            ).map((step, i) => (
-              <div key={step.label}>
-                {i > 0 && (
-                  <div className="flex justify-center py-2" aria-hidden="true">
-                    <span className="text-lg text-ink-faint">↓</span>
-                  </div>
-                )}
-                <div
-                  className={`rounded-2xl border border-border px-6 py-5 text-center ${
-                    i === 3 ? "bg-accent-soft/50" : "bg-surface"
-                  }`}
-                >
-                  <p className="text-xs font-semibold tracking-wider text-ink-faint uppercase">{step.label}</p>
-                  <p className="mt-2 font-display text-2xl font-bold tabular-nums text-ink sm:text-3xl">{step.value}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="mx-auto mt-6 max-w-xl text-center text-sm text-ink-muted">{data.breakEvenExample.disclaimer}</p>
-        </HubSection>
-
-        {/* 10. Financing */}
-        <HubSection
-          id="financing"
-          title="How to Finance a Restaurant Franchise"
-          subtitle="Most buyers blend lender debt with personal or partner cash to cover the down payment and reserves."
+          title="How Long Does It Take to Break Even on a Fast Food Franchise?"
+          subtitle="Adjust investment, revenue, margin, financing, and owner income to model simple payback for a fast food franchise."
+          featured
           className="bg-surface-muted/30"
         >
-          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {data.financingOptions.map((opt) => (
-              <li key={opt.title} className="rounded-2xl border border-border bg-surface p-5">
-                <h3 className="font-display text-base font-semibold text-ink">{opt.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-muted">{opt.detail}</p>
+          <FastFoodBreakEvenCalculator />
+        </HubSection>
+
+        {/* 11. ROI */}
+        <HubSection
+          id="roi"
+          title="Fast Food Franchise ROI"
+          subtitle="Three metrics that matter more than brand slogans when comparing fast food franchise opportunities."
+        >
+          <ul className="grid gap-4 sm:grid-cols-3">
+            {data.roiMetrics.map((metric) => (
+              <li key={metric.title} className="rounded-2xl border border-border bg-surface p-6">
+                <h3 className="font-display text-lg font-semibold text-ink">{metric.title}</h3>
+                <p className="mt-2 text-sm font-medium text-accent">{metric.formula}</p>
+                <p className="mt-3 text-sm leading-relaxed text-ink-muted">{metric.detail}</p>
               </li>
             ))}
           </ul>
-          <div className="mt-8 rounded-2xl border border-border bg-surface px-6 py-8">
-            <p className="text-center text-xs font-semibold tracking-wider text-accent uppercase">
-              How Much Cash Do You Need?
-            </p>
-            <div className="mt-6 grid gap-4 lg:grid-cols-3">
-              {(
-                [
-                  { label: "Small", example: data.cashRequirementExample.small },
-                  { label: "Medium", example: data.cashRequirementExample.medium },
-                  { label: "Large", example: data.cashRequirementExample.large },
-                ] as const
-              ).map((tier) => (
-                <div key={tier.label} className="rounded-xl border border-border bg-surface-muted/40 p-4">
-                  <p className="text-center text-xs font-semibold tracking-wider text-ink-faint uppercase">
-                    {tier.label}
-                  </p>
-                  <dl className="mt-3 space-y-2 text-sm">
-                    <div className="flex justify-between gap-3">
-                      <dt className="text-ink-muted">Total Investment</dt>
-                      <dd className="font-semibold tabular-nums text-ink">{tier.example.totalInvestment}</dd>
-                    </div>
-                    <div className="flex justify-between gap-3">
-                      <dt className="text-ink-muted">Financed</dt>
-                      <dd className="font-semibold tabular-nums text-ink">{tier.example.financed}</dd>
-                    </div>
-                    <div className="flex justify-between gap-3 border-t border-border-subtle pt-2">
-                      <dt className="text-ink-muted">Cash Required</dt>
-                      <dd className="font-semibold tabular-nums text-accent">{tier.example.cashRequired}</dd>
-                    </div>
-                  </dl>
-                </div>
-              ))}
-            </div>
-            <p className="mx-auto mt-4 max-w-lg text-center text-sm text-ink-muted">
-              {data.cashRequirementExample.note}
-            </p>
+          <p className="mt-6 text-center text-sm text-ink-muted">
+            Use the{" "}
+            <HashLink href="#calculator" className="font-semibold text-accent hover:underline">
+              investment calculator
+            </HashLink>{" "}
+            above to estimate ROI, cash-on-cash return, and payback for a specific concept.
+          </p>
+        </HubSection>
+
+        {/* 12. Drive-through vs traditional */}
+        <HubSection
+          id="drive-through"
+          title="Drive-Through vs Traditional Fast Food Franchise"
+          subtitle="Drive-through pads usually raise CapEx and staffing — and can raise revenue potential when traffic supports the site."
+          className="bg-surface-muted/30"
+        >
+          <div className="overflow-x-auto rounded-2xl border border-border bg-surface shadow-sm">
+            <table className="w-full min-w-[560px] text-sm">
+              <thead>
+                <tr className="border-b border-border-subtle bg-surface-muted/50">
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Metric</th>
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Drive-Through</th>
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Traditional</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.driveThroughVsTraditional.map((row) => (
+                  <tr key={row.metric} className="border-b border-border-subtle last:border-0">
+                    <td className="px-4 py-3.5 font-medium text-ink sm:px-5">{row.metric}</td>
+                    <td className="px-4 py-3.5 text-ink-muted sm:px-5">{row.driveThrough}</td>
+                    <td className="px-4 py-3.5 text-ink-muted sm:px-5">{row.traditional}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </HubSection>
 
-        {/* 11. vs Independent */}
+        {/* 13. vs Independent */}
         <HubSection
           id="vs-independent"
-          title="Restaurant Franchise vs Starting an Independent Restaurant"
-          subtitle="Franchise systems trade royalties and restrictions for brand demand and playbooks — independents keep margin and control."
+          title="Fast Food Franchise vs Independent Fast Food Restaurant"
+          subtitle="Franchise systems trade royalties and menu restrictions for brand demand and operating playbooks."
         >
           <div className="overflow-x-auto rounded-2xl border border-border bg-surface shadow-sm">
             <table className="w-full min-w-[560px] text-sm">
@@ -567,129 +619,99 @@ export function RestaurantFranchiseGuide() {
           </div>
           <div className="mt-6 text-center">
             <Link
-              href="/industries/comparisons/restaurant-vs-food-truck/"
+              href="/franchise/food/restaurant-franchise/#vs-independent"
               className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:underline"
             >
-              Explore restaurant business model comparisons →
+              Restaurant Franchise vs Independent Restaurant →
             </Link>
           </div>
         </HubSection>
 
-        {/* 12. Worth it */}
+        {/* 14. Worth it */}
         <HubSection
           id="worth-it"
-          title="Is Buying a Restaurant Franchise Worth It?"
-          subtitle="Use a decision framework — not a generic yes or no — to judge fit for your capital and operating style."
+          title="Is a Fast Food Franchise Worth It?"
+          subtitle="Use an investment scorecard — not a generic pros/cons list — to judge fit for your capital and operating style."
           className="bg-surface-muted/30"
         >
-          <div className="grid gap-6 lg:grid-cols-2">
-            <div className="rounded-2xl border border-border bg-surface p-6">
-              <h3 className="font-display text-base font-semibold text-ink">Potential advantages</h3>
-              <ul className="mt-4 space-y-2.5">
-                {data.advantages.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm text-ink-muted">
-                    <span className="mt-0.5 font-semibold text-[var(--metric-margin)]" aria-hidden="true">
-                      ✓
-                    </span>
-                    {item}
-                  </li>
+          <div className="overflow-x-auto rounded-2xl border border-border bg-surface shadow-sm">
+            <table className="w-full min-w-[420px] text-sm">
+              <thead>
+                <tr className="border-b border-border-subtle bg-surface-muted/50">
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Factor</th>
+                  <th className="px-4 py-3.5 text-left font-semibold text-ink sm:px-5">Importance</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.scorecard.map((row) => (
+                  <tr key={row.factor} className="border-b border-border-subtle last:border-0">
+                    <td className="px-4 py-3.5 text-ink sm:px-5">{row.factor}</td>
+                    <td className="px-4 py-3.5 font-semibold text-ink-muted sm:px-5">{row.importance}</td>
+                  </tr>
                 ))}
-              </ul>
-            </div>
-            <div className="rounded-2xl border border-border bg-surface p-6">
-              <h3 className="font-display text-base font-semibold text-ink">Potential disadvantages</h3>
-              <ul className="mt-4 space-y-2.5">
-                {data.disadvantages.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm text-ink-muted">
-                    <span className="mt-0.5 font-semibold text-red-600" aria-hidden="true">
-                      ✕
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+              </tbody>
+            </table>
           </div>
-          <div className="mt-8">
-            <h3 className="font-display text-lg font-semibold text-ink">Restaurant Franchise ROI Scorecard</h3>
-            <p className="mt-2 text-sm text-ink-muted">
-              Score each factor for a specific brand and territory before committing capital.
-            </p>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {data.roiScorecard.map((row) => (
-                <li key={row.factor} className="rounded-xl border border-border bg-surface px-4 py-4">
-                  <p className="text-sm font-semibold text-ink">{row.factor}</p>
-                  <p className="mt-1 text-sm text-ink-muted">{row.guidance}</p>
+          <div className="mt-8 rounded-2xl border border-border bg-surface p-6">
+            <h3 className="font-display text-base font-semibold text-ink">Best suited for</h3>
+            <ul className="mt-4 space-y-2.5">
+              {data.bestSuitedFor.map((item) => (
+                <li key={item} className="flex items-start gap-2.5 text-sm text-ink-muted">
+                  <span className="mt-0.5 font-semibold text-[var(--metric-margin)]" aria-hidden="true">
+                    ✓
+                  </span>
+                  {item}
                 </li>
               ))}
             </ul>
           </div>
         </HubSection>
 
-        {/* 13. Concepts */}
+        {/* 15. Types */}
         <HubSection
-          id="concepts"
-          title="Restaurant Franchise Types & Concepts"
-          subtitle="Explore fast food, pizza, burger, chicken, and other restaurant franchise concepts — each can become its own long-tail economics page."
+          id="types"
+          title="Types of Fast Food Franchises"
+          subtitle="Concept-level pages deepen long-tail SEO — each will expand into its own franchise economics landing page."
         >
-          <LinkCardGrid items={[...data.concepts]} columns={3} />
+          <LinkCardGrid items={[...data.types]} columns={3} />
         </HubSection>
 
-        {/* 14. Investment levels */}
-        <HubSection
-          id="investment-levels"
-          title="Lowest Cost Restaurant Franchises by Investment"
-          subtitle="Browse restaurant franchises under $250K, under $500K, under $1 million, and higher CapEx bands — including fast food options."
-          className="bg-surface-muted/30"
-        >
-          <LinkCardGrid items={[...data.investmentLevels]} columns={3} />
-        </HubSection>
-
-        {/* 15. FAQ */}
+        {/* 16. FAQ */}
         <HubSection
           id="faq"
-          title="Restaurant Franchise FAQs"
-          subtitle="High-intent questions prospective restaurant franchise buyers ask before investing."
+          title="Fast Food Franchise FAQs"
+          subtitle="High-intent questions buyers ask before opening a fast food franchise."
+          className="bg-surface-muted/30"
         >
           <IndustryFaq faqs={[...data.faqs]} />
         </HubSection>
 
-        {/* 16. Continue exploring */}
+        {/* Explore */}
         <HubSection
           id="explore"
           title="Continue Exploring"
-          subtitle="Go deeper on restaurant business economics or browse related franchise categories."
+          subtitle="Go deeper on restaurant franchise economics or related food concepts."
         >
-          <div className="grid gap-10 lg:grid-cols-2">
-            <div>
-              <h3 className="font-display text-base font-semibold text-ink">Explore Restaurant Business Economics</h3>
-              <ul className="mt-4 space-y-2">
-                {data.exploreRestaurantEconomics.map((link) => (
-                  <li key={link.href + link.label}>
-                    <Link href={link.href} className="text-sm font-medium text-accent hover:underline">
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-display text-base font-semibold text-ink">Explore Other Franchise Categories</h3>
-              <div className="mt-4">
-                <LinkCardGrid items={[...data.exploreOtherFranchises]} columns={2} />
-              </div>
-            </div>
-          </div>
+          <LinkCardGrid items={[...data.exploreLinks]} columns={3} />
+        </HubSection>
+
+        <HubSection
+          id="data-sources"
+          title="Data Sources & Methodology"
+          subtitle="Transparent attribution for fast food franchise benchmarks, calculator formulas, and planning limitations."
+          className="bg-surface-muted/30"
+        >
+          <DataSourcesAttribution attribution={fastFoodFranchiseAttribution} showMacroSources />
         </HubSection>
 
         <section className="border-b border-border/60 bg-gradient-to-br from-accent to-accent-hover">
           <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:px-6 sm:py-16">
             <h2 className="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
-              Compare Restaurant Franchise Opportunities
+              Compare Fast Food Franchise Opportunities
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/85 sm:text-base">
-              Model investment, fees, revenue, and payback — then diligence the brands that fit your capital and
-              operating goals.
+              Model investment, royalties, revenue, owner income, and payback — then diligence the brands that fit your
+              capital band.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <HashLink

@@ -51,11 +51,12 @@ export function FranchiseBrandStubPage({
             </p>
 
             <h1 className="font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              {brandName} Franchise Profile
+              {brandName} Franchise Costs, Fees & ROI
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-base text-ink-muted">
-              Full coverage of franchise fee, total investment, royalties, unit economics, and owner income for {brandName}{" "}
-              is coming soon.
+              Full coverage of {brandName} franchise fee, total investment, royalties, unit economics, revenue, and
+              owner income is coming soon. Compare brands on the {guideLabel.toLowerCase()} while we expand this
+              profile.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-3">

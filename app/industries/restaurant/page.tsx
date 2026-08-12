@@ -330,11 +330,11 @@ export default function RestaurantIndustryPage() {
         {/* Related Industries */}
         <Section
           id="related"
-          title="Related Industries"
-          subtitle="More food & beverage benchmarks."
+          title="Related Industries & Franchise Guides"
+          subtitle="More food & beverage benchmarks — plus restaurant and fast food franchise economics."
           className="bg-surface-muted/50"
         >
-          <LinkCardGrid items={relatedIndustries} columns={5} />
+          <LinkCardGrid items={relatedIndustries} columns={3} />
         </Section>
       </main>
       <Footer />

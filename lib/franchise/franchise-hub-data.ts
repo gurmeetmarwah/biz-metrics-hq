@@ -26,17 +26,16 @@ export type FranchiseCategory = {
 export const franchiseHubMeta = {
   title: "Franchise Economics & Business Benchmarks",
   subtitle:
-    "Startup costs, profit margins, ROI, owner salary, valuation, payback period, and revenue benchmarks — helping franchise buyers and operators compare franchise economics across industries.",
+    "Compare franchise costs, franchise fees, royalties, profit margins, owner salary, ROI, and payback periods across restaurant, fitness, beauty, and home services franchises.",
   dataVintage: "2025–2026",
 } as const;
 
 export const franchiseHeroTopics = [
-  "Startup Costs",
+  "Franchise Costs",
+  "Franchise Fees & Royalties",
   "Profit Margins",
-  "ROI",
   "Owner Salary",
-  "Valuation",
-  "Payback Period",
+  "ROI & Payback",
   "Revenue Benchmarks",
 ] as const;
 
@@ -86,9 +85,14 @@ export const franchiseCategories: readonly FranchiseCategory[] = [
     id: "food",
     name: "Food",
     icon: "food",
-    description: "Restaurant and food service franchise economics.",
+    description: "Restaurant, fast food, and food service franchise costs, ROI, and owner income.",
     franchises: [
       { label: "Restaurant Franchise", slug: "restaurant-franchise", href: franchiseHref("food", "restaurant-franchise") },
+      {
+        label: "Fast Food Franchise",
+        slug: "fast-food",
+        href: "/franchise/food/restaurant-franchise/fast-food/",
+      },
       { label: "Coffee Shop Franchise", slug: "coffee-shop-franchise", href: franchiseHref("food", "coffee-shop-franchise"), comingSoon: true },
       { label: "Bakery Franchise", slug: "bakery-franchise", href: franchiseHref("food", "bakery-franchise"), comingSoon: true },
       { label: "Food Truck Franchise", slug: "food-truck-franchise", href: franchiseHref("food", "food-truck-franchise"), comingSoon: true },

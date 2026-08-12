@@ -13,6 +13,17 @@ import {
 export const metadata: Metadata = {
   title: `${franchiseHubMeta.title} | BizMetricsHQ`,
   description: franchiseHubMeta.subtitle,
+  keywords: [
+    "franchise economics",
+    "franchise costs",
+    "franchise fees",
+    "franchise royalties",
+    "restaurant franchise",
+    "fast food franchise",
+    "gym franchise",
+    "franchise ROI",
+    "franchise owner salary",
+  ],
 };
 
 export default function FranchiseHubPage() {
@@ -169,12 +180,25 @@ export default function FranchiseHubPage() {
         <section className="bg-gradient-to-b from-accent-soft/40 to-surface">
           <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6">
             <h2 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
-              Comparing franchise vs independent?
+              Compare franchise costs, ROI, and owner income
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-sm text-ink-muted sm:text-base">
-              Start with industry benchmarks, then use our comparison tools to evaluate franchise fees, royalties, and owner economics.
+              Start with restaurant and fast food franchise economics, then expand into fitness, beauty, and home
+              services benchmarks.
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Link
+                href="/franchise/food/restaurant-franchise/"
+                className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
+              >
+                Restaurant Franchise Costs
+              </Link>
+              <Link
+                href="/franchise/food/restaurant-franchise/fast-food/"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
+              >
+                Fast Food Franchise Guide
+              </Link>
               <Link
                 href="/comparisons/hair-salon-vs-franchise-salon/"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
@@ -183,7 +207,7 @@ export default function FranchiseHubPage() {
               </Link>
               <Link
                 href="/industries/"
-                className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
               >
                 Browse Industries
               </Link>

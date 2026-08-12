@@ -179,7 +179,56 @@ function buildIndex(): SiteSearchItem[] {
     label: "Franchise Economics",
     href: "/franchise/",
     category: "Hub",
-    keywords: ["franchise", "franchise economics", "royalties", "franchise fee", "roi", "payback"],
+    keywords: [
+      "franchise",
+      "franchise economics",
+      "royalties",
+      "franchise fee",
+      "roi",
+      "payback",
+      "restaurant franchise",
+      "fast food franchise",
+    ],
+  });
+
+  add({
+    label: "Restaurant Franchise Guide",
+    href: "/franchise/food/restaurant-franchise/",
+    category: "Hub",
+    keywords: [
+      "restaurant franchise",
+      "restaurant franchise cost",
+      "how much does a restaurant franchise cost",
+      "restaurant franchise owner make",
+      "restaurant franchise profit margin",
+      "restaurant franchises under 500k",
+      "lowest cost restaurant franchise",
+      "subway franchise",
+      "mcdonalds franchise",
+      "taco bell franchise",
+      "restaurant franchise roi",
+    ],
+  });
+
+  add({
+    label: "Fast Food Franchise Guide",
+    href: "/franchise/food/restaurant-franchise/fast-food/",
+    category: "Hub",
+    keywords: [
+      "fast food franchise",
+      "fast food franchise cost",
+      "cheapest fast food franchises",
+      "fast food franchises under 500k",
+      "how much does a fast food franchise owner make",
+      "fast food franchise profit margin",
+      "fast food franchise revenue",
+      "how much cash to open a fast food franchise",
+      "mcdonalds franchise",
+      "wendys franchise",
+      "popeyes franchise",
+      "dairy queen franchise",
+      "fast food franchise roi",
+    ],
   });
 
   add({

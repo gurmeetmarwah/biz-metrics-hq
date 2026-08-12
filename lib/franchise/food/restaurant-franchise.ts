@@ -86,9 +86,9 @@ export const restaurantFranchiseBrandPresets: Record<
 
 export const restaurantFranchiseGuide = {
   meta: {
-    title: "Restaurant Franchise Costs, Revenue, Profit & Investment",
+    title: "Restaurant Franchise Guide: Costs, Revenue, Profit & Investment",
     subtitle:
-      "Compare restaurant franchise costs, initial investment, franchise fees, royalty rates, revenue potential, profit margins, owner income, and payback periods.",
+      "Compare restaurant franchise costs, franchise fees, royalties, revenue, profit margins, owner income, payback periods, and low-cost restaurant franchises under $500K.",
     dataVintage: "2025–2026",
     sampleSize: "leading U.S. restaurant franchise systems",
     shortName: "Restaurant",
@@ -138,7 +138,7 @@ export const restaurantFranchiseGuide = {
     { id: "calculator", label: "Calculator" },
     { id: "costs", label: "Costs" },
     { id: "fees", label: "Fees" },
-    { id: "opportunities", label: "Opportunities" },
+    { id: "compare-brands", label: "Opportunities" },
     { id: "revenue", label: "Revenue" },
     { id: "profitability", label: "Profitability" },
     { id: "owner-income", label: "Owner Income" },
@@ -491,7 +491,7 @@ export const restaurantFranchiseGuide = {
   ] as const,
 
   concepts: [
-    { label: "Fast Food Franchise", href: "/franchise/food/restaurant-franchise/fast-food/", comingSoon: true },
+    { label: "Fast Food Franchise", href: "/franchise/food/restaurant-franchise/fast-food/" },
     { label: "Fast Casual Franchise", href: "/franchise/food/fast-casual-franchise/", comingSoon: true },
     { label: "Casual Dining Franchise", href: "/franchise/food/restaurant-franchise/casual-dining/", comingSoon: true },
     { label: "Pizza Franchise", href: "/franchise/food/restaurant-franchise/pizza/", comingSoon: true },
@@ -504,11 +504,17 @@ export const restaurantFranchiseGuide = {
   ] as const,
 
   investmentLevels: [
-    { label: "Under $250K", href: "/franchise/food/restaurant-franchise/under-250k/", comingSoon: true },
-    { label: "$250K–$500K", href: "/franchise/food/restaurant-franchise/under-500k/", comingSoon: true },
-    { label: "$500K–$1M", href: "/franchise/food/restaurant-franchise/under-1m/", comingSoon: true },
-    { label: "$1M–$2M", href: "/franchise/food/restaurant-franchise/1m-2m/", comingSoon: true },
-    { label: "Over $2M", href: "/franchise/food/restaurant-franchise/over-2m/", comingSoon: true },
+    {
+      label: "Under $250K",
+      href: "/franchise/food/restaurant-franchise/fast-food/#investment-levels",
+    },
+    {
+      label: "$250K–$500K",
+      href: "/franchise/food/restaurant-franchise/fast-food/#investment-levels",
+    },
+    { label: "$500K–$1M", href: "/franchise/food/restaurant-franchise/#compare-brands" },
+    { label: "$1M–$2M", href: "/franchise/food/restaurant-franchise/#compare-brands" },
+    { label: "Over $2M", href: "/franchise/food/restaurant-franchise/#compare-brands" },
   ] as const,
 
   faqs: [
@@ -555,20 +561,20 @@ export const restaurantFranchiseGuide = {
   ] as const,
 
   exploreRestaurantEconomics: [
+    { label: "Fast Food Franchise Costs", href: "/franchise/food/restaurant-franchise/fast-food/" },
     { label: "Restaurant Startup Costs", href: "/industries/restaurant/" },
     { label: "Restaurant Revenue", href: "/industries/restaurant/#revenue" },
     { label: "Restaurant Profit Margin", href: "/industries/restaurant/#profit-margins" },
     { label: "Restaurant Owner Salary", href: "/industries/restaurant/#owner-salary" },
     { label: "Restaurant Valuation", href: "/industries/restaurant/#valuation" },
-    { label: "Restaurant Industry Benchmarks", href: "/industries/restaurant/" },
   ] as const,
 
   exploreOtherFranchises: [
+    { label: "Fast Food Franchise", href: "/franchise/food/restaurant-franchise/fast-food/" },
+    { label: "Gym Franchise", href: "/franchise/fitness/gym/" },
+    { label: "Hair Salon Franchise", href: "/franchise/beauty/hair-salon/" },
+    { label: "HVAC Franchise", href: "/franchise/home-services/hvac/" },
     { label: "Coffee Franchise", href: "/franchise/food/coffee-shop-franchise/", comingSoon: true },
     { label: "Bakery Franchise", href: "/franchise/food/bakery-franchise/", comingSoon: true },
-    { label: "Food Truck Franchise", href: "/franchise/food/food-truck-franchise/", comingSoon: true },
-    { label: "Gym Franchise", href: "/franchise/fitness/gym/" },
-    { label: "Beauty Franchise", href: "/franchise/#beauty" },
-    { label: "Home Services Franchise", href: "/franchise/#home-services" },
   ] as const,
 };
