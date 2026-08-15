@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { HashLink } from "@/components/ui/HashLink";
@@ -49,11 +50,11 @@ import {
   wholesaleTopics,
 } from "@/lib/industries/food-beverage/bakery-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Bakery industry data hub: revenue benchmarks, profit margins, startup costs, owner salaries, valuation multiples, wholesale economics, calculators, and benchmark tools.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Bakery",
+  profitabilitySeo,
+  keywords: industryPageKeywords.bakery,
+});
 
 function HubSection({
   id,

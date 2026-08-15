@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -63,11 +64,11 @@ import {
   valuationMultiples,
 } from "@/lib/industries/crossfit-gym-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, MRR, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "CrossFit gym benchmarks: revenue, membership economics, class utilization, coach productivity, member retention, profit margins, owner salaries, and valuation multiples for U.S. CrossFit affiliates.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "CrossFit Gym",
+  profitabilitySeo,
+  keywords: industryPageKeywords.crossfit,
+});
 
 function HubSection({
   id,

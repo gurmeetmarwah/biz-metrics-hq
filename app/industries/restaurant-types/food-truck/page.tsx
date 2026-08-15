@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -49,11 +50,11 @@ import { formatCurrency } from "@/lib/numbers";
 const profitabilitySeo = foodTruckProfitabilitySeo;
 const allFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, faqs);
 
-export const metadata: Metadata = {
-  title: `${foodTruckMeta.title} — Revenue, Margins & Startup Costs | BizMetricsHQ`,
-  description:
-    "Food truck economics: revenue benchmarks, daily unit economics, startup costs, event profitability, break-even analysis, valuation multiples, and owner income.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Food Truck",
+  profitabilitySeo,
+  keywords: industryPageKeywords.foodTruck,
+});
 
 function Section({
   id,

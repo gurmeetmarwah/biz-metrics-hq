@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -50,11 +51,11 @@ import { formatCurrency } from "@/lib/numbers";
 const profitabilitySeo = fineDiningProfitabilitySeo;
 const allFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, faqs);
 
-export const metadata: Metadata = {
-  title: `${fineDiningMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Fine dining restaurant economics: revenue benchmarks, average check analysis, profit margins, labor costs, owner compensation, valuation multiples, and private event revenue.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Fine Dining Restaurant",
+  profitabilitySeo,
+  keywords: industryPageKeywords.fineDining,
+});
 
 function Section({
   id,

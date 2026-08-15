@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -61,11 +62,11 @@ import {
   valuationMultiples,
 } from "@/lib/industries/pest-control-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Pest control industry data hub: revenue benchmarks, profit margins, owner salaries, valuation multiples, recurring revenue analysis, and benchmark tools for U.S. pest control businesses.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Pest Control",
+  profitabilitySeo,
+  keywords: industryPageKeywords.pestControl,
+});
 
 function HubSection({
   id,

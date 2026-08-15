@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -53,11 +54,11 @@ import {
   vetProductivityMetrics,
 } from "@/lib/industries/healthcare/veterinary-clinic-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Veterinary clinic industry data hub: revenue benchmarks, EBITDA margins, owner compensation, client economics, startup costs, valuation multiples, calculators, and benchmark tools.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Veterinary Clinic",
+  profitabilitySeo,
+  keywords: industryPageKeywords.veterinary,
+});
 
 function HubSection({
   id,

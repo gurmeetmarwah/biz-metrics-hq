@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -45,10 +46,11 @@ import {
   valuationMultiples,
 } from "@/lib/industries/hvac-hub";
 
-export const metadata: Metadata = {
-  title: `${profitabilitySeo.sectionTitle} Profit Margins & Benchmarks | BizMetricsHQ`,
-  description: profitabilitySeo.lead,
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "HVAC",
+  profitabilitySeo,
+  keywords: industryPageKeywords.hvac,
+});
 
 function HubSection({
   id,

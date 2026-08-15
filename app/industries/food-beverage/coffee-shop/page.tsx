@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { HashLink } from "@/components/ui/HashLink";
@@ -43,11 +44,11 @@ import {
   valuationSummary,
 } from "@/lib/industries/food-beverage/coffee-shop-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Coffee shop industry data hub: revenue benchmarks, profit margins, startup costs, owner salaries, valuation multiples, calculators, and benchmark tools for operators and investors.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Coffee Shop",
+  profitabilitySeo,
+  keywords: industryPageKeywords.coffeeShop,
+});
 
 function HubSection({
   id,

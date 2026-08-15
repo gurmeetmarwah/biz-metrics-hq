@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -41,11 +42,11 @@ import {
   valuationCards,
 } from "@/lib/industries/beauty/hair-salon-hub";
 
-export const metadata: Metadata = {
-  title: "Hair Salon Industry Benchmarks — Revenue, Profit Margin, Startup Cost & Valuation | BizMetricsHQ",
-  description:
-    "Hair salon business benchmarks: how much revenue a hair salon generates, the average hair salon profit margin, startup costs, owner salary, revenue per stylist, and salon valuation multiples.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Hair Salon",
+  profitabilitySeo,
+  keywords: industryPageKeywords.hairSalon,
+});
 
 function HubSection({
   id,

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -43,11 +44,11 @@ import {
   valuationCards,
 } from "@/lib/industries/beauty/day-spa-hub";
 
-export const metadata: Metadata = {
-  title: "Day Spa Industry Benchmarks — Revenue, Profit Margin, EBITDA & Valuation | BizMetricsHQ",
-  description:
-    "Day spa business benchmarks: how much revenue a day spa generates, average profit margin, EBITDA, startup costs, owner income, client lifetime value, and valuation multiples.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Day Spa",
+  profitabilitySeo,
+  keywords: industryPageKeywords.daySpa,
+});
 
 function HubSection({
   id,

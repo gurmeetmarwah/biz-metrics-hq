@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -42,11 +43,11 @@ import {
   valuationCards,
 } from "@/lib/industries/beauty/nail-salon-hub";
 
-export const metadata: Metadata = {
-  title: "Nail Salon Industry Benchmarks — Revenue, Profit Margin, Startup Cost & Valuation | BizMetricsHQ",
-  description:
-    "Nail salon business benchmarks: how much revenue a nail salon generates, the average nail salon profit margin, startup costs, owner salary, revenue per technician, and salon valuation multiples.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Nail Salon",
+  profitabilitySeo,
+  keywords: industryPageKeywords.nailSalon,
+});
 
 function HubSection({
   id,

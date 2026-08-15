@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -52,11 +53,11 @@ import { formatCurrency } from "@/lib/numbers";
 const profitabilitySeo = bakeryProfitabilitySeo;
 const allFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, faqs);
 
-export const metadata: Metadata = {
-  title: `${bakeryMeta.title} — Revenue, Margins & Startup Costs | BizMetricsHQ`,
-  description:
-    "Bakery economics and benchmarks: can a bakery be profitable? Revenue, margins, product mix, wholesale vs retail, custom cakes, seasonality, startup costs, and valuation.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Bakery",
+  profitabilitySeo,
+  keywords: industryPageKeywords.bakery,
+});
 
 function Section({
   id,

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -61,11 +62,11 @@ import {
   valuationMultiples,
 } from "@/lib/industries/optometry-practice-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins, Patient Metrics & Valuation | BizMetricsHQ`,
-  description:
-    "Optometry practice business benchmarks: annual revenue, profit margins, owner salaries, patient metrics, retail optical sales, valuation multiples, insurance mix, and startup costs for independent and multi-location practices.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Optometry Practice",
+  profitabilitySeo,
+  keywords: industryPageKeywords.optometry,
+});
 
 function HubSection({
   id,

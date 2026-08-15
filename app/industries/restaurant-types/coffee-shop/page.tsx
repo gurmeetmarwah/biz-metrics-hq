@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -51,11 +52,11 @@ import { formatCurrency } from "@/lib/numbers";
 const profitabilitySeo = coffeeShopProfitabilitySeo;
 const allFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, faqs);
 
-export const metadata: Metadata = {
-  title: `${coffeeShopMeta.title} — Revenue, Margins & Startup Costs | BizMetricsHQ`,
-  description:
-    "Coffee shop economics: revenue benchmarks, daily unit economics, average ticket analysis, drive-thru comparison, startup costs, menu margins, and valuation multiples.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Coffee Shop",
+  profitabilitySeo,
+  keywords: industryPageKeywords.coffeeShop,
+});
 
 function Section({
   id,

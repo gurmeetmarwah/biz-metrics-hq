@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -44,11 +45,11 @@ import { restaurantProfitabilitySeo } from "@/lib/industries/profitability-seo-d
 const profitabilitySeo = restaurantProfitabilitySeo;
 const allFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, faqs);
 
-export const metadata: Metadata = {
-  title: "Restaurant Industry Benchmarks — Revenue, Margins & Valuation | BizMetricsHQ",
-  description:
-    "Restaurant industry dashboard: revenue ranges, profit margins, owner salaries, valuation multiples, benchmark tool, and FAQs for independent restaurants.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Restaurant",
+  profitabilitySeo,
+  keywords: industryPageKeywords.restaurant,
+});
 
 function Section({
   id,

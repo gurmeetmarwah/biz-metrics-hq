@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -63,11 +64,11 @@ import {
   valuationMultiples,
 } from "@/lib/industries/cleaning-business-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Cleaning business industry data hub: revenue benchmarks, profit margins, owner salaries, valuation multiples, contract revenue analysis, and benchmark tools for U.S. cleaning companies.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Cleaning Business",
+  profitabilitySeo,
+  keywords: industryPageKeywords.cleaning,
+});
 
 function HubSection({
   id,

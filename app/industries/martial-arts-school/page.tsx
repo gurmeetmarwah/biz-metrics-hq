@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -63,11 +64,11 @@ import {
   youthActivityBenchmarkMatrix,
 } from "@/lib/industries/martial-arts-school-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Tuition MRR, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Martial arts school benchmarks: revenue, tuition economics, student retention, program performance, instructor productivity, profit margins, owner salaries, and valuation multiples for U.S. martial arts academies.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Martial Arts School",
+  profitabilitySeo,
+  keywords: industryPageKeywords.martialArts,
+});
 
 function HubSection({
   id,

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -43,11 +44,11 @@ import {
   valuationCards,
 } from "@/lib/industries/beauty/barbershop-hub";
 
-export const metadata: Metadata = {
-  title: "Barbershop Business Benchmarks — Revenue, Profit Margin, Chair Utilization & Valuation | BizMetricsHQ",
-  description:
-    "Barbershop business benchmarks: how much revenue a barbershop generates, average profit margin, startup costs, owner income, revenue per barber, chair utilization, and valuation multiples.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Barbershop",
+  profitabilitySeo,
+  keywords: industryPageKeywords.barbershop,
+});
 
 function HubSection({
   id,

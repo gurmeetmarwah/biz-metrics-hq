@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -62,11 +63,11 @@ import {
   valuationMultiples,
 } from "@/lib/industries/ice-cream-shop-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Ice cream shop benchmarks: annual revenue, profit margins, owner salaries, valuation multiples, seasonal performance, sales metrics, and startup costs for independent and franchise operators.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Ice Cream Shop",
+  profitabilitySeo,
+  keywords: industryPageKeywords.iceCream,
+});
 
 function HubSection({
   id,

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { HashLink } from "@/components/ui/HashLink";
@@ -51,11 +52,11 @@ import {
   valuationSummary,
 } from "@/lib/industries/food-beverage/food-truck-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Food truck industry data hub: revenue benchmarks, profit margins, startup costs, owner salaries, event economics, valuation multiples, calculators, and benchmark tools.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Food Truck",
+  profitabilitySeo,
+  keywords: industryPageKeywords.foodTruck,
+});
 
 function HubSection({
   id,

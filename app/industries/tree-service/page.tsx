@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -62,11 +63,11 @@ import {
   valuationMultiples,
 } from "@/lib/industries/tree-service-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins, Equipment & Valuation | BizMetricsHQ`,
-  description:
-    "Tree service business benchmarks: annual revenue, profit margins, owner salaries, equipment investment, job pricing, valuation multiples, and startup costs for removal and arborist operators.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Tree Service",
+  profitabilitySeo,
+  keywords: industryPageKeywords.treeService,
+});
 
 function HubSection({
   id,

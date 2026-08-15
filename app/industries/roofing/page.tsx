@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -58,11 +59,11 @@ import {
   valuationMultiples,
 } from "@/lib/industries/roofing-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Roofing industry data hub: revenue benchmarks, profit margins, owner salaries, valuation multiples, insurance claim economics, storm market conditions, and benchmark tools for U.S. roofing companies.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Roofing",
+  profitabilitySeo,
+  keywords: industryPageKeywords.roofing,
+});
 
 function HubSection({
   id,

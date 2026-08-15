@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -61,11 +62,11 @@ import {
   valuationMultiples,
 } from "@/lib/industries/pilates-studio-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, MRR, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Pilates studio benchmarks: revenue, membership economics, class occupancy, instructor productivity, profit margins, owner salaries, and valuation multiples for U.S. reformer studios.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Pilates Studio",
+  profitabilitySeo,
+  keywords: industryPageKeywords.pilates,
+});
 
 function HubSection({
   id,

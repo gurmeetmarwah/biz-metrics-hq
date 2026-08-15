@@ -11,9 +11,9 @@ const categoryAccentMap: Record<string, string> = {
 };
 
 export const industriesHubMeta = {
-  title: "Industry Benchmarks & Key Financial Performance Indicators",
+  title: "Industry Profit Margins, Owner Salaries & Business Benchmarks",
   subtitle:
-    "Compare revenue, profit margins, owner salaries, startup costs, and valuation—key financial performance indicators for small business owners choosing or scaling a company.",
+    "Compare industry profit margins, owner salaries, revenue benchmarks, startup costs, and valuation multiples — key financial performance indicators for small business owners.",
   dataVintage: "2025–2026",
   sampleSize: `${countTotalIndustries()} industries tracked`,
 } as const;

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -61,11 +62,11 @@ import {
   valuationMultiples,
 } from "@/lib/industries/pool-service-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, MRR, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Pool service business benchmarks: annual revenue, profit margins, owner salaries, MRR, route efficiency, valuation multiples, and startup costs for residential and commercial operators.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Pool Service",
+  profitabilitySeo,
+  keywords: industryPageKeywords.poolService,
+});
 
 function HubSection({
   id,

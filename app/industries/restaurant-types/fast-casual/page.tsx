@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -46,11 +47,11 @@ import { formatCurrency } from "@/lib/numbers";
 const profitabilitySeo = fastCasualProfitabilitySeo;
 const allFaqs = mergeProfitabilityFaqs(profitabilitySeo.faqs, faqs);
 
-export const metadata: Metadata = {
-  title: `${fastCasualMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Fast casual restaurant economics: revenue benchmarks, profit margins, labor costs, owner salaries, startup costs, valuation multiples, and unit economics for Chipotle-style concepts.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Fast Casual Restaurant",
+  profitabilitySeo,
+  keywords: industryPageKeywords.fastCasual,
+});
 
 function Section({
   id,

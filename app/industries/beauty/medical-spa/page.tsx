@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -43,11 +44,11 @@ import {
   valuationCards,
 } from "@/lib/industries/beauty/medical-spa-hub";
 
-export const metadata: Metadata = {
-  title: "Medical Spa Industry Benchmarks — Revenue, EBITDA, Profit Margin & Valuation | BizMetricsHQ",
-  description:
-    "Medical spa business benchmarks: how much revenue a med spa generates, average profit margin, EBITDA, startup costs, owner income, patient lifetime value, and valuation multiples.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Medical Spa",
+  profitabilitySeo,
+  keywords: industryPageKeywords.medicalSpa,
+});
 
 function HubSection({
   id,

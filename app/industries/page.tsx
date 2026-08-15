@@ -16,10 +16,12 @@ import { IndustryInsightsGrid } from "@/components/industries-hub/IndustryInsigh
 import { IndustriesHubCTA } from "@/components/industries-hub/IndustriesHubCTA";
 import { IndustriesHubFooter } from "@/components/industries-hub/IndustriesHubFooter";
 import { industriesHubMeta } from "@/lib/industries-hub";
+import { industryPageKeywords } from "@/lib/industries/industry-page-meta";
 
 export const metadata: Metadata = {
   title: `${industriesHubMeta.title} | BizMetricsHQ`,
   description: industriesHubMeta.subtitle,
+  keywords: [...industryPageKeywords.hub],
 };
 
 export default function IndustriesHubPage() {

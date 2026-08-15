@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildIndustryPageMetadata, industryPageKeywords } from "@/lib/industries/industry-page-meta";
 import { IndustryProfitabilitySeo } from "@/components/industry/IndustryProfitabilitySeo";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -55,11 +56,11 @@ import {
   wellnessPlanTopics,
 } from "@/lib/industries/healthcare/chiropractic-clinic-hub";
 
-export const metadata: Metadata = {
-  title: `${hubMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description:
-    "Chiropractic clinic industry data hub: revenue benchmarks, EBITDA margins, owner compensation, patient economics, recurring revenue models, productivity, valuation multiples, calculators, and benchmark tools.",
-};
+export const metadata: Metadata = buildIndustryPageMetadata({
+  industryLabel: "Chiropractic Clinic",
+  profitabilitySeo,
+  keywords: industryPageKeywords.chiropractic,
+});
 
 function HubSection({
   id,
