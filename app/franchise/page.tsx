@@ -183,8 +183,8 @@ export default function FranchiseHubPage() {
               Compare franchise costs, ROI, and owner income
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-sm text-ink-muted sm:text-base">
-              Start with restaurant and fast food franchise economics, then expand into fitness, beauty, and home
-              services benchmarks.
+              Start with restaurant, fast food, and coffee shop franchise economics, then expand into fitness, beauty,
+              and home services benchmarks.
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link
@@ -198,6 +198,12 @@ export default function FranchiseHubPage() {
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
               >
                 Fast Food Franchise Guide
+              </Link>
+              <Link
+                href="/franchise/food/coffee-shop-franchise/"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
+              >
+                Coffee Shop Franchise Guide
               </Link>
               <Link
                 href="/comparisons/hair-salon-vs-franchise-salon/"

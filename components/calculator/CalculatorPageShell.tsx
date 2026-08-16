@@ -21,6 +21,8 @@ type CalculatorPageShellProps = {
   hubLabel?: string;
   sampleSize?: string;
   dataVintage?: string;
+  /** Put the interactive calculator above the long intro so it is never missed. */
+  leadWithCalculator?: boolean;
   children: React.ReactNode;
   faqs: readonly { question: string; answer: string }[];
 };
@@ -43,6 +45,7 @@ export function CalculatorPageShell({
   hubLabel = "Coffee Shop",
   sampleSize,
   dataVintage,
+  leadWithCalculator = false,
   children,
   faqs,
 }: CalculatorPageShellProps) {
@@ -64,6 +67,37 @@ export function CalculatorPageShell({
     applicationCategory: "BusinessApplication",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
   };
+
+  const introBlock = (
+    <div className="mt-8 max-w-3xl space-y-4">
+      <p className="text-sm leading-relaxed text-ink-muted">{intro.lead}</p>
+      <ul className="space-y-2">
+        {intro.bullets.map((bullet) => (
+          <li key={bullet} className="flex items-start gap-2.5 text-sm text-ink-muted">
+            <svg
+              className="mt-0.5 size-4 shrink-0 text-accent"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-7.5" />
+            </svg>
+            {bullet}
+          </li>
+        ))}
+      </ul>
+      {intro.audience && <p className="text-sm text-ink-faint">{intro.audience}</p>}
+      {sampleSize && dataVintage && (
+        <BenchmarkSourceFootnote
+          sampleSize={sampleSize}
+          dataVintage={dataVintage}
+          className="pt-2"
+        />
+      )}
+    </div>
+  );
 
   return (
     <>
@@ -105,46 +139,15 @@ export function CalculatorPageShell({
               {meta.subtitle}
             </p>
 
-            <div className="mt-8 max-w-3xl space-y-4">
-              <p className="text-sm leading-relaxed text-ink-muted">{intro.lead}</p>
-              <ul className="space-y-2">
-                {intro.bullets.map((bullet) => (
-                  <li
-                    key={bullet}
-                    className="flex items-start gap-2.5 text-sm text-ink-muted"
-                  >
-                    <svg
-                      className="mt-0.5 size-4 shrink-0 text-accent"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2}
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-7.5"
-                      />
-                    </svg>
-                    {bullet}
-                  </li>
-                ))}
-              </ul>
-              {intro.audience && (
-                <p className="text-sm text-ink-faint">{intro.audience}</p>
-              )}
-              {sampleSize && dataVintage && (
-                <BenchmarkSourceFootnote
-                  sampleSize={sampleSize}
-                  dataVintage={dataVintage}
-                  className="pt-2"
-                />
-              )}
-            </div>
+            {!leadWithCalculator && introBlock}
           </div>
         </section>
         {children}
+        {leadWithCalculator && (
+          <section className="border-b border-border/60 bg-surface">
+            <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-12">{introBlock}</div>
+          </section>
+        )}
       </main>
       <Footer />
     </>

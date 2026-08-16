@@ -47,6 +47,26 @@ export const allCoffeeShopCalculators = [
     href: "/calculators/coffee-shop-revenue/",
     description: "Estimate annual revenue from daily volume and ticket size.",
   },
+  {
+    label: "Food Cost Calculator",
+    href: "/calculators/coffee-shop-food-cost/",
+    description: "Benchmark coffee, dairy, pastry, and waste costs.",
+  },
+  {
+    label: "Franchise ROI Calculator",
+    href: "/calculators/coffee-shop-franchise-roi/",
+    description: "Model coffee franchise cash flow, payback, and ROI.",
+  },
+  {
+    label: "Franchise Royalty Calculator",
+    href: "/calculators/coffee-shop-franchise-royalty/",
+    description: "Estimate royalty and marketing fee stacks.",
+  },
+  {
+    label: "Payback Calculator",
+    href: "/calculators/coffee-shop-payback/",
+    description: "Estimate years to recover coffee franchise CapEx.",
+  },
 ] as const;
 
 export function relatedCalculators(excludeHref: string) {

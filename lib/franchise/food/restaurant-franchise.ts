@@ -495,7 +495,7 @@ export const restaurantFranchiseGuide = {
     { label: "Fast Casual Franchise", href: "/franchise/food/fast-casual-franchise/", comingSoon: true },
     { label: "Casual Dining Franchise", href: "/franchise/food/restaurant-franchise/casual-dining/", comingSoon: true },
     { label: "Pizza Franchise", href: "/franchise/food/restaurant-franchise/pizza/", comingSoon: true },
-    { label: "Coffee & Café Franchise", href: "/franchise/food/coffee-shop-franchise/", comingSoon: true },
+    { label: "Coffee & Café Franchise", href: "/franchise/food/coffee-shop-franchise/" },
     { label: "Chicken Franchise", href: "/franchise/food/restaurant-franchise/chicken/", comingSoon: true },
     { label: "Burger Franchise", href: "/franchise/food/restaurant-franchise/burger/", comingSoon: true },
     { label: "Mexican / Tex-Mex Franchise", href: "/franchise/food/restaurant-franchise/mexican/", comingSoon: true },
@@ -574,7 +574,7 @@ export const restaurantFranchiseGuide = {
     { label: "Gym Franchise", href: "/franchise/fitness/gym/" },
     { label: "Hair Salon Franchise", href: "/franchise/beauty/hair-salon/" },
     { label: "HVAC Franchise", href: "/franchise/home-services/hvac/" },
-    { label: "Coffee Franchise", href: "/franchise/food/coffee-shop-franchise/", comingSoon: true },
+    { label: "Coffee Franchise", href: "/franchise/food/coffee-shop-franchise/" },
     { label: "Bakery Franchise", href: "/franchise/food/bakery-franchise/", comingSoon: true },
   ] as const,
 };

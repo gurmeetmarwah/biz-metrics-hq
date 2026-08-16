@@ -221,6 +221,7 @@ function buildIndex(): SiteSearchItem[] {
       "payback",
       "restaurant franchise",
       "fast food franchise",
+      "coffee shop franchise",
     ],
   });
 
@@ -261,6 +262,27 @@ function buildIndex(): SiteSearchItem[] {
       "popeyes franchise",
       "dairy queen franchise",
       "fast food franchise roi",
+    ],
+  });
+
+  add({
+    label: "Coffee Shop Franchise Guide",
+    href: "/franchise/food/coffee-shop-franchise/",
+    category: "Hub",
+    keywords: [
+      "coffee shop franchise",
+      "coffee franchise cost",
+      "dunkin franchise",
+      "dutch bros franchise",
+      "scooters coffee franchise",
+      "7 brew franchise",
+      "tim hortons franchise",
+      "drive thru coffee franchise",
+      "cheapest coffee franchise",
+      "coffee franchise roi",
+      "coffee franchise profit margin",
+      "how much does a coffee franchise owner make",
+      "coffee shop franchise investment",
     ],
   });
 

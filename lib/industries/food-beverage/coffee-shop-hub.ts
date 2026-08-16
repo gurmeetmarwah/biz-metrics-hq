@@ -144,6 +144,16 @@ export const hubCalculators = [
     description: "Estimate annual revenue",
     href: "/calculators/coffee-shop-revenue/",
   },
+  {
+    label: "Food Cost Calculator",
+    description: "Benchmark ingredient costs",
+    href: "/calculators/coffee-shop-food-cost/",
+  },
+  {
+    label: "Franchise ROI Calculator",
+    description: "Model franchise cash flow",
+    href: "/calculators/coffee-shop-franchise-roi/",
+  },
 ] as const;
 
 export const coffeeShopTypes = [
@@ -211,6 +221,7 @@ export const hubComparisons = [
 ] as const;
 
 export const relatedFoodBeverageIndustries = [
+  { label: "Coffee Shop Franchise Guide", href: "/franchise/food/coffee-shop-franchise/" },
   { label: "Bakery Economics", href: "/industries/food-beverage/bakery/" },
   { label: "Restaurant Economics", href: "/industries/restaurant/" },
   { label: "Food Truck Economics", href: "/industries/food-beverage/food-truck/" },

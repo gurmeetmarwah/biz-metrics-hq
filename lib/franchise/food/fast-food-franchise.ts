@@ -611,6 +611,6 @@ export const fastFoodFranchiseGuide = {
     { label: "Gym Franchise Costs", href: "/franchise/fitness/gym/" },
     { label: "Hair Salon Franchise", href: "/franchise/beauty/hair-salon/" },
     { label: "Franchise Economics Hub", href: "/franchise/" },
-    { label: "Coffee Franchise", href: "/franchise/food/coffee-shop-franchise/", comingSoon: true },
+    { label: "Coffee Franchise", href: "/franchise/food/coffee-shop-franchise/" },
   ] as const,
 };

@@ -93,7 +93,7 @@ export const franchiseCategories: readonly FranchiseCategory[] = [
         slug: "fast-food",
         href: "/franchise/food/restaurant-franchise/fast-food/",
       },
-      { label: "Coffee Shop Franchise", slug: "coffee-shop-franchise", href: franchiseHref("food", "coffee-shop-franchise"), comingSoon: true },
+      { label: "Coffee Shop Franchise", slug: "coffee-shop-franchise", href: franchiseHref("food", "coffee-shop-franchise") },
       { label: "Bakery Franchise", slug: "bakery-franchise", href: franchiseHref("food", "bakery-franchise"), comingSoon: true },
       { label: "Food Truck Franchise", slug: "food-truck-franchise", href: franchiseHref("food", "food-truck-franchise"), comingSoon: true },
       { label: "Ice Cream Franchise", slug: "ice-cream-franchise", href: franchiseHref("food", "ice-cream-franchise"), comingSoon: true },
