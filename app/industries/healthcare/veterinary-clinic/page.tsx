@@ -58,6 +58,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Veterinary Clinic",
   profitabilitySeo,
   keywords: industryPageKeywords.veterinary,
+  title: "How Much Profit Does a Vet Clinic Make? ($180K–$265K) | BizMetricsHQ",
+  description:
+    "How much profit does a vet clinic make? Typical clinics clear $180K–$265K — median ~$216K on $1.2M revenue. See the margins most owners miss, plus owner salary & valuation.",
 });
 
 function HubSection({

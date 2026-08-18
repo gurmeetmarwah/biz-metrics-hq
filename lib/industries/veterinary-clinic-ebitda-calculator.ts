@@ -6,11 +6,12 @@ import {
 } from "@/lib/industries/veterinary-calculators-shared";
 
 export const meta = {
-  title: "Veterinary Clinic EBITDA Calculator & Margin Benchmark Tool",
-  shortTitle: "Veterinary Clinic EBITDA Calculator",
-  subtitle: "Calculate EBITDA margin for your veterinary clinic and compare against industry benchmarks.",
+  title: "Vet Clinic Profit Calculator — Is Your Margin Leaving Money Behind?",
+  shortTitle: "Vet Clinic Profit / EBITDA Calculator",
+  subtitle:
+    "See how much profit your vet clinic makes — calculate EBITDA margin and compare against the 15–22% healthy range.",
   description:
-    "Free veterinary clinic EBITDA calculator. Enter revenue and expense categories to compute EBITDA margin and compare to the 15–22% healthy range.",
+    "Free vet clinic profit calculator. How much profit does a vet clinic make? Enter revenue and expenses to compute EBITDA margin vs the 15–22% industry range.",
 };
 
 export const introContent = {

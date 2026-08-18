@@ -17,8 +17,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const name = pilatesFranchiseBrandNames[slug as (typeof pilatesFranchiseBrandSlugs)[number]];
   if (!name) return { title: "Franchise Brand | BizMetricsHQ" };
   return {
-    title: `${name} Franchise Costs, Fees & ROI | BizMetricsHQ`,
-    description: `${name} franchise investment, royalty fees, unit economics, and owner earnings — part of the BizMetricsHQ Pilates franchise guide.`,
+    title: `${name} Franchise Cost, Fees & ROI — Best Franchise for Pilates Guide | BizMetricsHQ`,
+    description: `${name} Pilates franchise investment, royalty fees, unit economics, and owner earnings. Compare whether ${name} is the best franchise for Pilates for your capital and goals.`,
+    keywords: [
+      `${name.toLowerCase()} franchise`,
+      `${name.toLowerCase()} franchise cost`,
+      "best franchise for pilates",
+      "pilates franchise cost",
+      "pilates franchise ROI",
+    ],
   };
 }
 
@@ -32,7 +39,7 @@ export default async function PilatesFranchiseBrandPage({ params }: Props) {
       brandName={name}
       industryLabel="Pilates"
       guideHref="/franchise/fitness/pilates/"
-      guideLabel="Pilates Franchise Guide"
+      guideLabel="Best Franchise for Pilates Guide"
     />
   );
 }

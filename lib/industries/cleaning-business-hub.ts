@@ -36,9 +36,9 @@ export const hubMeta = {
   slug: "cleaning-business",
   parentSlug: "",
   parentLabel: "Industries",
-  title: "Cleaning Business Benchmarks",
+  title: "Is a Cleaning Business Profitable?",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and business economics for cleaning businesses.",
+    "Yes — typical net margins run 10–20% (median ~15%), or about $50K–$100K profit on $500K revenue. See 2026 benchmarks for margins, owner pay, contracts, and valuation.",
   dataVintage: "2025–2026",
   sampleSize: "190+ cleaning businesses",
 };
@@ -92,10 +92,10 @@ export const businessScorecard = {
 } as const;
 
 export const searchQuickLinks = [
-  { label: "HVAC", href: "/industries/hvac/" },
-  { label: "Plumbing", href: "/industries/plumbing/" },
-  { label: "Pest Control", href: "/industries/pest-control/" },
-  { label: "Landscaping", href: "/industries/landscaping/" },
+  { label: "Is It Profitable?", href: "#profitability" },
+  { label: "Revenue", href: "#revenue-benchmark" },
+  { label: "Owner Pay", href: "#owner-economics" },
+  { label: "Valuation", href: "#valuation" },
 ] as const;
 
 export const hubSectionNav = [
@@ -144,7 +144,7 @@ export const hubCalculators = [
   {
     label: "Profit Margin Calculator",
     href: "/calculators/cleaning-business-profit-margin/",
-    description: "Calculate net margin and compare to cleaning business benchmarks.",
+    description: "Is a cleaning business profitable? Calculate your net margin vs 10–20% benchmarks.",
   },
   {
     label: "Business Valuation Calculator",
@@ -165,6 +165,11 @@ export const relatedHomeServiceIndustries = [
 ] as const;
 
 const baseFaqs = [
+  {
+    question: "Is a cleaning business profitable?",
+    answer:
+      "Yes. Healthy cleaning companies typically achieve 10–20% net profit margin (median ~15%), or about $50K–$100K a year at median $500K revenue. Residential-focused operators with strong route density can reach 18–22%; commercial-heavy books often run 10–14% with more contract stability.",
+  },
   {
     question: "How profitable is a cleaning business?",
     answer:

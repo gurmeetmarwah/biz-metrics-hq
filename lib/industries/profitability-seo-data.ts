@@ -75,10 +75,10 @@ export const hairSalonProfitabilitySeo = buildProfitabilitySeo({
   costDriver: "payroll stays 45–50% of revenue and retail attachment adds 8–12% of sales",
 });
 
-export const hvacProfitabilitySeo = buildProfitabilitySeo({
+const hvacProfitabilitySeoBase = buildProfitabilitySeo({
   businessPhrase: "an HVAC business",
-  companiesPhrase: "HVAC companies",
-  profitEntityPhrase: "an HVAC company",
+  companiesPhrase: "HVAC businesses",
+  profitEntityPhrase: "an HVAC business",
   marginPhrase: "HVAC profit margin",
   marginRange: "8 – 16%",
   medianMargin: "12%",
@@ -89,6 +89,23 @@ export const hvacProfitabilitySeo = buildProfitabilitySeo({
   medianProfit: "$288K",
   costDriver: "payroll stays 28–38% of revenue and maintenance is 25%+ of mix",
 });
+
+const [hvacHowSection, hvacMarginSection, hvacAreSection, hvacProfitSection] =
+  hvacProfitabilitySeoBase.sections;
+const [hvacHowFaq, hvacMarginFaq, hvacAreFaq, hvacProfitFaq] =
+  hvacProfitabilitySeoBase.faqs;
+
+/** CTR-led primary question matches Search Console long-tail: are hvac businesses profitable */
+export const hvacProfitabilitySeo = {
+  ...hvacProfitabilitySeoBase,
+  lead: "Are HVAC businesses profitable? Yes — healthy operators keep 8–16% net (median ~12%), typically $190K–$380K a year. The gap widens when maintenance mix and payroll stay in range.",
+  sectionTitle: "Are HVAC Businesses Profitable?",
+  sectionSubtitle:
+    "Typical net margin 8–16% (median ~12%) — about $190K–$380K profit on $2.4M revenue, plus owner pay and valuation multiples.",
+  faqSectionTitle: "HVAC Profitability FAQs",
+  sections: [hvacAreSection, hvacHowSection, hvacMarginSection, hvacProfitSection],
+  faqs: [hvacAreFaq, hvacHowFaq, hvacMarginFaq, hvacProfitFaq],
+};
 
 export const plumbingProfitabilitySeo = buildProfitabilitySeo({
   businessPhrase: "a plumbing business",
@@ -165,10 +182,10 @@ export const pestControlProfitabilitySeo = buildProfitabilitySeo({
   costDriver: "recurring routes and technician utilization stay strong",
 });
 
-export const cleaningBusinessProfitabilitySeo = buildProfitabilitySeo({
+const cleaningBusinessProfitabilitySeoBase = buildProfitabilitySeo({
   businessPhrase: "a cleaning business",
-  companiesPhrase: "cleaning companies",
-  profitEntityPhrase: "a cleaning company",
+  companiesPhrase: "cleaning businesses",
+  profitEntityPhrase: "a cleaning business",
   marginPhrase: "cleaning business profit margin",
   marginRange: "10 – 20%",
   medianMargin: "15%",
@@ -179,6 +196,45 @@ export const cleaningBusinessProfitabilitySeo = buildProfitabilitySeo({
   medianProfit: "$75K",
   costDriver: "labor utilization and route density stay high",
 });
+
+const [
+  cleaningHowSection,
+  cleaningMarginSection,
+  cleaningAreSection,
+  cleaningProfitSection,
+] = cleaningBusinessProfitabilitySeoBase.sections;
+const [cleaningHowFaq, cleaningMarginFaq, cleaningAreFaq, cleaningProfitFaq] =
+  cleaningBusinessProfitabilitySeoBase.faqs;
+
+const isCleaningProfitable = {
+  heading: "Is a cleaning business profitable?",
+  answer:
+    "Is a cleaning business profitable? Yes — healthy operators keep 10–20% net (median ~15%), typically $50K–$100K a year at median $500K revenue. Top crews reach 21–25% when labor utilization and route density stay high.",
+} as const;
+
+/** CTR-led primary question matches Search Console long-tail: is a cleaning business profitable */
+export const cleaningBusinessProfitabilitySeo = {
+  ...cleaningBusinessProfitabilitySeoBase,
+  lead: "Is a cleaning business profitable? Yes — most clear 10–20% net profit (median ~15%), or about $50K–$100K a year. The real gap is between average operators and those who nail route density.",
+  sectionTitle: "Is a Cleaning Business Profitable?",
+  sectionSubtitle:
+    "Typical net margin 10–20% (median ~15%) — about $50K–$100K profit on $500K revenue, plus owner pay and valuation multiples.",
+  faqSectionTitle: "Cleaning Business Profitability FAQs",
+  sections: [
+    { heading: isCleaningProfitable.heading, answer: isCleaningProfitable.answer },
+    cleaningHowSection,
+    cleaningMarginSection,
+    cleaningProfitSection,
+    cleaningAreSection,
+  ],
+  faqs: [
+    { question: isCleaningProfitable.heading, answer: isCleaningProfitable.answer },
+    cleaningHowFaq,
+    cleaningMarginFaq,
+    cleaningProfitFaq,
+    cleaningAreFaq,
+  ],
+};
 
 export const poolServiceProfitabilitySeo = buildProfitabilitySeo({
   businessPhrase: "a pool service business",
@@ -405,11 +461,11 @@ export const physicalTherapyClinicProfitabilitySeo = buildProfitabilitySeo({
   costDriver: "therapist utilization and payer mix stay strong",
 });
 
-export const veterinaryClinicProfitabilitySeo = buildProfitabilitySeo({
-  businessPhrase: "a veterinary clinic",
-  companiesPhrase: "veterinary clinics",
-  profitEntityPhrase: "a veterinary clinic",
-  marginPhrase: "veterinary clinic profit margin",
+const veterinaryClinicProfitabilitySeoBase = buildProfitabilitySeo({
+  businessPhrase: "a vet clinic",
+  companiesPhrase: "vet clinics",
+  profitEntityPhrase: "a vet clinic",
+  marginPhrase: "vet clinic profit margin",
   marginRange: "15 – 22%",
   medianMargin: "18%",
   topMargin: "23 – 28%",
@@ -419,6 +475,23 @@ export const veterinaryClinicProfitabilitySeo = buildProfitabilitySeo({
   medianProfit: "$216K",
   costDriver: "clinical payroll and medical supplies stay controlled",
 });
+
+const [vetHowSection, vetMarginSection, vetAreSection, vetProfitSection] =
+  veterinaryClinicProfitabilitySeoBase.sections;
+const [vetHowFaq, vetMarginFaq, vetAreFaq, vetProfitFaq] =
+  veterinaryClinicProfitabilitySeoBase.faqs;
+
+/** CTR-led primary question matches Search Console query: how much profit does a vet clinic make */
+export const veterinaryClinicProfitabilitySeo = {
+  ...veterinaryClinicProfitabilitySeoBase,
+  lead: "How much profit does a vet clinic make? Most clear $180K–$265K a year — but the gap between average and top clinics is bigger than most owners expect.",
+  sectionTitle: "How Much Profit Does a Vet Clinic Make?",
+  sectionSubtitle:
+    "Typical annual profit $180K–$265K at ~$1.2M revenue — plus the margins, owner pay, and valuation multiples behind the number.",
+  faqSectionTitle: "Vet Clinic Profitability FAQs",
+  sections: [vetProfitSection, vetHowSection, vetMarginSection, vetAreSection],
+  faqs: [vetProfitFaq, vetHowFaq, vetMarginFaq, vetAreFaq],
+};
 
 export const restaurantProfitabilitySeo = buildProfitabilitySeo({
   businessPhrase: "a restaurant",

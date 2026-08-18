@@ -34,7 +34,13 @@ const config: FranchiseRankingIndustryConfig = {
   ],
   compareHref: "/comparisons/gym-vs-yoga-studio/",
   keywords: {
-    best: ["best yoga franchises", "best yoga franchise to buy", "top yoga franchise opportunities"],
+    best: [
+      "top yoga franchises",
+      "top yoga franchises 2026",
+      "best yoga franchises",
+      "best yoga franchise to buy",
+      "top yoga franchise opportunities",
+    ],
     "lowest-cost": ["lowest cost yoga franchises", "cheapest yoga franchise", "yoga franchise under budget"],
     "highest-revenue": ["highest revenue yoga franchise", "highest roi yoga franchises", "how much does a yoga franchise make"],
     "fastest-growing": ["fastest growing yoga franchises", "yoga franchise expansion 2026", "hot yoga franchise opportunities"],
@@ -124,6 +130,12 @@ const config: FranchiseRankingIndustryConfig = {
 const built = buildAllFranchiseRankings(config);
 
 const titleOverrides: Record<string, { title: string; cardLabel: string; description: string }> = {
+  "best-yoga-franchises-2026": {
+    title: "Top Yoga Franchises 2026",
+    cardLabel: "Top Yoga Franchises",
+    description:
+      "Top yoga franchises in 2026 ranked: YogaSix, Hotworx, CorePower Yoga, and Yoga Pod compared on investment, fees, revenue, margins, and buyer fit.",
+  },
   "lowest-cost-yoga-franchises-2026": {
     title: "Lowest Cost Yoga Franchises 2026",
     cardLabel: "Lowest Cost Yoga Franchises",

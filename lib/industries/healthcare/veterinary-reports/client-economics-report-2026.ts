@@ -2,11 +2,11 @@ import type { ReportMeta, ReportSection } from "@/lib/industries/reports/types";
 
 export const reportMeta: ReportMeta = {
   slug: "veterinary-clinic-client-economics-2026",
-  title: "How Many Clients Does A Vet Need?",
+  title: "How Many Clients Does a Vet Need to Hit Profit Goals?",
   subtitle:
-    "2026 client economics analysis for US veterinary clinics covering active client benchmarks, acquisition pace, retention performance, and client lifetime value.",
+    "2026 client economics for US veterinary clinics — active client counts, acquisition pace, retention, and the LTV math behind clinic profit.",
   description:
-    "Veterinary clinic client benchmarks for 2026: active client counts, new clients per month, retention rates, lifetime value, and annual revenue per client.",
+    "How many clients does a vet clinic need? See 2026 active-client benchmarks, new clients per month, retention, LTV, and revenue per client — tied to profit outcomes.",
   published: "June 2026",
   dataVintage: "2025–2026",
   readTime: "7 min",

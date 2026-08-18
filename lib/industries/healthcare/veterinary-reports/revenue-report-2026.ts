@@ -2,11 +2,11 @@ import type { ReportMeta, ReportSection } from "@/lib/industries/reports/types";
 
 export const reportMeta: ReportMeta = {
   slug: "veterinary-clinic-revenue-2026",
-  title: "How Much Revenue Does A Veterinary Clinic Generate?",
+  title: "How Much Revenue Does a Vet Clinic Really Make?",
   subtitle:
-    "2026 analysis of US veterinary clinic revenue by practice model, service mix, and care segment, with operator and investor benchmarks.",
+    "2026 analysis of US veterinary clinic revenue by practice model, service mix, and care segment — and why the median $1.2M figure hides a wide spread.",
   description:
-    "Veterinary clinic revenue benchmarks for 2026: US market sizing, median clinic revenue of $1.2M, segment economics, and growth outlook through 2033.",
+    "How much does a vet clinic make in revenue? Median ~$1.2M (typical range $850K–$2.4M). See 2026 segment economics, market size, and what drives top-quartile clinics.",
   published: "June 2026",
   dataVintage: "2025–2026",
   readTime: "8 min",

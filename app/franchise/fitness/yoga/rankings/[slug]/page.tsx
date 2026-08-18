@@ -36,10 +36,10 @@ export default async function YogaFranchiseRankingRoute({ params }: PageProps) {
       ranking={ranking}
       siblingRankings={siblings}
       guideHref="/franchise/fitness/yoga/"
-      guideLabel="Yoga Franchise Guide"
+      guideLabel="Top Yoga Franchises Guide"
       industryNavLabel="Yoga Franchise"
       siblingsHeading="More Yoga Franchise Rankings"
-      finalCtaTitle="Ready to compare yoga franchise opportunities?"
+      finalCtaTitle="Ready to compare the top yoga franchises?"
     />
   );
 }

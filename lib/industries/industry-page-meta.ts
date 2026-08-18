@@ -8,6 +8,10 @@ export type IndustryPageMetaInput = {
   keywords: readonly string[];
   /** Optional metric list for the title suffix */
   titleMetrics?: string;
+  /** Full SERP title override (curiosity / exact-match CTR). Include brand if desired. */
+  title?: string;
+  /** Meta description override — answer teaser + curiosity hook */
+  description?: string;
 };
 
 /**
@@ -19,11 +23,15 @@ export function buildIndustryPageMetadata({
   profitabilitySeo,
   keywords,
   titleMetrics = "Profit Margin, Owner Salary, Revenue & Valuation",
+  title,
+  description,
 }: IndustryPageMetaInput): Metadata {
   const howTitle = profitabilitySeo.sectionTitle.replace(/\?$/, "");
   return {
-    title: `${howTitle}? ${titleMetrics} | BizMetricsHQ`,
-    description: `${profitabilitySeo.lead} Compare ${industryLabel.toLowerCase()} revenue, owner salary, startup costs, and valuation multiples.`,
+    title: title ?? `${howTitle}? ${titleMetrics} | BizMetricsHQ`,
+    description:
+      description ??
+      `${profitabilitySeo.lead} Compare ${industryLabel.toLowerCase()} revenue, owner salary, startup costs, and valuation multiples.`,
     keywords: [...keywords],
   };
 }
@@ -41,17 +49,23 @@ export const industryPageKeywords = {
     "small business profitability metrics",
   ],
   hvac: [
-    "hvac profit margin",
+    "are hvac businesses profitable",
+    "is an hvac business profitable",
     "how profitable is an hvac business",
+    "hvac profit margin",
     "hvac company owner salary",
+    "average hvac company profit",
     "hvac business valuation",
     "hvac revenue per technician",
-    "average hvac company profit",
   ],
   plumbing: [
+    "plumbers net worth",
+    "plumber net worth",
+    "plumbing company owner salary",
+    "how much do plumbing owners make",
+    "plumbing business worth",
     "plumbing profit margin",
     "how profitable is a plumbing business",
-    "plumbing company owner salary",
     "plumbing business valuation",
     "average plumbing company revenue",
   ],
@@ -80,10 +94,14 @@ export const industryPageKeywords = {
     "pest control business valuation",
   ],
   cleaning: [
-    "cleaning business profit margin",
+    "is a cleaning business profitable",
     "how profitable is a cleaning business",
+    "cleaning business profit margin",
     "cleaning company owner salary",
+    "average cleaning business profit",
+    "are cleaning companies profitable",
     "janitorial business valuation",
+    "cleaning business revenue",
   ],
   poolService: [
     "pool service profit margin",
@@ -138,10 +156,15 @@ export const industryPageKeywords = {
     "how profitable is a dental practice",
   ],
   veterinary: [
+    "how much profit does a vet clinic make",
+    "how much profit does a veterinary clinic make",
+    "vet clinic profit",
     "veterinary clinic profit margin",
-    "vet clinic owner salary",
-    "veterinary practice valuation",
     "how profitable is a vet clinic",
+    "vet clinic owner salary",
+    "average vet clinic profit",
+    "veterinary practice valuation",
+    "vet clinic ebitda margin",
   ],
   physicalTherapy: [
     "physical therapy clinic profit margin",

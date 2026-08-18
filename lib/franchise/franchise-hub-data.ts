@@ -24,9 +24,9 @@ export type FranchiseCategory = {
 };
 
 export const franchiseHubMeta = {
-  title: "Franchise Economics & Business Benchmarks",
+  title: "Best Franchise Opportunities 2026: Costs, ROI & Owner Income",
   subtitle:
-    "Compare franchise costs, franchise fees, royalties, profit margins, owner salary, ROI, and payback periods across restaurant, fitness, beauty, and home services franchises.",
+    "Compare the best franchise opportunities — including the best franchise for Pilates, gym, restaurant, and home services. See franchise costs, fees, royalties, profit margins, owner salary, ROI, and payback periods.",
   dataVintage: "2025–2026",
 } as const;
 
@@ -76,7 +76,7 @@ export const franchiseCategories: readonly FranchiseCategory[] = [
     franchises: [
       { label: "Gym Franchise", slug: "gym", href: franchiseHref("fitness", "gym") },
       { label: "Pilates Franchise", slug: "pilates", href: franchiseHref("fitness", "pilates") },
-      { label: "Yoga Franchise", slug: "yoga", href: franchiseHref("fitness", "yoga") },
+      { label: "Top Yoga Franchises", slug: "yoga", href: franchiseHref("fitness", "yoga") },
       { label: "CrossFit Affiliate", slug: "crossfit", href: franchiseHref("fitness", "crossfit") },
       { label: "Swim School Franchise", slug: "swim-school", href: franchiseHref("fitness", "swim-school") },
     ],

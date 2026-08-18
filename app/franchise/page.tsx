@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   title: `${franchiseHubMeta.title} | BizMetricsHQ`,
   description: franchiseHubMeta.subtitle,
   keywords: [
+    "best franchise opportunities",
+    "best franchise for pilates",
     "franchise economics",
     "franchise costs",
     "franchise fees",
@@ -21,6 +23,7 @@ export const metadata: Metadata = {
     "restaurant franchise",
     "fast food franchise",
     "gym franchise",
+    "pilates franchise",
     "franchise ROI",
     "franchise owner salary",
   ],
@@ -180,16 +183,22 @@ export default function FranchiseHubPage() {
         <section className="bg-gradient-to-b from-accent-soft/40 to-surface">
           <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6">
             <h2 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
-              Compare franchise costs, ROI, and owner income
+              Compare the best franchise opportunities by cost and ROI
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-sm text-ink-muted sm:text-base">
-              Start with restaurant, fast food, and coffee shop franchise economics, then expand into fitness, beauty,
-              and home services benchmarks.
+              Start with Pilates, gym, restaurant, and coffee shop franchise economics — then expand into beauty and
+              home services benchmarks.
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link
-                href="/franchise/food/restaurant-franchise/"
+                href="/franchise/fitness/pilates/"
                 className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
+              >
+                Best Franchise for Pilates
+              </Link>
+              <Link
+                href="/franchise/food/restaurant-franchise/"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
               >
                 Restaurant Franchise Costs
               </Link>
@@ -206,10 +215,10 @@ export default function FranchiseHubPage() {
                 Coffee Shop Franchise Guide
               </Link>
               <Link
-                href="/comparisons/hair-salon-vs-franchise-salon/"
+                href="/franchise/fitness/gym/"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
               >
-                Hair Salon vs Franchise Salon
+                Best Gym Franchise
               </Link>
               <Link
                 href="/industries/"

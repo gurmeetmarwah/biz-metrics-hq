@@ -31,9 +31,9 @@ export const hubMeta = {
   slug: "plumbing",
   parentSlug: "",
   parentLabel: "Industries",
-  title: "Plumbing Industry Benchmarks",
+  title: "Plumbers Net Worth: How Much Are Owners Really Worth?",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and business economics for plumbing companies in the United States.",
+    "Owner pay typically runs $85K–$165K (median ~$125K) — and a median plumbing business can be worth $700K–$1.1M. See 2026 income, profit, and valuation benchmarks.",
   dataVintage: "2025–2026",
   sampleSize: "380+ plumbing businesses",
 };
@@ -57,7 +57,7 @@ export const hubKpis = [
   },
   {
     id: "owner-pay",
-    label: "Owner Salary",
+    label: "Owner Pay / Net Worth",
     value: "$125K",
     sublabel: "median compensation",
     href: "#owner-economics",
@@ -65,9 +65,9 @@ export const hubKpis = [
   },
   {
     id: "valuation",
-    label: "Valuation",
-    value: "2.8× SDE",
-    sublabel: "median multiple",
+    label: "Business Equity",
+    value: "$700K–$1.1M",
+    sublabel: "typical shop at ~2.8× SDE",
     href: "#valuation",
     accent: "metric-valuation",
   },
@@ -85,10 +85,10 @@ export const businessScorecard = {
 } as const;
 
 export const searchQuickLinks = [
-  { label: "HVAC", href: "/industries/hvac/" },
-  { label: "Electrical", href: "/industries/electrical/" },
-  { label: "Roofing", href: "/industries/roofing/" },
-  { label: "Landscaping", href: "/industries/landscaping/" },
+  { label: "Net Worth", href: "#owner-economics" },
+  { label: "Owner Pay", href: "#owner-economics" },
+  { label: "Business Value", href: "#valuation" },
+  { label: "Profit Margin", href: "#profitability" },
 ] as const;
 
 export const hubSectionNav = [
@@ -130,16 +130,17 @@ export const hubCalculators = [
   },
   {
     label: "Business Valuation Calculator",
-    description: "Estimate plumbing company value using SDE multiples.",
+    description: "Estimate plumbers' business net worth using SDE multiples.",
     href: "/calculators/plumbing-valuation/",
   },
 ] as const;
 
 export const relatedMetrics = [
-  { label: "Plumbing Revenue", href: "#revenue-benchmark" },
-  { label: "Plumbing Profit Margin", href: "#profitability" },
+  { label: "Plumbers Net Worth", href: "#owner-economics" },
   { label: "Plumbing Owner Salary", href: "#owner-economics" },
-  { label: "Plumbing Valuation", href: "#valuation" },
+  { label: "Plumbing Business Value", href: "#valuation" },
+  { label: "Plumbing Profit Margin", href: "#profitability" },
+  { label: "Plumbing Revenue", href: "#revenue-benchmark" },
   { label: "Plumbing Startup Costs", href: "#startup-costs" },
 ] as const;
 
@@ -155,6 +156,16 @@ export const relatedHomeServiceIndustries = [
 ] as const;
 
 const baseFaqs = [
+  {
+    question: "What is a plumber's net worth?",
+    answer:
+      "Plumbers net worth varies widely. Owner-operators typically earn $85K–$165K in annual compensation (median ~$125K). On top of income, a median plumbing business with ~$320K SDE often sells near 2.8× — roughly $700K–$1.1M in business equity. Multi-crew owners combining salary and distributions can clear $185K–$320K+ a year, which compounds net worth faster when the shop is transferable.",
+  },
+  {
+    question: "How much are plumbing business owners worth?",
+    answer:
+      "Most plumbing owners build net worth from two buckets: take-home pay ($85K–$165K typical) and business equity (often $700K–$1.1M at median SDE multiples). Top multi-location operators can exceed $320K annual earnings with shops valued well over $1M.",
+  },
   {
     question: "How profitable is a plumbing business?",
     answer:

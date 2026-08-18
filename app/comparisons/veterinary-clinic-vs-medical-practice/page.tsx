@@ -6,9 +6,9 @@ import {
 } from "@/lib/industries/comparisons/veterinary-clinic-vs-medical-practice";
 
 export const metadata: Metadata = {
-  title: `${comparisonMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
+  title: `Vet Clinic vs Medical Practice: Which Makes More Profit? | BizMetricsHQ`,
   description:
-    "Veterinary clinic vs medical practice comparison: revenue, profit margins, owner compensation, payer mix, startup costs, valuation, and interactive decision tool.",
+    "Vet clinic vs medical practice: which clears more profit? Compare revenue, margins, owner pay, payer mix, startup costs, and valuation — with an interactive decision tool.",
 };
 
 export default function VeterinaryClinicVsMedicalPracticePage() {

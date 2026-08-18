@@ -25,37 +25,41 @@ export const pilatesFranchiseGuide: HomeServicesFranchiseGuideData = {
     slug: "pilates",
     categoryLabel: "Fitness",
     shortName: "Pilates",
-    title: "Pilates Franchise Guide: Compare Costs, ROI, Profit Margins & Top Studio Franchise Opportunities",
+    title: "Best Franchise for Pilates: Costs, ROI, Profit Margins & Top Brands (2026)",
     subtitle:
-      "Compare startup costs, franchise fees, royalties, investment requirements, revenue potential, and owner earnings across leading Pilates studio franchises.",
+      "Find the best franchise for Pilates — compare Club Pilates, Solidcore, Kinrgy, and BodyBar. See $250K–$700K startup costs, franchise fees, royalties, profit margins, owner income, and ROI before you buy.",
     dataVintage: "2025–2026",
     sampleSize: "leading U.S. boutique Pilates and reformer studio franchises",
     kpiDashboardTitle: "Pilates Franchise KPIs",
     kpiDashboardSubtitle: "Directional ranges across national reformer, megaformer, and fusion Pilates studio franchise systems.",
-    overviewTitle: "Which Pilates Franchise Is Right for You?",
-    overviewSubtitle: "Match capital, studio format, and class model to the right Pilates franchise.",
-    compareTitle: "Compare Pilates Franchise Brands",
+    overviewTitle: "Best Franchise for Pilates — Which Brand Fits You?",
+    overviewSubtitle:
+      "Match capital, studio format, and class model to the best Pilates franchise for first-time owners, multi-unit investors, or boutique reformer buyers.",
+    compareTitle: "Compare the Best Pilates Franchises Side by Side",
     compareSubtitle:
       "Side-by-side snapshot of investment, fees, royalties, footprint, and buyer fit — open a brand for the full investment profile.",
     economicsSubtitle: "Industry-average operating ranges for mature U.S. Pilates studio franchise units after royalties.",
     economicsPanelSubtitle: "Typical single-unit performance for national reformer and boutique Pilates studio franchises.",
-    startupSubtitle: "Where the first $250K–$700K typically goes when launching a Pilates studio franchise location.",
+    startupSubtitle: "How Much Does a Pilates Franchise Cost? Startup Breakdown",
     startupPanelSubtitle:
       "Includes franchise fees, leasehold improvements, reformer equipment, technology, and opening working capital.",
     calculatorsSubtitle: "Model studio revenue, client lifetime value, instructor productivity, and valuation before you buy a Pilates franchise.",
-    rankingsSubtitle: "Curated lists for comparing Pilates franchises by cost, ROI, growth, and owner fit.",
-    prosConsTitle: "Franchise vs Independent Pilates Studio",
+    rankingsSubtitle:
+      "Curated “best franchise for Pilates” lists ranked by cost, ROI, growth, first-time fit, and profitability.",
+    prosConsTitle: "Pilates Franchise vs Independent Studio",
     prosConsSubtitle: "Trade brand systems, national marketing, and instructor certification pipelines for royalties and less operating freedom.",
     shouldBuyHref: "#faq",
     shouldBuyBlurb:
       "Compare franchise studio systems and instructor pipelines against independent Pilates studio economics before you commit capital.",
-    questionsSubtitle: "High-intent questions Pilates franchise investors ask before buying.",
-    finalCtaTitle: "Compare Pilates Franchise Opportunities",
-    finalCtaSubtitle: "Find the right franchise by comparing startup costs, fees, revenue, ROI, and long-term profitability.",
+    questionsSubtitle:
+      "High-intent questions buyers ask when searching for the best franchise for Pilates, costs, and owner earnings.",
+    finalCtaTitle: "Compare the Best Pilates Franchise Opportunities",
+    finalCtaSubtitle:
+      "Find the best franchise for Pilates by comparing startup costs, fees, revenue, ROI, and long-term profitability.",
   },
   heroCtas: [
-    { label: "Compare Pilates Franchises", href: "#compare-brands", primary: true },
-    { label: "Franchise ROI Calculator", href: "#calculators", primary: false },
+    { label: "Compare Best Pilates Franchises", href: "#compare-brands", primary: true },
+    { label: "Pilates Franchise ROI Calculator", href: "#calculators", primary: false },
   ],
   executiveKpis: [
     {
@@ -265,9 +269,14 @@ export const pilatesFranchiseGuide: HomeServicesFranchiseGuideData = {
         "A Pilates franchise typically costs $250,000 to $700,000 in total investment, with many operators landing near $420,000. That includes the franchise fee ($40,000–$70,000), leasehold improvements, reformer or megaformer equipment, technology, furniture, signage, pre-opening marketing, training, insurance, and working capital. Lower-CapEx brands like BodyBar Pilates sit toward the low end, while intensity-format studios like Solidcore can push toward $700,000. Always rebuild Item 7 with local contractor and equipment quotes before you buy.",
     },
     {
+      question: "What is the best franchise for Pilates?",
+      answer:
+        "The best franchise for Pilates depends on your goals. Club Pilates often suits multi-unit operators seeking the largest reformer studio network and highest revenue ceiling, while Solidcore fits buyers targeting premium, high-intensity megaformer classes. Kinrgy appeals to first-time owners wanting a fusion class format with turnkey training, and BodyBar Pilates suits capital-constrained buyers wanting a lower-CapEx boutique studio. Rank brands on after-fee cash flow, territory quality, and membership retention — not marketing claims alone.",
+    },
+    {
       question: "What is the best Pilates franchise to open?",
       answer:
-        "The best Pilates franchise depends on your goals. Club Pilates often suits multi-unit operators seeking the largest reformer studio network and highest revenue ceiling, while Solidcore fits buyers targeting premium, high-intensity megaformer classes. Kinrgy appeals to first-time owners wanting a fusion class format with turnkey training, and BodyBar Pilates suits capital-constrained buyers wanting a lower-CapEx boutique studio. Rank brands on after-fee cash flow, territory quality, and membership retention — not marketing claims alone.",
+        "Buyers searching for the best Pilates franchise to open should shortlist Club Pilates for scale, Solidcore for premium intensity revenue, Kinrgy for first-timer support, and BodyBar Pilates for lower CapEx. Rebuild each brand’s FDD Item 7 and Item 19 (if disclosed) with local rent and instructor labor before deciding.",
     },
     {
       question: "How profitable are Pilates franchises?",
@@ -408,6 +417,6 @@ export const pilatesFranchiseGuide: HomeServicesFranchiseGuideData = {
   roiCtaLabel: "Franchise ROI Calculator",
   economicsTitle: "Pilates Franchise Economics",
   calculatorsTitle: "Pilates Franchise Calculators",
-  rankingsTitle: "Top Pilates Franchise Rankings",
+  rankingsTitle: "Best Franchise for Pilates — Rankings & Shortlists",
   categoryId: "fitness",
 };

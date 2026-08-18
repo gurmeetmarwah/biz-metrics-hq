@@ -1,9 +1,9 @@
 export const plumbingMeta = {
   slug: "plumbing",
   name: "Plumbing",
-  title: "Plumbing Industry Benchmarks",
+  title: "Plumbers Net Worth: How Much Are Owners Really Worth?",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and business economics for plumbing companies in the United States.",
+    "Owner pay typically runs $85K–$165K (median ~$125K), and a median plumbing business can be worth $700K–$1.1M. Revenue, margins, and valuation benchmarks for US plumbing companies.",
   dataVintage: "2025–2026",
   sampleSize: "380+ plumbing businesses",
   geography: "United States",
@@ -28,6 +28,10 @@ export const industrySnapshotRatings = [
 ] as const;
 
 export const industryInsights = [
+  {
+    title: "Plumbers net worth = pay + business equity",
+    body: "Plumbers net worth is usually two numbers: owner compensation ($85K–$165K typical, median ~$125K) plus the equity in the shop. A median plumbing business near $320K SDE often values around $700K–$1.1M at ~2.8× — far more than wage-only comparisons suggest.",
+  },
   {
     title: "Non-discretionary demand",
     body: "Plumbing businesses benefit from non-discretionary demand because water, sewer, and pipe failures require immediate repairs — homeowners and businesses cannot defer most plumbing emergencies.",

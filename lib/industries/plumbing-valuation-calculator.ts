@@ -6,12 +6,12 @@ import {
 } from "@/lib/industries/plumbing-calculators-shared";
 
 export const meta = {
-  title: "Plumbing Business Valuation Calculator & SDE Multiple Tool",
-  shortTitle: "Plumbing Valuation Calculator",
+  title: "Plumbers Net Worth Calculator — What Is Your Plumbing Business Worth?",
+  shortTitle: "Plumbing Valuation / Net Worth Calculator",
   subtitle:
-    "Estimate what your plumbing company is worth using SDE multiples and revenue benchmarks.",
+    "Estimate plumbers' business net worth using SDE multiples — the equity number most owner comparisons miss.",
   description:
-    "Free plumbing business valuation calculator using SDE and revenue multiples. Compare your company's estimated value against industry benchmarks for plumbing contractors.",
+    "Free plumbers net worth / plumbing valuation calculator. Estimate business equity at 2.2×–3.5× SDE (median ~2.8×) and see how owner pay plus shop value stack up.",
 };
 
 export const introContent = {

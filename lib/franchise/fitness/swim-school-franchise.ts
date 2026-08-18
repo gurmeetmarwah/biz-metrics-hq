@@ -25,10 +25,9 @@ export const swimSchoolFranchiseGuide: HomeServicesFranchiseGuideData = {
     slug: "swim-school",
     categoryLabel: "Fitness",
     shortName: "Swim School",
-    title:
-      "Swim School Franchise Guide: Compare Costs, ROI, Profit Margins & Top Aquatic Franchise Opportunities",
+    title: "Best Swim School Franchise 2026: Costs, ROI, Profit Margins & Brands",
     subtitle:
-      "Compare startup costs, franchise fees, royalties, investment requirements, revenue potential, and owner earnings across leading swim school franchises.",
+      "Find the best swim school franchise — compare British Swim School, Goldfish, Aqua-Tots, and SafeSplash. See startup costs, fees, royalties, profit margins, and ROI before you buy.",
     dataVintage: "2025–2026",
     sampleSize: "leading U.S. learn-to-swim & aquatics franchises",
     kpiDashboardTitle: "Swim School Franchise KPIs",

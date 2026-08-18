@@ -2,11 +2,11 @@ import type { ReportMeta, ReportSection } from "@/lib/industries/reports/types";
 
 export const reportMeta: ReportMeta = {
   slug: "veterinary-clinic-owner-compensation-2026",
-  title: "How Much Do Veterinary Clinic Owners Earn?",
+  title: "How Much Do Vet Clinic Owners Really Make?",
   subtitle:
-    "2026 compensation analysis for US veterinary clinic owners across solo and multi-vet models, with benchmarks for associates and consolidation-era pay structures.",
+    "2026 compensation analysis for US veterinary clinic owners across solo and multi-vet models — with the pay gap between associates, solo owners, and scaled operators.",
   description:
-    "Veterinary clinic owner compensation benchmarks for 2026: solo owner and multi-vet owner ranges, associate pay comparisons, and the key drivers shaping owner earnings.",
+    "How much do vet clinic owners make? Solo median ~$185K; multi-vet owners often $180K–$280K+. See 2026 owner pay ranges, associate comparisons, and what drives the upside.",
   published: "June 2026",
   dataVintage: "2025-2026",
   readTime: "7 min",

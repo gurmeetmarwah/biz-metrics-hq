@@ -18,7 +18,7 @@ import {
 
 export const comparisonMeta = {
   slug: "cleaning-business-vs-hvac",
-  title: "Cleaning Business vs HVAC",
+  title: "Cleaning Business vs HVAC: Which Is More Profitable?",
   subtitle:
     "Compare revenue, profit margins, owner compensation, startup costs, technician productivity, recurring revenue, licensing, scalability, and valuation benchmarks.",
   dataVintage: "2025–2026",

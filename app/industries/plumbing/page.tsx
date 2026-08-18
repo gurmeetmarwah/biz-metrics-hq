@@ -53,6 +53,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Plumbing",
   profitabilitySeo,
   keywords: industryPageKeywords.plumbing,
+  title: "Plumbers Net Worth: How Much Are Owners Really Worth? | BizMetricsHQ",
+  description:
+    "Plumbers net worth isn't just a paycheck — owners typically earn $85K–$165K (median ~$125K), and a median shop can be worth $700K–$1.1M. See 2026 pay, profit & valuation.",
 });
 
 function HubSection({
@@ -264,8 +267,8 @@ export default function PlumbingHubPage() {
 
         <HubSection
           id="owner-economics"
-          title="How Much Do Plumbing Business Owners Make?"
-          subtitle="Owner compensation ladder from solo operator to multi-location business."
+          title="Plumbers Net Worth: How Much Do Owners Make?"
+          subtitle="Owner compensation is half the story — typical pay is $85K–$165K (median ~$125K). Business equity is the other half."
           className="bg-surface-muted/50"
         >
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -287,8 +290,8 @@ export default function PlumbingHubPage() {
 
         <HubSection
           id="valuation"
-          title="Plumbing Business Valuation Multiples"
-          subtitle="SDE, EBITDA, and revenue multiples used to value plumbing companies at sale."
+          title="Plumbing Business Value (The Equity Side of Net Worth)"
+          subtitle="SDE, EBITDA, and revenue multiples — a median shop near $320K SDE often lands around $700K–$1.1M."
         >
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {valuationMultiples.map((row) => (

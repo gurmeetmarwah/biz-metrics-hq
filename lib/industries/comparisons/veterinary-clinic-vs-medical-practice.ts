@@ -3,9 +3,9 @@ import { scoreDualChoice } from "./score-dual-choice";
 
 export const comparisonMeta = {
   slug: "veterinary-clinic-vs-medical-practice",
-  title: "Veterinary Clinic vs Medical Practice",
+  title: "Vet Clinic vs Medical Practice: Which Makes More Profit?",
   subtitle:
-    "Compare revenue, profitability, payer mix, owner compensation, startup costs, and valuation outcomes across companion-animal and physician-led care models.",
+    "Side-by-side revenue, margins, payer mix, owner pay, startup costs, and valuation — so you can see which model actually clears more profit.",
   dataVintage: "2025–2026",
 } as const;
 

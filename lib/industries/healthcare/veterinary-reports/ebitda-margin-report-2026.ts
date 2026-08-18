@@ -2,11 +2,11 @@ import type { ReportMeta, ReportSection } from "@/lib/industries/reports/types";
 
 export const reportMeta: ReportMeta = {
   slug: "veterinary-clinic-ebitda-margin-2026",
-  title: "What Is A Good Veterinary EBITDA Margin?",
+  title: "What Is a Good Vet Clinic Profit Margin? (Most Miss This Range)",
   subtitle:
-    "2026 profitability analysis for US veterinary clinics, including normalized EBITDA benchmarks, cost structure diagnostics, and margin expansion strategies.",
+    "2026 profitability analysis for US veterinary clinics — including normalized EBITDA benchmarks, cost structure diagnostics, and why average owners leave six figures on the table.",
   description:
-    "Veterinary clinic EBITDA benchmarks for 2026: healthy margin range of 15–22%, median 19%, expense ratio guidance, and investor-grade operating insights.",
+    "How much profit does a vet clinic make? Healthy EBITDA is 15–22% (median ~19%). See the margin range most clinics miss — plus expense ratios and margin expansion moves for 2026.",
   published: "June 2026",
   dataVintage: "2025–2026",
   readTime: "7 min",

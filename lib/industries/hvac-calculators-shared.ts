@@ -31,7 +31,7 @@ export const allHvacCalculators = [
   {
     label: "Profit Margin Calculator",
     href: "/calculators/hvac-profit-margin/",
-    description: "Calculate net margin and compare to HVAC benchmarks.",
+    description: "Are HVAC businesses profitable? Compare your net margin to 8–16% benchmarks.",
   },
   {
     label: "Business Valuation Calculator",
@@ -56,9 +56,9 @@ export const hvacDataLinks = [
     description: "Median $2.4M — revenue by technician count and service mix.",
   },
   {
-    label: "HVAC Profit Margins",
+    label: "Are HVAC Businesses Profitable?",
     href: "/industries/hvac/#profitability",
-    description: "Net margin tiers, gross margin, and cost structure.",
+    description: "Yes — 8–16% net margins (median ~12%), plus cost structure benchmarks.",
   },
   {
     label: "HVAC Owner Salary",

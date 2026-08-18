@@ -68,6 +68,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Cleaning Business",
   profitabilitySeo,
   keywords: industryPageKeywords.cleaning,
+  title: "Is a Cleaning Business Profitable? (10–20% Margins) | BizMetricsHQ",
+  description:
+    "Is a cleaning business profitable? Yes — typical net margins are 10–20% (median ~15%), or about $50K–$100K profit on $500K revenue. See 2026 owner pay, contracts & valuation.",
 });
 
 function HubSection({

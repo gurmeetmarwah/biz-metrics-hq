@@ -2,7 +2,7 @@ import type { HealthcareDecisionInputs, HealthcareDualComparisonData } from "./h
 
 export const comparisonMeta = {
   slug: "hvac-vs-plumbing",
-  title: "HVAC vs Plumbing",
+  title: "HVAC vs Plumbing: Which Is More Profitable?",
   subtitle:
     "Compare revenue, profit margins, owner compensation, startup costs, technician productivity, recurring revenue, scalability, and valuation benchmarks.",
   dataVintage: "2025–2026",

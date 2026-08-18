@@ -83,7 +83,7 @@ const kindMeta: Record<
     slugSuffix: "best-{noun}-franchises-2026",
     titlePrefix: "Best {Label} Franchises 2026",
     cardLabel: "Best {Label} Franchises",
-    intentBlurb: "best {noun} franchises, best {noun} franchise to buy, top {noun} franchise opportunities 2026",
+    intentBlurb: "best {noun} franchises, best franchise for {noun}, best {noun} franchise to buy, top {noun} franchise opportunities 2026",
     tableIntro:
       "Rankings below score each brand on a **balanced franchise scorecard**: investment accessibility, brand recognition, mature-unit revenue, training/support, and multi-unit readiness. Figures are **directional planning ranges** — always verify the current FDD.",
     criteriaTitle: "3. How We Rank the Best {Label} Franchises",

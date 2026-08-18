@@ -25,16 +25,16 @@ export const yogaFranchiseGuide: HomeServicesFranchiseGuideData = {
     slug: "yoga",
     categoryLabel: "Fitness",
     shortName: "Yoga",
-    title: "Yoga Franchise Guide: Compare Costs, ROI, Profit Margins & Top Studio Franchise Opportunities",
+    title: "Top Yoga Franchises 2026: Costs, ROI & Best Brands to Buy",
     subtitle:
-      "Compare startup costs, franchise fees, royalties, investment requirements, revenue potential, and owner earnings across leading yoga studio franchises.",
+      "See the top yoga franchises of 2026 — YogaSix, Hotworx, CorePower Yoga, and Yoga Pod ranked by cost, fees, royalties, profit margins, owner income, and ROI.",
     dataVintage: "2025–2026",
     sampleSize: "leading U.S. yoga & boutique studio franchises",
     kpiDashboardTitle: "Yoga Franchise KPIs",
     kpiDashboardSubtitle: "Directional ranges across national boutique yoga studio franchise systems.",
-    overviewTitle: "Which Yoga Franchise Is Right for You?",
+    overviewTitle: "Which of the Top Yoga Franchises Is Right for You?",
     overviewSubtitle: "Match capital, class format, and membership model to the right yoga studio franchise.",
-    compareTitle: "Compare Yoga Franchise Brands",
+    compareTitle: "Compare Top Yoga Franchises Side by Side",
     compareSubtitle:
       "Side-by-side snapshot of investment, fees, royalties, footprint, and buyer fit — open a brand for the full investment profile.",
     economicsSubtitle: "Industry-average operating ranges for mature U.S. yoga studio franchise units after royalties.",
@@ -43,18 +43,19 @@ export const yogaFranchiseGuide: HomeServicesFranchiseGuideData = {
     startupPanelSubtitle:
       "Includes franchise fees, leasehold improvements, studio buildout, technology, and opening working capital.",
     calculatorsSubtitle: "Model membership revenue, class capacity, client lifetime value, and valuation before you buy a yoga franchise.",
-    rankingsSubtitle: "Curated lists for comparing yoga franchises by cost, ROI, growth, and owner fit.",
+    rankingsSubtitle:
+      "Curated rankings of the top yoga franchises by cost, ROI, growth, and owner fit — start with our 2026 leaderboard.",
     prosConsTitle: "Franchise vs Independent Yoga Studio",
     prosConsSubtitle: "Trade brand systems, national marketing, and teacher training pipelines for royalties and less operating freedom.",
     shouldBuyHref: "#faq",
     shouldBuyBlurb:
       "Compare franchise membership systems and teacher training pipelines against independent yoga studio economics before you commit capital.",
-    questionsSubtitle: "High-intent questions yoga franchise investors ask before buying.",
-    finalCtaTitle: "Compare Yoga Franchise Opportunities",
+    questionsSubtitle: "High-intent questions yoga franchise investors ask before buying the top brands.",
+    finalCtaTitle: "Compare the Top Yoga Franchise Opportunities",
     finalCtaSubtitle: "Find the right franchise by comparing startup costs, fees, revenue, ROI, and long-term profitability.",
   },
   heroCtas: [
-    { label: "Compare Yoga Franchises", href: "#compare-brands", primary: true },
+    { label: "See Top Yoga Franchises", href: "#compare-brands", primary: true },
     { label: "Franchise ROI Calculator", href: "#calculators", primary: false },
   ],
   executiveKpis: [
@@ -260,6 +261,11 @@ export const yogaFranchiseGuide: HomeServicesFranchiseGuideData = {
   ],
   businessQuestionFaqs: [
     {
+      question: "What are the top yoga franchises?",
+      answer:
+        "The top yoga franchises in 2026 typically include YogaSix, Hotworx, CorePower Yoga, and Yoga Pod. YogaSix often leads on network scale and membership systems; Hotworx ranks high for lower CapEx and lean staffing; CorePower Yoga suits premium multi-room operators; Yoga Pod is a flexible, lower-entry boutique option. Rank the top brands on after-fee cash flow, territory quality, and member retention — not marketing claims alone.",
+    },
+    {
       question: "How much does a yoga franchise cost?",
       answer:
         "A yoga franchise typically costs $150,000 to $550,000 in total investment, with many operators landing near $320,000. That includes the franchise fee ($30,000–$60,000), leasehold improvements, studio equipment, technology, furniture, signage, pre-opening marketing, training, insurance, and working capital. Lower-CapEx formats like Hotworx sit toward the low end given their infrared pod and virtual-coaching layout, while premium multi-room studios like CorePower Yoga can exceed $550,000. Always rebuild Item 7 with local contractor and equipment quotes before you buy.",
@@ -404,10 +410,10 @@ export const yogaFranchiseGuide: HomeServicesFranchiseGuideData = {
   relatedTitle: "Related Fitness Franchises",
   relatedSubtitle: "Explore franchise economics across other fitness and studio formats.",
   shouldBuyCtaLabel: "Should You Buy a Yoga Franchise or Open an Independent Studio?",
-  compareCtaLabel: "Compare Yoga Franchises",
+  compareCtaLabel: "Compare Top Yoga Franchises",
   roiCtaLabel: "Franchise ROI Calculator",
   economicsTitle: "Yoga Franchise Economics",
   calculatorsTitle: "Yoga Franchise Calculators",
-  rankingsTitle: "Top Yoga Franchise Rankings",
+  rankingsTitle: "Top Yoga Franchises Rankings",
   categoryId: "fitness",
 };

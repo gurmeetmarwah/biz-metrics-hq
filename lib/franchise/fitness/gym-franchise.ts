@@ -25,9 +25,9 @@ export const gymFranchiseGuide: HomeServicesFranchiseGuideData = {
     slug: "gym",
     categoryLabel: "Fitness",
     shortName: "Gym",
-    title: "Gym Franchise Guide: Compare Costs, ROI, Profit Margins & Top Fitness Franchise Opportunities",
+    title: "Best Gym Franchise 2026: Costs, ROI, Profit Margins & Top Brands",
     subtitle:
-      "Compare startup costs, franchise fees, royalties, investment requirements, revenue potential, and owner earnings across leading gym franchises.",
+      "Find the best gym franchise — compare Anytime Fitness, Planet Fitness, Orangetheory, and Snap Fitness. See startup costs, franchise fees, royalties, profit margins, owner income, and ROI before you buy.",
     dataVintage: "2025–2026",
     sampleSize: "leading U.S. gym & boutique fitness franchises",
     kpiDashboardTitle: "Gym Franchise KPIs",

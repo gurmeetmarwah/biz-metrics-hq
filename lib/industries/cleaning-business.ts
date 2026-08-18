@@ -1,9 +1,9 @@
 export const cleaningBusinessMeta = {
   slug: "cleaning-business",
   name: "Cleaning Business",
-  title: "Cleaning Business Benchmarks",
+  title: "Is a Cleaning Business Profitable?",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and business economics for cleaning businesses in the United States.",
+    "Yes — typical net margins run 10–20% (median ~15%). Revenue, owner salaries, valuation multiples, and business economics for cleaning businesses in the United States.",
   dataVintage: "2025–2026",
   sampleSize: "190+ cleaning businesses",
   geography: "United States",
@@ -28,6 +28,10 @@ export const industrySnapshotRatings = [
 ] as const;
 
 export const industryInsights = [
+  {
+    title: "Yes — cleaning can be profitable",
+    body: "Is a cleaning business profitable? Healthy operators keep 10–20% net margins (median ~15%) on recurring residential and commercial contracts — typically $50K–$100K profit at median ~$500K revenue.",
+  },
   {
     title: "Scheduled contract revenue",
     body: "Cleaning businesses typically generate recurring revenue through scheduled service contracts — weekly residential cleans and monthly commercial janitorial agreements provide predictable cash flow.",

@@ -34,12 +34,40 @@ const config: FranchiseRankingIndustryConfig = {
   ],
   compareHref: "/comparisons/gym-vs-pilates-studio/",
   keywords: {
-    best: ["best pilates franchises", "best pilates franchise to buy", "top pilates franchise opportunities"],
-    "lowest-cost": ["lowest cost pilates franchises", "cheapest pilates franchise", "pilates franchise under budget"],
-    "highest-revenue": ["highest revenue pilates franchise", "highest roi pilates franchises", "how much does a pilates franchise make"],
-    "fastest-growing": ["fastest growing pilates franchises", "pilates franchise expansion 2026", "hot pilates franchise opportunities"],
-    "first-time": ["best pilates franchise for first-time owners", "pilates franchise for beginners", "easiest pilates franchise to open"],
-    "most-profitable": ["most profitable pilates franchise", "highest roi pilates franchise", "pilates franchise profit margin"],
+    best: [
+      "best franchise for pilates",
+      "best pilates franchises",
+      "best pilates franchise to buy",
+      "best pilates franchise 2026",
+      "top pilates franchise opportunities",
+    ],
+    "lowest-cost": [
+      "lowest cost pilates franchises",
+      "cheapest pilates franchise",
+      "pilates franchise under budget",
+      "cheapest franchise for pilates",
+    ],
+    "highest-revenue": [
+      "highest revenue pilates franchise",
+      "highest roi pilates franchises",
+      "how much does a pilates franchise make",
+    ],
+    "fastest-growing": [
+      "fastest growing pilates franchises",
+      "pilates franchise expansion 2026",
+      "hot pilates franchise opportunities",
+    ],
+    "first-time": [
+      "best pilates franchise for first-time owners",
+      "best franchise for pilates beginners",
+      "pilates franchise for beginners",
+      "easiest pilates franchise to open",
+    ],
+    "most-profitable": [
+      "most profitable pilates franchise",
+      "highest roi pilates franchise",
+      "pilates franchise profit margin",
+    ],
   },
   brands: [
     {
@@ -124,6 +152,12 @@ const config: FranchiseRankingIndustryConfig = {
 const built = buildAllFranchiseRankings(config);
 
 const titleOverrides: Record<string, { title: string; cardLabel: string; description: string }> = {
+  "best-pilates-franchises-2026": {
+    title: "Best Franchise for Pilates 2026: Top Brands Ranked",
+    cardLabel: "Best Franchise for Pilates",
+    description:
+      "Best franchise for Pilates in 2026 — ranked Club Pilates, Solidcore, Kinrgy, and BodyBar on investment, fees, revenue, profit margins, and multi-unit fit. Compare costs and ROI before you buy.",
+  },
   "lowest-cost-pilates-franchises-2026": {
     title: "Lowest Cost Pilates Franchises 2026",
     cardLabel: "Lowest Cost Pilates Franchises",

@@ -2,11 +2,11 @@ import type { ReportMeta, ReportSection } from "@/lib/industries/reports/types";
 
 export const reportMeta: ReportMeta = {
   slug: "veterinary-clinic-valuation-2026",
-  title: "What Is A Veterinary Practice Worth?",
+  title: "What Is a Vet Clinic Worth? (The Multiple Buyers Use)",
   subtitle:
-    "2026 veterinary practice valuation benchmarks for US buyers and sellers, including SDE, EBITDA, and revenue multiple ranges across independent and scaled clinic models.",
+    "2026 veterinary practice valuation benchmarks for US buyers and sellers — SDE, EBITDA, and revenue multiples, plus the drivers that move you into the top band.",
   description:
-    "Veterinary practice valuation benchmarks for 2026: SDE multiples of 2.8x-4.0x (median 3.4x), revenue multiples of 0.7x-1.1x, EBITDA ranges, and practical value drivers.",
+    "What is a vet clinic worth? Independent practices often sell at 2.8×–4.0× SDE (median 3.4×). See 2026 multiples, revenue ranges, and what raises (or cuts) value.",
   published: "June 2026",
   dataVintage: "2025-2026",
   readTime: "7 min",

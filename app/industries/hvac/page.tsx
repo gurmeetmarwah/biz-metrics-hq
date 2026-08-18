@@ -50,6 +50,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "HVAC",
   profitabilitySeo,
   keywords: industryPageKeywords.hvac,
+  title: "Are HVAC Businesses Profitable? (8–16% Margins) | BizMetricsHQ",
+  description:
+    "Are HVAC businesses profitable? Yes — typical net margins are 8–16% (median ~12%), or about $190K–$380K profit on $2.4M revenue. See 2026 owner pay, contracts & valuation.",
 });
 
 function HubSection({

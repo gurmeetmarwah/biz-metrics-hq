@@ -61,9 +61,9 @@ export const plumbingDataLinks = [
     description: "Net margin tiers, gross margin, and cost structure.",
   },
   {
-    label: "Plumbing Owner Salary",
+    label: "Plumbers Net Worth & Owner Salary",
     href: "/industries/plumbing/#owner-economics",
-    description: "What plumbing owners earn by company size.",
+    description: "Owner pay $85K–$165K plus business equity benchmarks.",
   },
   {
     label: "Plumbing Valuation Multiples",

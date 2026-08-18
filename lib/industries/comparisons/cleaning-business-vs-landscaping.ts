@@ -32,7 +32,7 @@ import {
 
 export const comparisonMeta = {
   slug: "cleaning-business-vs-landscaping",
-  title: "Cleaning Business vs Landscaping",
+  title: "Cleaning Business vs Landscaping: Which Is More Profitable?",
   subtitle:
     "Compare revenue, profit margins, owner compensation, startup costs, labor economics, recurring revenue, scalability, and valuation benchmarks.",
   dataVintage: "2025–2026",

@@ -23,9 +23,9 @@ export const hubMeta = {
   slug: "veterinary-clinic",
   parentSlug: "healthcare",
   parentLabel: "Healthcare",
-  title: "Veterinary Clinic Economics & Benchmarks",
+  title: "How Much Profit Does a Vet Clinic Make?",
   subtitle:
-    "Explore veterinary clinic revenue, profit margins, owner compensation, practice valuations, startup costs, and operating benchmarks.",
+    "Real 2026 numbers: typical clinics clear $180K–$265K profit on ~$1.2M revenue. See margins, owner pay, valuation, and what separates average operators from top earners.",
   dataVintage: "2025–2026",
   sampleSize: "240+ veterinary clinics",
 };
@@ -93,8 +93,8 @@ export const businessScorecard = {
 } as const;
 
 export const searchQuickLinks = [
+  { label: "How Much Profit?", href: "#profitability" },
   { label: "Revenue", href: "#revenue-benchmark" },
-  { label: "Profit Margin", href: "#profitability" },
   { label: "Owner Salary", href: "#owner-economics" },
   { label: "Valuation", href: "#valuation" },
 ] as const;
@@ -118,12 +118,12 @@ export const exploreTopics = [
   },
   {
     id: "profitability",
-    title: "Profitability",
-    subtitle: "EBITDA margin, net profit, expense ratios, and benchmarking.",
-    topics: ["EBITDA Margin", "Net Profit", "Expense Ratios", "Benchmarking"],
+    title: "How Much Profit?",
+    subtitle: "Typical $180K–$265K profit — margins, expense ratios, and what top clinics do differently.",
+    topics: ["Annual Profit", "EBITDA Margin", "Expense Ratios", "Benchmarking"],
     href: "#profitability",
     accent: "metric-margin",
-    buttonLabel: "Explore Profitability →",
+    buttonLabel: "See Profit Numbers →",
   },
   {
     id: "owner-comp",
@@ -281,6 +281,7 @@ export const relatedHealthcareIndustries = [
 ] as const;
 
 export const popularMetrics = [
+  { label: "How Much Profit Does a Vet Clinic Make?", href: "#profitability" },
   { label: "Veterinary Revenue Benchmarks", href: "#revenue-benchmark" },
   { label: "Veterinary EBITDA Margins", href: "#profitability" },
   { label: "Veterinary Owner Compensation", href: "#owner-economics" },
@@ -292,6 +293,11 @@ export const popularMetrics = [
 export { industryInsights } from "@/lib/industries/healthcare/veterinary-reports";
 
 const baseFaqs = [
+  {
+    question: "How much profit does a vet clinic make?",
+    answer:
+      "Most general vet clinics clear about $180K–$265K in annual profit at median revenue near $1.2M (~$216K at an 18% net margin). Top operators push higher when payroll and medical supplies stay in range; thin profits usually mean cost drift or weak preventive-care retention.",
+  },
   {
     question: "How profitable are veterinary clinics?",
     answer:
