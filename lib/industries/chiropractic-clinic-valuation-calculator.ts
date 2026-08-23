@@ -8,11 +8,17 @@ import {
 } from "@/lib/industries/chiropractic-calculators-shared";
 
 export const meta = {
-  title: "Chiropractic Clinic Valuation Calculator & SDE Multiple Tool",
+  title: "Chiropractic Clinic Valuation Calculator — Free SDE Multiple Tool",
   shortTitle: "Chiropractic Clinic Valuation Calculator",
-  subtitle: "Estimate what your chiropractic clinic is worth using SDE and revenue benchmarks.",
+  subtitle: "Chiropractic clinic valuation calculator: estimate practice worth with SDE and revenue multiples.",
   description:
-    "Free chiropractic clinic valuation calculator using SDE and revenue multiples. Compare your clinic's estimated value against independent chiropractic benchmarks.",
+    "Free chiropractic clinic valuation calculator. Estimate clinic value at 2.0×–3.5× SDE (median ~2.8×) plus equipment — compare against independent chiropractic benchmarks.",
+  keywords: [
+    "chiropractic clinic valuation",
+    "chiropractic clinic valuation calculator",
+    "chiropractic practice valuation",
+    "chiropractic practice worth",
+  ],
 };
 
 export const introContent = {

@@ -6,11 +6,17 @@ import {
 } from "@/lib/industries/medical-spa-calculators-shared";
 
 export const meta = {
-  title: "Medical Spa Revenue Calculator & Annual Sales Estimator",
-  shortTitle: "Medical Spa Revenue Calculator",
-  subtitle: "Project annual medical spa revenue from providers, treatment volume, and average ticket.",
+  title: "Spa Revenue Calculator — Medical Spa Annual Sales Estimator",
+  shortTitle: "Spa Revenue Calculator (Medical Spa)",
+  subtitle: "Spa revenue calculator for med spas — project annual sales from providers, treatments, and average ticket.",
   description:
-    "Free medical spa revenue calculator. Estimate annual med spa revenue from providers, treatments per day, average treatment value, and membership revenue.",
+    "Free spa revenue calculator for medical spas. Estimate annual med spa revenue from providers, treatments per day, average treatment value, and membership revenue — median ~$1.2M.",
+  keywords: [
+    "spa revenue calculator",
+    "medical spa revenue calculator",
+    "med spa revenue calculator",
+    "spa sales calculator",
+  ],
 };
 
 export const introContent = {

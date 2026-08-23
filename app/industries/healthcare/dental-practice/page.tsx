@@ -55,6 +55,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Dental Practice",
   profitabilitySeo,
   keywords: industryPageKeywords.dental,
+  title: "Business Metrics for Dentists: Revenue, Margins & Valuation | BizMetricsHQ",
+  description:
+    "Business metrics for dentists in 2026: median collections ~$1.8M, EBITDA 18–30%, owner pay ~$285K, and practice valuation at 3.2×–4.5× SDE. Benchmarks from 310+ practices.",
 });
 
 function HubSection({

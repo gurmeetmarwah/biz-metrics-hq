@@ -7,12 +7,18 @@ import {
 } from "@/lib/industries/electrical-calculators-shared";
 
 export const meta = {
-  title: "Electrical Profit Margin Calculator & Industry Benchmark Tool",
-  shortTitle: "Electrical Profit Margin Calculator",
+  title: "Electrician Profit Margin Calculator — Free Benchmark Tool",
+  shortTitle: "Electrician Profit Margin Calculator",
   subtitle:
-    "Calculate your electrical company's profit margin and compare it against industry benchmarks.",
+    "Calculate your electrician profit margin and compare against the 7–14% industry range (median ~10%).",
   description:
-    "Free electrical profit margin calculator with industry benchmarks, cost diagnostics, and quartile comparison. See how your payroll, materials, and fleet costs stack up against 340+ electrical businesses.",
+    "Free electrician profit margin calculator. How profitable is an electrical business? Enter payroll, materials, and overhead vs 340+ contractor benchmarks (median ~10% net).",
+  keywords: [
+    "electrician profit margin",
+    "how profitable is electrical business",
+    "how profitable is an electrical business",
+    "electrical profit margin calculator",
+  ],
 };
 
 export const introContent = {

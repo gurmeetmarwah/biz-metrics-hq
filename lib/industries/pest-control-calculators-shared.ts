@@ -38,14 +38,14 @@ export const allPestControlCalculators = [
     description: "Estimate LTV from contract value, retention, and upsells.",
   },
   {
-    label: "Recurring Revenue Calculator",
+    label: "Increase Pest Control Revenue Calculator",
     href: "/calculators/pest-control-recurring-revenue/",
-    description: "Model subscription contract revenue and annual penetration.",
+    description: "Increase pest control revenue — model subscriptions and recurring mix.",
   },
   {
-    label: "Profit Margin Calculator",
+    label: "Average Pest Control Profit Margin Calculator",
     href: "/calculators/pest-control-profit-margin/",
-    description: "Calculate net margin and compare to pest control benchmarks.",
+    description: "See the average pest control business profit margin vs your numbers.",
   },
   {
     label: "Business Valuation Calculator",
@@ -60,14 +60,14 @@ export function relatedCalculators(excludeHref: string) {
 
 export const pestControlDataLinks = [
   {
-    label: "Pest Control Revenue Benchmarks",
+    label: "How to Increase Pest Control Revenue",
     href: "/industries/pest-control/#revenue-benchmark",
-    description: "Median $900K — revenue by technician count and service mix.",
+    description: "Median $900K — growth levers for routes, recurring mix, and commercial.",
   },
   {
-    label: "Pest Control Profit Margins",
+    label: "Average Pest Control Business Profit Margin",
     href: "/industries/pest-control/#profitability",
-    description: "Net margin tiers, gross margin, and cost structure.",
+    description: "Typical 15–25% net (median ~18%) — margin tiers and cost structure.",
   },
   {
     label: "Pest Control Owner Salary",

@@ -6,12 +6,18 @@ import {
 } from "@/lib/industries/pest-control-calculators-shared";
 
 export const meta = {
-  title: "Pest Control Recurring Revenue Calculator & Subscription Mix Tool",
-  shortTitle: "Pest Control Recurring Revenue Calculator",
+  title: "Increase Pest Control Revenue — Recurring Contract Calculator",
+  shortTitle: "Increase Pest Control Revenue Calculator",
   subtitle:
-    "Model annual recurring revenue from service contracts and compare to industry benchmarks.",
+    "Increase pest control revenue by modeling subscription contracts, termite bonds, and recurring mix vs top operators.",
   description:
-    "Free pest control recurring revenue calculator. Estimate subscription contract revenue, one-time treatments, and recurring mix against 220+ pest control benchmarks.",
+    "Increase pest control revenue with this free recurring contract calculator. Model residential and commercial subscriptions, boost recurring mix toward 80–90%, and benchmark against 220+ operators.",
+  keywords: [
+    "increase pest control revenue",
+    "how to increase pest control revenue",
+    "pest control recurring revenue",
+    "pest control subscription revenue",
+  ],
 };
 
 export const introContent = {

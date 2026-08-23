@@ -6,12 +6,18 @@ import {
 } from "@/lib/industries/landscaping-calculators-shared";
 
 export const meta = {
-  title: "Landscaping Business Valuation Calculator & SDE Multiple Tool",
-  shortTitle: "Landscaping Valuation Calculator",
+  title: "Landscaping Business Valuation Calculator — Free SDE Multiple Tool",
+  shortTitle: "Landscaping Business Valuation Calculator",
   subtitle:
-    "Estimate what your landscaping company is worth using SDE multiples and revenue benchmarks.",
+    "Landscaping business valuation calculator: estimate company worth using SDE multiples (typically 1.8×–2.8×).",
   description:
-    "Free landscaping business valuation calculator using SDE and revenue multiples. Compare your company's estimated value against industry benchmarks for landscaping contractors.",
+    "Free landscaping business valuation calculator. Estimate value at 1.8×–2.8× SDE (median ~2.2×) against 280+ landscaping contractor benchmarks.",
+  keywords: [
+    "landscaping business valuation",
+    "landscaping business valuation calculator",
+    "landscaping company worth",
+    "landscaping SDE multiple",
+  ],
 };
 
 export const introContent = {

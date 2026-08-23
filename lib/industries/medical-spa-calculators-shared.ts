@@ -31,9 +31,9 @@ export const medicalSpaIndustryAverages = {
 
 export const allMedicalSpaCalculators = [
   {
-    label: "Medical Spa Revenue Calculator",
+    label: "Spa Revenue Calculator (Medical Spa)",
     href: "/calculators/medical-spa-revenue/",
-    description: "Project annual revenue from providers, treatment volume, and average ticket.",
+    description: "Free spa revenue calculator for medical spas — project annual sales.",
   },
   {
     label: "Medical Spa Profit Margin Calculator",

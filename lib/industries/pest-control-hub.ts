@@ -35,9 +35,9 @@ export const hubMeta = {
   slug: "pest-control",
   parentSlug: "",
   parentLabel: "Industries",
-  title: "Pest Control Industry Benchmarks",
+  title: "Average Pest Control Business Profit Margin",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and business economics for pest control businesses.",
+    "Typical net margins run 15–25% (median ~18%). See how to increase pest control revenue with denser routes, higher recurring mix, and 2026 owner-pay benchmarks.",
   dataVintage: "2025–2026",
   sampleSize: "220+ pest control companies",
 };
@@ -91,10 +91,10 @@ export const businessScorecard = {
 } as const;
 
 export const searchQuickLinks = [
-  { label: "HVAC", href: "/industries/hvac/" },
-  { label: "Plumbing", href: "/industries/plumbing/" },
-  { label: "Roofing", href: "/industries/roofing/" },
-  { label: "Landscaping", href: "/industries/landscaping/" },
+  { label: "Profit Margin", href: "#profitability" },
+  { label: "Increase Revenue", href: "#revenue-benchmark" },
+  { label: "Owner Pay", href: "#owner-economics" },
+  { label: "Valuation", href: "#valuation" },
 ] as const;
 
 export const hubSectionNav = [
@@ -136,12 +136,12 @@ export const hubCalculators = [
   },
   {
     label: "Recurring Revenue Calculator",
-    description: "Model subscription contract revenue and annual penetration.",
+    description: "Increase pest control revenue — model subscriptions and recurring mix.",
     href: "/calculators/pest-control-recurring-revenue/",
   },
   {
     label: "Profit Margin Calculator",
-    description: "Calculate net margin and compare to pest control benchmarks.",
+    description: "See the average pest control business profit margin vs your numbers.",
     href: "/calculators/pest-control-profit-margin/",
   },
   {
@@ -163,6 +163,16 @@ export const relatedHomeServiceIndustries = [
 ] as const;
 
 const baseFaqs = [
+  {
+    question: "What is the average pest control business profit margin?",
+    answer:
+      "The average pest control business profit margin is typically 15–25% net, with a median around 18%. Subscription-heavy operators with strong route density and low churn can reach 22–28%. Gross margins usually run 55–68% before overhead.",
+  },
+  {
+    question: "How do I increase pest control revenue?",
+    answer:
+      "Increase pest control revenue by raising recurring contract penetration toward 80–90%, densifying technician routes, cross-selling termite and mosquito programs, and adding commercial accounts. Top operators also lift average ticket with annual plans and retention offers that cut churn below ~15%.",
+  },
   {
     question: "How profitable is a pest control business?",
     answer:

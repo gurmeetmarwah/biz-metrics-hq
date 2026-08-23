@@ -25,9 +25,9 @@ export const hubMeta = {
   slug: "hvac",
   parentSlug: "",
   parentLabel: "Industries",
-  title: "Are HVAC Businesses Profitable?",
+  title: "HVAC Business Owner Salary: How Much Do Owners Make?",
   subtitle:
-    "Yes — typical net margins run 8–16% (median ~12%), or about $190K–$380K profit on $2.4M revenue. See 2026 benchmarks for margins, owner pay, maintenance mix, and valuation.",
+    "HVAC business owner salary typically runs $95K–$185K (median ~$145K). Multi-location operators can exceed $350K — see 2026 pay ladders, margins, and valuation.",
   dataVintage: "2025–2026",
   sampleSize: "420+ HVAC businesses",
 };
@@ -79,9 +79,9 @@ export const businessScorecard = {
 } as const;
 
 export const searchQuickLinks = [
+  { label: "Owner Salary", href: "#owner-economics" },
   { label: "Are They Profitable?", href: "#profitability" },
   { label: "Revenue", href: "#revenue-benchmark" },
-  { label: "Owner Pay", href: "#owner-economics" },
   { label: "Valuation", href: "#valuation" },
 ] as const;
 
@@ -129,6 +129,8 @@ export const hubCalculators = [
 ] as const;
 
 export const relatedMetrics = [
+  { label: "Average HVAC Profit Margin", href: "#profitability" },
+  { label: "HVAC Business Owner Salary", href: "#owner-economics" },
   { label: "Are HVAC Businesses Profitable?", href: "#profitability" },
   { label: "HVAC Profit Margin", href: "#profitability" },
   { label: "HVAC Revenue", href: "#revenue-benchmark" },
@@ -147,6 +149,16 @@ export const relatedHomeServiceIndustries = [
 ] as const;
 
 const baseFaqs = [
+  {
+    question: "What is the average HVAC profit margin?",
+    answer:
+      "The average HVAC profit margin is typically 8–16% net, with a median around 12%. Top operators with strong maintenance contracts and disciplined payroll often reach 17–22%. Thin margins usually mean labor bloat or a weak recurring mix.",
+  },
+  {
+    question: "What is the average HVAC business owner salary?",
+    answer:
+      "HVAC business owner salary typically runs $95K–$185K in total compensation, with a median around $145K. Small single-truck operators often earn $95K–$120K, while multi-location operators can exceed $350K when combining owner salary and profit distributions.",
+  },
   {
     question: "Are HVAC businesses profitable?",
     answer:

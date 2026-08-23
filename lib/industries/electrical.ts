@@ -1,9 +1,9 @@
 export const electricalMeta = {
   slug: "electrical",
   name: "Electrical",
-  title: "Electrical Industry Benchmarks",
+  title: "How Profitable Is an Electrical Business?",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and key economics for electrical contracting businesses.",
+    "Typical electrician profit margins run 7–14% (median ~10%). Revenue, owner salaries, valuation multiples, and key economics for electrical contracting businesses.",
   dataVintage: "2025–2026",
   sampleSize: "340+ electrical contracting businesses",
   geography: "United States",

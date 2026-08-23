@@ -1,9 +1,9 @@
 export const iceCreamShopMeta = {
   slug: "ice-cream-shop",
   name: "Ice Cream Shop",
-  title: "Ice Cream Shop Business Benchmarks",
+  title: "Ice Cream Business Valuation Multiples: What Is a Shop Worth?",
   subtitle:
-    "Compare revenue, profit margins, startup costs, owner salaries, valuation multiples, and key operating metrics for independent and franchise ice cream shops.",
+    "Ice cream business valuation multiples typically run 2.0×–3.5× SDE (median ~2.8×). Compare revenue, margins, owner salaries, and operating metrics for independent and franchise shops.",
   dataVintage: "2025–2026",
   sampleSize: "175+ ice cream shops",
   geography: "United States",

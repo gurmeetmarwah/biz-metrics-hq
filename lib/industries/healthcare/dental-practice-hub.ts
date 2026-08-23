@@ -19,9 +19,9 @@ export const hubMeta = {
   slug: "dental-practice",
   parentSlug: "healthcare",
   parentLabel: "Healthcare",
-  title: "Dental Practice Economics & Benchmarks",
+  title: "Business Metrics for Dentists: Revenue, Margins & Valuation",
   subtitle:
-    "Explore revenue benchmarks, profit margins, owner compensation, startup costs, valuations, and operating metrics for dental practices.",
+    "The core business metrics for dentists — median collections ~$1.8M, EBITDA 18–30%, owner pay, startup costs, and practice valuation multiples for 2026.",
   dataVintage: "2025–2026",
   sampleSize: "310+ dental practices",
 };
@@ -73,7 +73,7 @@ export const businessScorecard = {
 } as const;
 
 export const searchQuickLinks = [
-  { label: "Revenue", href: "#revenue-benchmark" },
+  { label: "Key Metrics", href: "#revenue-benchmark" },
   { label: "Profit Margin", href: "#profitability" },
   { label: "Owner Salary", href: "#owner-economics" },
   { label: "Valuation", href: "#valuation" },
@@ -240,6 +240,7 @@ export const relatedHealthcareIndustries = [
 ] as const;
 
 export const popularMetrics = [
+  { label: "Business Metrics for Dentists", href: "#revenue-benchmark" },
   { label: "Dental Practice Revenue Benchmarks", href: "#revenue-benchmark" },
   { label: "Dental EBITDA Margins", href: "#profitability" },
   { label: "Dental Owner Compensation", href: "#owner-economics" },
@@ -249,6 +250,11 @@ export const popularMetrics = [
 ] as const;
 
 const baseFaqs = [
+  {
+    question: "What are the key business metrics for dentists?",
+    answer:
+      "Core business metrics for dentists include annual collections (median ~$1.8M), EBITDA margin (typically 18–30%, median ~24%), owner compensation (median ~$285K), revenue per operatory ($350K–$550K), and practice valuation (often 3.2×–4.5× SDE, median ~3.8×). Track clinical payroll, supplies, and new-patient flow alongside these benchmarks.",
+  },
   {
     question: "How profitable are dental practices?",
     answer:

@@ -6,12 +6,18 @@ import {
 } from "@/lib/industries/ice-cream-shop-calculators-shared";
 
 export const meta = {
-  title: "Ice Cream Shop Valuation Calculator & SDE Multiple Tool",
-  shortTitle: "Ice Cream Shop Valuation Calculator",
+  title: "Ice Cream Business Valuation Multiples Calculator — Free SDE Tool",
+  shortTitle: "Ice Cream Valuation Multiples Calculator",
   subtitle:
-    "Estimate what your ice cream shop is worth using SDE multiples and seasonal revenue quality.",
+    "Apply ice cream business valuation multiples (typically 2.0×–3.5× SDE) to estimate what your shop is worth.",
   description:
-    "Free ice cream shop valuation calculator using SDE and revenue multiples. Compare estimated value against industry benchmarks.",
+    "Free ice cream business valuation multiples calculator. Estimate shop value at 2.0×–3.5× SDE (median ~2.8×) with seasonal revenue quality checks.",
+  keywords: [
+    "ice cream business valuation multiples",
+    "ice cream shop valuation",
+    "ice cream shop worth",
+    "ice cream SDE multiple",
+  ],
 };
 
 export const introContent = {

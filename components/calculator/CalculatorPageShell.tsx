@@ -30,10 +30,12 @@ type CalculatorPageShellProps = {
 export function createCalculatorMetadata(meta: {
   title: string;
   description: string;
+  keywords?: readonly string[];
 }): Metadata {
   return {
     title: `${meta.title} | BizMetricsHQ`,
     description: meta.description,
+    ...(meta.keywords ? { keywords: [...meta.keywords] } : {}),
   };
 }
 

@@ -6,11 +6,17 @@ import {
 } from "@/lib/industries/day-spa-calculators-shared";
 
 export const meta = {
-  title: "Day Spa Revenue Calculator & Annual Sales Estimator",
-  shortTitle: "Day Spa Revenue Calculator",
-  subtitle: "Project annual day spa revenue from therapists, appointment volume, and average ticket.",
+  title: "Spa Revenue Calculator — Free Day Spa Annual Sales Tool",
+  shortTitle: "Spa Revenue Calculator",
+  subtitle: "Use this spa revenue calculator to project annual sales from therapists, appointments, and average ticket.",
   description:
-    "Free day spa revenue calculator. Estimate annual spa revenue from therapists, appointments per day, average treatment value, and membership revenue.",
+    "Free spa revenue calculator for day spas. Estimate annual spa revenue from therapists, appointments per day, average treatment value, and membership revenue — median ~$750K.",
+  keywords: [
+    "spa revenue calculator",
+    "day spa revenue calculator",
+    "spa sales calculator",
+    "spa income calculator",
+  ],
 };
 
 export const introContent = {

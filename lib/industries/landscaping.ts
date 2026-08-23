@@ -1,9 +1,9 @@
 export const landscapingMeta = {
   slug: "landscaping",
   name: "Landscaping",
-  title: "Landscaping Industry Benchmarks",
+  title: "Landscaping Business Valuation: What Is a Company Worth?",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and business economics for landscaping businesses in the United States.",
+    "Landscaping businesses typically sell at 1.8×–2.8× SDE (median ~2.2×). Revenue, margins, owner salaries, and valuation multiples for U.S. landscaping companies.",
   dataVintage: "2025–2026",
   sampleSize: "280+ landscaping companies",
   geography: "United States",

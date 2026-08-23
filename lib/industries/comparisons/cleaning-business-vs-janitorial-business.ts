@@ -28,9 +28,9 @@ const janitorialKpis = {
 
 export const comparisonMeta = {
   slug: "cleaning-business-vs-janitorial-business",
-  title: "Cleaning Business vs Janitorial Business",
+  title: "Facilities Management Valuation: Cleaning vs Janitorial",
   subtitle:
-    "Compare revenue, profit margins, owner compensation, startup costs, contract scale, commercial focus, bonding requirements, scalability, and valuation benchmarks.",
+    "Facilities management company valuation side-by-side — cleaning vs janitorial revenue, margins, owner pay, startup costs, and SDE multiples (1.5×–3.0×).",
   dataVintage: "2025–2026",
 } as const;
 

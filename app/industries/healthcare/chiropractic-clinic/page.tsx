@@ -60,6 +60,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Chiropractic Clinic",
   profitabilitySeo,
   keywords: industryPageKeywords.chiropractic,
+  title: "Chiropractic Clinic Valuation: What Is a Practice Worth? (2.0×–3.5× SDE) | BizMetricsHQ",
+  description:
+    "Chiropractic clinic valuation typically runs 2.0×–3.5× SDE (median ~2.8×). A $500K clinic with strong SDE can clear $580K–$1M+. See 2026 multiples, revenue & owner pay.",
 });
 
 function HubSection({
@@ -509,8 +512,8 @@ export default function ChiropracticClinicHubPage() {
 
         <HubSection
           id="valuation"
-          title="Practice Valuation Center"
-          subtitle="Multiples and benchmarks used to value chiropractic clinics at sale or buy-in."
+          title="Chiropractic Clinic Valuation"
+          subtitle="SDE multiples of 2.0×–3.5× (median ~2.8×) — what buyers pay for independent clinics in 2026."
         >
           <ul className="mb-8 flex flex-wrap gap-2">
             {valuationTopics.map((topic) => (

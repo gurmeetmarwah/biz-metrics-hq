@@ -2,11 +2,11 @@ import type { ReportMeta, ReportSection } from "@/lib/industries/reports/types";
 
 export const reportMeta: ReportMeta = {
   slug: "chiropractic-clinic-valuation-2026",
-  title: "What Is A Chiropractic Practice Worth?",
+  title: "Chiropractic Clinic Valuation: What Is a Practice Worth?",
   subtitle:
-    "2026 valuation analysis for US chiropractic clinics — SDE multiples, revenue multiples, recurring revenue premiums, and transaction benchmarks for buyers, sellers, and advisors.",
+    "2026 chiropractic clinic valuation analysis — SDE multiples, revenue multiples, recurring revenue premiums, and transaction benchmarks for buyers, sellers, and advisors.",
   description:
-    "Chiropractic clinic valuation benchmarks for 2026: SDE multiples 2.0×-3.5× (median 2.8×), revenue multiples 0.5×-0.9×, and factors that drive premium vs. discount pricing.",
+    "Chiropractic clinic valuation for 2026: SDE multiples 2.0×–3.5× (median 2.8×), revenue multiples 0.5×–0.9×, and the factors that drive premium vs. discount pricing.",
   published: "June 2026",
   dataVintage: "2025–2026",
   readTime: "8 min",

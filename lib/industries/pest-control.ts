@@ -1,9 +1,9 @@
 export const pestControlMeta = {
   slug: "pest-control",
   name: "Pest Control",
-  title: "Pest Control Industry Benchmarks",
+  title: "Average Pest Control Business Profit Margin",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and business economics for pest control businesses in the United States.",
+    "Typical net margins run 15–25% (median ~18%). Learn how to increase pest control revenue with denser routes and higher recurring mix — plus owner pay and valuation benchmarks.",
   dataVintage: "2025–2026",
   sampleSize: "220+ pest control companies",
   geography: "United States",
@@ -29,6 +29,14 @@ export const industrySnapshotRatings = [
 
 export const industryInsights = [
   {
+    title: "Average margins beat most home services",
+    body: "The average pest control business profit margin runs 15–25% net (median ~18%) — among the strongest in home services when recurring routes and technician utilization stay high.",
+  },
+  {
+    title: "How to increase pest control revenue",
+    body: "Increase pest control revenue by lifting recurring contract mix toward 80–90%, densifying routes, cross-selling termite and mosquito programs, and expanding commercial accounts — the levers that separate median operators from top quartile.",
+  },
+  {
     title: "Predictable recurring revenue",
     body: "Pest control businesses generate predictable recurring revenue through ongoing service contracts and quarterly treatment plans — creating strong revenue visibility compared to project-based trades.",
   },
@@ -39,10 +47,6 @@ export const industryInsights = [
   {
     title: "Retention drives valuation",
     body: "The combination of recurring revenue and high retention rates typically leads to stronger business valuations compared to many other home service industries — a key reason private equity actively consolidates pest control.",
-  },
-  {
-    title: "Subscription model advantage",
-    body: "Quarterly treatment contracts, termite bonds, and mosquito programs create a subscription-like revenue engine that supports premium exit multiples and predictable cash flow for operators.",
   },
 ] as const;
 

@@ -6,12 +6,18 @@ import {
 } from "@/lib/industries/dental-calculators-shared";
 
 export const meta = {
-  title: "Dental Practice Valuation Calculator & SDE Multiple Tool",
+  title: "Dental Practice Valuation Calculator — Free SDE Multiple Tool",
   shortTitle: "Dental Practice Valuation Calculator",
   subtitle:
-    "Estimate what your dental practice is worth using SDE multiples and revenue benchmarks.",
+    "Dental practice valuation calculator: estimate what your practice is worth using SDE multiples and revenue benchmarks.",
   description:
-    "Free dental practice valuation calculator using SDE and revenue multiples. Compare your practice's estimated value against industry benchmarks for general dentistry.",
+    "Free dental practice valuation calculator. Estimate practice value with SDE and revenue multiples (typically 3.2×–4.5× SDE, median ~3.8×) against general dentistry benchmarks.",
+  keywords: [
+    "dental practice valuation calculator",
+    "dental practice valuation",
+    "dental practice worth calculator",
+    "dental SDE multiple",
+  ],
 };
 
 export const introContent = {

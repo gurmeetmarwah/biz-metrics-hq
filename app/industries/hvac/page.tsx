@@ -50,9 +50,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "HVAC",
   profitabilitySeo,
   keywords: industryPageKeywords.hvac,
-  title: "Are HVAC Businesses Profitable? (8–16% Margins) | BizMetricsHQ",
+  title: "HVAC Business Owner Salary: How Much Do Owners Make? ($95K–$185K) | BizMetricsHQ",
   description:
-    "Are HVAC businesses profitable? Yes — typical net margins are 8–16% (median ~12%), or about $190K–$380K profit on $2.4M revenue. See 2026 owner pay, contracts & valuation.",
+    "HVAC business owner salary typically runs $95K–$185K (median ~$145K). Multi-location owners can clear $350K+. See 2026 pay ladders, profit margins, and valuation benchmarks.",
 });
 
 function HubSection({
@@ -253,8 +253,8 @@ export default function HvacHubPage() {
 
         <HubSection
           id="owner-economics"
-          title="How Much Do HVAC Owners Make?"
-          subtitle="Owner compensation by business size — small operator, median company, and multi-location owner."
+          title="HVAC Business Owner Salary: How Much Do Owners Make?"
+          subtitle="Owner compensation ladder — solo operators ~$95K–$120K, median ~$145K, multi-location $185K–$350K+."
         >
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {ownerEconomicsCards.map((item) => (

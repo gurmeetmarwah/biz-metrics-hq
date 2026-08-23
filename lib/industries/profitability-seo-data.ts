@@ -95,16 +95,16 @@ const [hvacHowSection, hvacMarginSection, hvacAreSection, hvacProfitSection] =
 const [hvacHowFaq, hvacMarginFaq, hvacAreFaq, hvacProfitFaq] =
   hvacProfitabilitySeoBase.faqs;
 
-/** CTR-led primary question matches Search Console long-tail: are hvac businesses profitable */
+/** CTR-led primary question matches Search Console long-tail: are hvac businesses profitable / average hvac profit margin */
 export const hvacProfitabilitySeo = {
   ...hvacProfitabilitySeoBase,
-  lead: "Are HVAC businesses profitable? Yes — healthy operators keep 8–16% net (median ~12%), typically $190K–$380K a year. The gap widens when maintenance mix and payroll stay in range.",
-  sectionTitle: "Are HVAC Businesses Profitable?",
+  lead: "What is the average HVAC profit margin? Healthy operators keep 8–16% net (median ~12%) — typically $190K–$380K a year at median $2.4M revenue.",
+  sectionTitle: "What Is the Average HVAC Profit Margin?",
   sectionSubtitle:
-    "Typical net margin 8–16% (median ~12%) — about $190K–$380K profit on $2.4M revenue, plus owner pay and valuation multiples.",
+    "Typical net margin 8–16% (median ~12%) — about $190K–$380K profit on $2.4M revenue, plus owner salary and valuation multiples.",
   faqSectionTitle: "HVAC Profitability FAQs",
-  sections: [hvacAreSection, hvacHowSection, hvacMarginSection, hvacProfitSection],
-  faqs: [hvacAreFaq, hvacHowFaq, hvacMarginFaq, hvacProfitFaq],
+  sections: [hvacMarginSection, hvacAreSection, hvacHowSection, hvacProfitSection],
+  faqs: [hvacMarginFaq, hvacAreFaq, hvacHowFaq, hvacProfitFaq],
 };
 
 export const plumbingProfitabilitySeo = buildProfitabilitySeo({
@@ -122,11 +122,11 @@ export const plumbingProfitabilitySeo = buildProfitabilitySeo({
   costDriver: "plumber payroll and materials stay in benchmark ranges",
 });
 
-export const electricalProfitabilitySeo = buildProfitabilitySeo({
+const electricalProfitabilitySeoBase = buildProfitabilitySeo({
   businessPhrase: "an electrical business",
-  companiesPhrase: "electrical companies",
-  profitEntityPhrase: "an electrical company",
-  marginPhrase: "electrical profit margin",
+  companiesPhrase: "electrical businesses",
+  profitEntityPhrase: "an electrical business",
+  marginPhrase: "electrician profit margin",
   marginRange: "7 – 14%",
   medianMargin: "10%",
   topMargin: "15 – 18%",
@@ -136,6 +136,27 @@ export const electricalProfitabilitySeo = buildProfitabilitySeo({
   medianProfit: "$200K",
   costDriver: "technician payroll and job costing stay disciplined",
 });
+
+const [
+  elecHowSection,
+  elecMarginSection,
+  elecAreSection,
+  elecProfitSection,
+] = electricalProfitabilitySeoBase.sections;
+const [elecHowFaq, elecMarginFaq, elecAreFaq, elecProfitFaq] =
+  electricalProfitabilitySeoBase.faqs;
+
+/** CTR-led: how profitable is electrical business / electrician profit margin */
+export const electricalProfitabilitySeo = {
+  ...electricalProfitabilitySeoBase,
+  lead: "How profitable is an electrical business? Yes — healthy contractors keep 7–14% net (median ~10%), typically $140K–$280K a year at median $2.0M revenue.",
+  sectionTitle: "How Profitable Is an Electrical Business?",
+  sectionSubtitle:
+    "Typical electrician profit margin 7–14% (median ~10%) — about $140K–$280K profit on $2.0M revenue, plus owner pay and valuation.",
+  faqSectionTitle: "Electrical Profitability FAQs",
+  sections: [elecHowSection, elecMarginSection, elecProfitSection, elecAreSection],
+  faqs: [elecHowFaq, elecMarginFaq, elecProfitFaq, elecAreFaq],
+};
 
 export const roofingProfitabilitySeo = buildProfitabilitySeo({
   businessPhrase: "a roofing business",
@@ -167,12 +188,12 @@ export const landscapingProfitabilitySeo = buildProfitabilitySeo({
   costDriver: "route density and crew labor stay efficient",
 });
 
-export const pestControlProfitabilitySeo = buildProfitabilitySeo({
+const pestControlProfitabilitySeoBase = buildProfitabilitySeo({
   businessPhrase: "a pest control business",
-  companiesPhrase: "pest control companies",
-  profitEntityPhrase: "a pest control company",
-  marginPhrase: "pest control profit margin",
-  marginRange: "14 – 24%",
+  companiesPhrase: "pest control businesses",
+  profitEntityPhrase: "a pest control business",
+  marginPhrase: "pest control business profit margin",
+  marginRange: "15 – 25%",
   medianMargin: "18%",
   topMargin: "25 – 30%",
   grossMargin: "55 – 65%",
@@ -181,6 +202,27 @@ export const pestControlProfitabilitySeo = buildProfitabilitySeo({
   medianProfit: "$162K",
   costDriver: "recurring routes and technician utilization stay strong",
 });
+
+const [
+  pestHowSection,
+  pestMarginSection,
+  pestAreSection,
+  pestProfitSection,
+] = pestControlProfitabilitySeoBase.sections;
+const [pestHowFaq, pestMarginFaq, pestAreFaq, pestProfitFaq] =
+  pestControlProfitabilitySeoBase.faqs;
+
+/** CTR-led primary question matches: average pest control business profit margin */
+export const pestControlProfitabilitySeo = {
+  ...pestControlProfitabilitySeoBase,
+  lead: "What is the average pest control business profit margin? Healthy operators keep 15–25% net (median ~18%) — about $125K–$215K a year at median $900K revenue.",
+  sectionTitle: "What Is the Average Pest Control Business Profit Margin?",
+  sectionSubtitle:
+    "Typical net margin 15–25% (median ~18%) — plus how to increase pest control revenue with denser routes and higher recurring mix.",
+  faqSectionTitle: "Pest Control Profitability FAQs",
+  sections: [pestMarginSection, pestHowSection, pestProfitSection, pestAreSection],
+  faqs: [pestMarginFaq, pestHowFaq, pestProfitFaq, pestAreFaq],
+};
 
 const cleaningBusinessProfitabilitySeoBase = buildProfitabilitySeo({
   businessPhrase: "a cleaning business",

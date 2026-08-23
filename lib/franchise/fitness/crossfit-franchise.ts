@@ -25,9 +25,9 @@ export const crossfitFranchiseGuide: HomeServicesFranchiseGuideData = {
     slug: "crossfit",
     categoryLabel: "Fitness",
     shortName: "CrossFit",
-    title: "Best CrossFit Franchise 2026: Affiliate vs F45 Costs, ROI & Brands",
+    title: "CrossFit Franchise Guide 2026: Affiliate vs F45 Costs, ROI & Brands",
     subtitle:
-      "Find the best CrossFit or functional fitness franchise — compare CrossFit Affiliate, F45, 9Round, and D1. See startup costs, dues vs royalties, profit margins, and ROI before you buy.",
+      "CrossFit franchise options compared — CrossFit Affiliate, F45, 9Round, and D1. See startup costs, dues vs royalties, profit margins, owner income, and ROI before you buy.",
     dataVintage: "2025–2026",
     sampleSize: "CrossFit affiliates and leading U.S. functional fitness / HIIT franchise systems",
     kpiDashboardTitle: "CrossFit Franchise KPIs",

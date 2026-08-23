@@ -60,6 +60,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Landscaping",
   profitabilitySeo,
   keywords: industryPageKeywords.landscaping,
+  title: "Landscaping Business Valuation: What Is a Company Worth? (1.8×–2.8× SDE) | BizMetricsHQ",
+  description:
+    "Landscaping business valuation typically runs 1.8×–2.8× SDE (median ~2.2×). A $1.1M company with strong SDE can clear $360K–$560K+. See 2026 multiples, margins & owner pay.",
 });
 
 function HubSection({
@@ -336,8 +339,8 @@ export default function LandscapingHubPage() {
 
         <HubSection
           id="valuation"
-          title="Landscaping Business Valuation Multiples"
-          subtitle="SDE, EBITDA, and revenue multiples used to value landscaping companies at sale."
+          title="Landscaping Business Valuation"
+          subtitle="SDE multiples of 1.8×–2.8× (median ~2.2×) — what buyers pay for landscaping companies in 2026."
         >
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {valuationMultiples.map((row) => (

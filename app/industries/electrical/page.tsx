@@ -56,6 +56,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Electrical",
   profitabilitySeo,
   keywords: industryPageKeywords.electrical,
+  title: "How Profitable Is an Electrical Business? (7–14% Margins) | BizMetricsHQ",
+  description:
+    "How profitable is an electrical business? Typical electrician profit margins are 7–14% (median ~10%), or about $140K–$280K on $2.0M revenue. See 2026 owner pay & valuation.",
 });
 
 function HubSection({

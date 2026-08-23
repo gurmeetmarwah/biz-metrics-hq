@@ -21,7 +21,7 @@ export const allDentalCalculators = [
   {
     label: "Dental Practice Valuation Calculator",
     href: "/calculators/dental-practice-valuation/",
-    description: "Estimate practice value using SDE multiples.",
+    description: "Free dental practice valuation calculator using SDE multiples.",
   },
   {
     label: "EBITDA Calculator",

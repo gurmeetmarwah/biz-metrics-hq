@@ -33,9 +33,9 @@ export const hubMeta = {
   slug: "landscaping",
   parentSlug: "",
   parentLabel: "Industries",
-  title: "Landscaping Industry Benchmarks",
+  title: "Landscaping Business Valuation: What Is a Company Worth?",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and business economics for landscaping businesses.",
+    "Landscaping businesses typically sell at 1.8×–2.8× SDE (median ~2.2×). See 2026 valuation multiples, revenue, margins, and owner-pay benchmarks.",
   dataVintage: "2025–2026",
   sampleSize: "280+ landscaping companies",
 };
@@ -89,10 +89,10 @@ export const businessScorecard = {
 } as const;
 
 export const searchQuickLinks = [
-  { label: "HVAC", href: "/industries/hvac/" },
-  { label: "Plumbing", href: "/industries/plumbing/" },
-  { label: "Roofing", href: "/industries/roofing/" },
-  { label: "Pest Control", href: "/industries/pest-control/" },
+  { label: "Business Valuation", href: "#valuation" },
+  { label: "Revenue", href: "#revenue-benchmark" },
+  { label: "Profit Margin", href: "#profitability" },
+  { label: "Owner Pay", href: "#owner-economics" },
 ] as const;
 
 export const hubSectionNav = [
@@ -160,6 +160,11 @@ export const relatedHomeServiceIndustries = [
 ] as const;
 
 const baseFaqs = [
+  {
+    question: "What is a landscaping business valuation?",
+    answer:
+      "Landscaping business valuation typically uses SDE multiples of 1.8×–2.8× (median ~2.2×). A company with $1.1M revenue and $200K SDE might value between $360K and $560K. Transferable maintenance contracts and low owner dependence command premium multiples.",
+  },
   {
     question: "How profitable is a landscaping business?",
     answer:

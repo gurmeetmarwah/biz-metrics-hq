@@ -66,6 +66,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Pest Control",
   profitabilitySeo,
   keywords: industryPageKeywords.pestControl,
+  title: "Average Pest Control Business Profit Margin (15–25%) | BizMetricsHQ",
+  description:
+    "Average pest control business profit margin is typically 15–25% (median ~18%). See how to increase pest control revenue with denser routes, plus owner pay & valuation for 2026.",
 });
 
 function HubSection({
@@ -179,8 +182,8 @@ export default function PestControlHubPage() {
 
         <HubSection
           id="revenue-benchmark"
-          title="Average Pest Control Revenue"
-          subtitle="Annual revenue percentiles for owner-operated pest control companies."
+          title="How to Increase Pest Control Revenue"
+          subtitle="Median revenue ~$900K — raise it with denser routes, higher recurring mix, and commercial expansion."
         >
           <div className="overflow-hidden rounded-2xl border border-border bg-surface">
             <table className="w-full text-sm">

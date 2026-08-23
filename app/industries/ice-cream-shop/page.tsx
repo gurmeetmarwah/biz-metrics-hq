@@ -67,6 +67,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Ice Cream Shop",
   profitabilitySeo,
   keywords: industryPageKeywords.iceCream,
+  title: "Ice Cream Business Valuation Multiples (2.0×–3.5× SDE) | BizMetricsHQ",
+  description:
+    "Ice cream business valuation multiples typically run 2.0×–3.5× SDE (median ~2.8×). See 2026 revenue, profit margins, and owner-pay benchmarks for ice cream shops.",
 });
 
 function HubSection({
@@ -320,8 +323,8 @@ export default function IceCreamShopHubPage() {
 
         <HubSection
           id="valuation"
-          title="Business Valuation"
-          subtitle="SDE, EBITDA, and revenue multiples used to value ice cream shops at sale."
+          title="Ice Cream Business Valuation Multiples"
+          subtitle="SDE 2.0×–3.5× (median ~2.8×), EBITDA 2.8×–4.2×, and revenue multiples used to value ice cream shops."
         >
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {valuationMultiples.map((row) => (

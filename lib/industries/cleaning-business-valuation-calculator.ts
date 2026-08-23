@@ -6,12 +6,18 @@ import {
 } from "@/lib/industries/cleaning-business-calculators-shared";
 
 export const meta = {
-  title: "Cleaning Business Valuation Calculator & SDE Multiple Tool",
-  shortTitle: "Cleaning Business Valuation Calculator",
+  title: "Facilities Management Company Valuation Calculator (Cleaning & Janitorial)",
+  shortTitle: "Facilities Management / Cleaning Valuation",
   subtitle:
-    "Estimate what your cleaning company is worth using SDE multiples and revenue benchmarks.",
+    "Estimate facilities management company valuation for cleaning and janitorial operators using SDE multiples.",
   description:
-    "Free cleaning business valuation calculator using SDE and revenue multiples. Compare your company's estimated value against industry benchmarks for cleaning operators.",
+    "Free facilities management company valuation calculator for cleaning and janitorial businesses. Estimate value at 1.8×–3.0× SDE (median ~2.4×) against operator benchmarks.",
+  keywords: [
+    "facilities management company valuation",
+    "facility management valuation",
+    "cleaning business valuation",
+    "janitorial business valuation",
+  ],
 };
 
 export const introContent = {

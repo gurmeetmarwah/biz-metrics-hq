@@ -29,9 +29,9 @@ export const daySpaIndustryAverages = {
 
 export const allDaySpaCalculators = [
   {
-    label: "Day Spa Revenue Calculator",
+    label: "Spa Revenue Calculator",
     href: "/calculators/day-spa-revenue/",
-    description: "Project annual revenue from therapists, appointment volume, and average ticket.",
+    description: "Free spa revenue calculator — project annual day spa sales.",
   },
   {
     label: "Day Spa Profit Margin Calculator",

@@ -6,8 +6,9 @@ import {
 } from "@/lib/industries/comparisons/cleaning-business-vs-janitorial-business";
 
 export const metadata: Metadata = {
-  title: `${comparisonMeta.title} — Revenue, Margins & Valuation | BizMetricsHQ`,
-  description: comparisonMeta.subtitle,
+  title: "Facilities Management Company Valuation: Cleaning vs Janitorial | BizMetricsHQ",
+  description:
+    "Facilities management company valuation compared — cleaning vs janitorial SDE multiples, revenue, margins, and owner pay. See which model commands stronger exit value.",
 };
 
 export default function Page() {

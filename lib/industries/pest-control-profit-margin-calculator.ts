@@ -7,12 +7,18 @@ import {
 } from "@/lib/industries/pest-control-calculators-shared";
 
 export const meta = {
-  title: "Pest Control Profit Margin Calculator & Industry Benchmark Tool",
+  title: "Average Pest Control Business Profit Margin Calculator",
   shortTitle: "Pest Control Profit Margin Calculator",
   subtitle:
-    "Calculate your pest control company's profit margin and compare it against industry benchmarks.",
+    "See the average pest control business profit margin — calculate yours and compare to the 15–25% industry range.",
   description:
-    "Free pest control profit margin calculator with industry benchmarks, cost diagnostics, and quartile comparison. See how your payroll, chemicals, and fleet costs stack up against 220+ pest control businesses.",
+    "Average pest control business profit margin is typically 15–25% (median ~18%). Free calculator with cost diagnostics vs 220+ pest control businesses.",
+  keywords: [
+    "average pest control business profit margin",
+    "pest control profit margin",
+    "pest control profit margin calculator",
+    "pest control net margin",
+  ],
 };
 
 export const introContent = {

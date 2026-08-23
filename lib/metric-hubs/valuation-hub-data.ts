@@ -1,9 +1,9 @@
 import { sortByValuation } from "./industry-benchmarks";
 
 export const valuationHubMeta = {
-  title: "Business Valuation Benchmarks for Small Business Owners",
+  title: "Business Valuation Benchmarks — Including Facilities Management Multiples",
   subtitle:
-    "See what businesses are worth—and how understanding cash flow vs profitability for owners shapes what buyers will pay.",
+    "See what businesses are worth — from HVAC and landscaping to facilities management / janitorial — and how cash flow vs profitability shapes what buyers will pay.",
   dataVintage: "2025–2026",
   sampleSize: "350+ businesses",
 } as const;
@@ -21,7 +21,12 @@ export const valuationIndustryCards = [
   { label: "Plumbing Valuation", href: "/industries/plumbing/#valuation", multiple: "2.8× SDE" },
   { label: "Pest Control Valuation", href: "/industries/pest-control/#valuation", multiple: "3.2× SDE" },
   { label: "Electrical Valuation", href: "/industries/electrical/#valuation", multiple: "2.8× SDE" },
-  { label: "Landscaping Valuation", href: "/industries/landscaping/#valuation", multiple: "2.2× SDE" },
+  { label: "Landscaping Business Valuation", href: "/industries/landscaping/#valuation", multiple: "2.2× SDE" },
+  {
+    label: "Facilities Management / Cleaning Valuation",
+    href: "/calculators/cleaning-business-valuation/",
+    multiple: "2.4× SDE",
+  },
 ] as const;
 
 export const valuationDrivers = [

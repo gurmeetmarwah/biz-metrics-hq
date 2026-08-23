@@ -32,9 +32,9 @@ export const hubMeta = {
   slug: "electrical",
   parentSlug: "",
   parentLabel: "Industries",
-  title: "Electrical Industry Benchmarks",
+  title: "How Profitable Is an Electrical Business?",
   subtitle:
-    "Revenue, profit margins, owner salaries, valuation multiples, and key economics for electrical contracting businesses.",
+    "Typical electrician profit margins run 7–14% (median ~10%) — about $140K–$280K profit on $2.0M revenue. See 2026 owner pay, revenue per electrician, and valuation.",
   dataVintage: "2025–2026",
   sampleSize: "340+ electrical contracting businesses",
 };
@@ -88,10 +88,10 @@ export const businessScorecard = {
 } as const;
 
 export const searchQuickLinks = [
-  { label: "HVAC", href: "/industries/hvac/" },
-  { label: "Plumbing", href: "/industries/plumbing/" },
-  { label: "Roofing", href: "/industries/roofing/" },
-  { label: "Landscaping", href: "/industries/landscaping/" },
+  { label: "Profit Margin", href: "#profitability" },
+  { label: "Revenue", href: "#revenue-benchmark" },
+  { label: "Owner Pay", href: "#owner-economics" },
+  { label: "Valuation", href: "#valuation" },
 ] as const;
 
 export const hubSectionNav = [
@@ -156,6 +156,11 @@ const baseFaqs = [
     question: "How profitable is an electrical business?",
     answer:
       "Healthy electrical contracting companies typically achieve 7–13% net profit margin, with a median around 10%. Top-quartile operators with strong commercial mix, maintenance contracts, and disciplined labor management can reach 14–17%. Gross margins usually run 40–50% before overhead.",
+  },
+  {
+    question: "What is the average electrician profit margin?",
+    answer:
+      "The average electrician profit margin (contractor net margin) is typically 7–14%, with a median near 10%. Top crews reach 15–18% when job costing and technician payroll stay disciplined. Thin margins often signal underpriced bids or materials bleed.",
   },
   {
     question: "How much revenue does an electrical contractor generate?",

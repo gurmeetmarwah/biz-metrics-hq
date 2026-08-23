@@ -77,7 +77,7 @@ export const franchiseCategories: readonly FranchiseCategory[] = [
       { label: "Gym Franchise", slug: "gym", href: franchiseHref("fitness", "gym") },
       { label: "Pilates Franchise", slug: "pilates", href: franchiseHref("fitness", "pilates") },
       { label: "Top Yoga Franchises", slug: "yoga", href: franchiseHref("fitness", "yoga") },
-      { label: "CrossFit Affiliate", slug: "crossfit", href: franchiseHref("fitness", "crossfit") },
+      { label: "CrossFit Franchise", slug: "crossfit", href: franchiseHref("fitness", "crossfit") },
       { label: "Swim School Franchise", slug: "swim-school", href: franchiseHref("fitness", "swim-school") },
     ],
   },

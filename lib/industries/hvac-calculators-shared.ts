@@ -58,12 +58,12 @@ export const hvacDataLinks = [
   {
     label: "Are HVAC Businesses Profitable?",
     href: "/industries/hvac/#profitability",
-    description: "Yes — 8–16% net margins (median ~12%), plus cost structure benchmarks.",
+    description: "Average HVAC profit margin 8–16% net (median ~12%), plus cost structure.",
   },
   {
-    label: "HVAC Owner Salary",
+    label: "HVAC Business Owner Salary",
     href: "/industries/hvac/#owner-economics",
-    description: "What HVAC owners earn by company size.",
+    description: "HVAC business owner salary typically $95K–$185K (median ~$145K).",
   },
   {
     label: "HVAC Valuation Multiples",

@@ -1,9 +1,9 @@
 export const hvacMeta = {
   slug: "hvac",
   name: "HVAC",
-  title: "Are HVAC Businesses Profitable?",
+  title: "HVAC Business Owner Salary: How Much Do Owners Make?",
   subtitle:
-    "Yes — typical net margins run 8–16% (median ~12%). Revenue, owner salaries, valuation multiples, and key economics for HVAC companies in the United States.",
+    "HVAC business owner salary typically runs $95K–$185K (median ~$145K). Revenue, margins, valuation multiples, and key economics for HVAC companies in the United States.",
   dataVintage: "2025–2026",
   sampleSize: "420+ HVAC businesses",
   geography: "United States",

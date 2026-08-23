@@ -20,7 +20,7 @@ export const allChiropracticCalculators = [
   {
     label: "Chiropractic Clinic Valuation Calculator",
     href: "/calculators/chiropractic-clinic-valuation/",
-    description: "Estimate clinic value using SDE multiples.",
+    description: "Free chiropractic clinic valuation calculator using SDE multiples.",
   },
   {
     label: "Revenue Per Patient Calculator",

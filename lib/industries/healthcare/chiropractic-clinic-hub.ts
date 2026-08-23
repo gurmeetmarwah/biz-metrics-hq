@@ -25,9 +25,9 @@ export const hubMeta = {
   slug: "chiropractic-clinic",
   parentSlug: "healthcare",
   parentLabel: "Healthcare",
-  title: "Chiropractic Clinic Economics & Benchmarks",
+  title: "Chiropractic Clinic Valuation: What Is a Practice Worth?",
   subtitle:
-    "Explore chiropractic clinic revenue, profit margins, owner compensation, practice valuations, startup costs, and patient economics.",
+    "Independent clinics typically sell at 2.0×–3.5× SDE (median ~2.8×). See 2026 valuation multiples, revenue, owner pay, and patient economics.",
   dataVintage: "2025–2026",
   sampleSize: "160+ chiropractic clinics",
 };
@@ -95,10 +95,10 @@ export const businessScorecard = {
 } as const;
 
 export const searchQuickLinks = [
+  { label: "Clinic Valuation", href: "#valuation" },
   { label: "Revenue", href: "#revenue-benchmark" },
   { label: "Profit Margin", href: "#profitability" },
   { label: "Owner Salary", href: "#owner-economics" },
-  { label: "Valuation", href: "#valuation" },
 ] as const;
 
 export const industrySnapshot = quickSummary;
@@ -168,7 +168,7 @@ export const exploreTopics = [
 export const hubCalculators = [
   {
     label: "Chiropractic Clinic Valuation Calculator",
-    description: "Estimate practice value",
+    description: "Estimate chiropractic clinic valuation with SDE multiples",
     href: "/calculators/chiropractic-clinic-valuation/",
   },
   {
@@ -259,6 +259,7 @@ export const relatedHealthcareIndustries = [
 ] as const;
 
 export const popularMetrics = [
+  { label: "Chiropractic Clinic Valuation", href: "#valuation" },
   { label: "Chiropractic Revenue Benchmarks", href: "#revenue-benchmark" },
   { label: "Chiropractic Profit Margins", href: "#profitability" },
   { label: "Chiropractic Owner Compensation", href: "#owner-economics" },
@@ -270,6 +271,11 @@ export const popularMetrics = [
 export { industryInsights } from "@/lib/industries/healthcare/chiropractic-reports";
 
 const baseFaqs = [
+  {
+    question: "What is a chiropractic clinic valuation?",
+    answer:
+      "Chiropractic clinic valuation is typically based on SDE multiples of 2.0×–3.5× (median ~2.8×). A clinic with $500K revenue and $200K SDE might be valued around $560K. Strong recurring revenue, membership programs, and cash-pay mix command the high end of the range.",
+  },
   {
     question: "How profitable are chiropractic clinics?",
     answer:

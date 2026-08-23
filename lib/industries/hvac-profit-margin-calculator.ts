@@ -7,12 +7,18 @@ import {
 } from "@/lib/industries/hvac-calculators-shared";
 
 export const meta = {
-  title: "Are HVAC Businesses Profitable? Free Profit Margin Calculator",
-  shortTitle: "HVAC Profit Calculator",
+  title: "Average HVAC Profit Margin Calculator — Free Benchmark Tool",
+  shortTitle: "Average HVAC Profit Margin Calculator",
   subtitle:
-    "See if your HVAC business is profitable — calculate net margin and compare against the 8–16% industry range.",
+    "See the average HVAC profit margin — calculate yours and compare to the 8–16% industry range (median ~12%).",
   description:
-    "Are HVAC businesses profitable? Free calculator with 420+ operator benchmarks. Enter payroll, materials, and overhead to see your margin vs the 8–16% healthy range (median ~12%).",
+    "Average HVAC profit margin is typically 8–16% net (median ~12%). Free calculator with 420+ operator benchmarks — enter payroll, materials, and overhead to see where you stand.",
+  keywords: [
+    "average hvac profit margin",
+    "hvac profit margin",
+    "hvac profit margin calculator",
+    "are hvac businesses profitable",
+  ],
 };
 
 export const introContent = {
