@@ -19,9 +19,9 @@ export const hubMeta = {
   slug: "dental-practice",
   parentSlug: "healthcare",
   parentLabel: "Healthcare",
-  title: "Business Metrics for Dentists: Revenue, Margins & Valuation",
+  title: "Dental Practice Revenue & Business Metrics for Dentists",
   subtitle:
-    "The core business metrics for dentists — median collections ~$1.8M, EBITDA 18–30%, owner pay, startup costs, and practice valuation multiples for 2026.",
+    "Dental practice revenue averages ~$1.8M in collections (range $1.2M–$2.6M). See margins, owner pay, valuation, and the key business metrics dentists track in 2026.",
   dataVintage: "2025–2026",
   sampleSize: "310+ dental practices",
 };
@@ -250,6 +250,11 @@ export const popularMetrics = [
 ] as const;
 
 const baseFaqs = [
+  {
+    question: "What is typical dental practice revenue?",
+    answer:
+      "Dental practice revenue (collections) typically runs $1.2M–$2.6M annually for general practices, with a median around $1.8M. Solo practices often collect $800K–$1.4M; multi-dentist groups push $2.2M–$3.5M+. Revenue per operatory averages $350K–$550K per year.",
+  },
   {
     question: "What are the key business metrics for dentists?",
     answer:

@@ -7,12 +7,18 @@ import {
 } from "@/lib/industries/cleaning-business-calculators-shared";
 
 export const meta = {
-  title: "Is a Cleaning Business Profitable? Free Profit Margin Calculator",
-  shortTitle: "Cleaning Business Profit Calculator",
+  title: "Cleaning Business Profit Margins Calculator — Free Benchmark Tool",
+  shortTitle: "Cleaning Business Profit Margins Calculator",
   subtitle:
-    "See if your cleaning business is profitable — calculate net margin and compare against the 10–20% industry range.",
+    "Calculate cleaning business profit margins and compare against the 10–20% industry range (median ~15%).",
   description:
-    "Is a cleaning business profitable? Free calculator with 190+ operator benchmarks. Enter payroll, supplies, and overhead to see your margin vs the 10–20% healthy range (median ~15%).",
+    "Free cleaning business profit margins calculator. Typical net margins are 10–20% (median ~15%). Enter payroll, supplies, and overhead vs 190+ operator benchmarks.",
+  keywords: [
+    "cleaning business profit margins",
+    "cleaning business profit margin",
+    "is a cleaning business profitable",
+    "cleaning company profit margin",
+  ],
 };
 
 export const introContent = {

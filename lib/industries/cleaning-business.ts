@@ -1,9 +1,9 @@
 export const cleaningBusinessMeta = {
   slug: "cleaning-business",
   name: "Cleaning Business",
-  title: "Is a Cleaning Business Profitable?",
+  title: "Cleaning Business Profit Margins: What's Typical in 2026?",
   subtitle:
-    "Yes — typical net margins run 10–20% (median ~15%). Revenue, owner salaries, valuation multiples, and business economics for cleaning businesses in the United States.",
+    "Cleaning business profit margins typically run 10–20% net (median ~15%). Revenue, owner salaries, valuation multiples, and business economics for cleaning businesses in the United States.",
   dataVintage: "2025–2026",
   sampleSize: "190+ cleaning businesses",
   geography: "United States",

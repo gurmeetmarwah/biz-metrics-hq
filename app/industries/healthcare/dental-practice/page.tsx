@@ -55,9 +55,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Dental Practice",
   profitabilitySeo,
   keywords: industryPageKeywords.dental,
-  title: "Business Metrics for Dentists: Revenue, Margins & Valuation | BizMetricsHQ",
+  title: "Dental Practice Revenue: Median $1.8M Collections (2026) | BizMetricsHQ",
   description:
-    "Business metrics for dentists in 2026: median collections ~$1.8M, EBITDA 18–30%, owner pay ~$285K, and practice valuation at 3.2×–4.5× SDE. Benchmarks from 310+ practices.",
+    "Dental practice revenue benchmarks for 2026: median collections ~$1.8M ($1.2M–$2.6M range), plus EBITDA margins, owner pay, and valuation multiples from 310+ practices.",
 });
 
 function HubSection({
@@ -194,8 +194,8 @@ export default function DentalPracticeHubPage() {
 
         <HubSection
           id="revenue-benchmark"
-          title="Revenue Benchmark Center"
-          subtitle="Annual collections benchmarks by practice type, dentist count, and operatory count."
+          title="Dental Practice Revenue Benchmarks"
+          subtitle="Annual collections percentiles — median dental practice revenue ~$1.8M ($1.2M–$2.6M typical range)."
           className="bg-surface-muted/50"
         >
           <RevenueBenchmarkCenter groups={revenueBenchmarkGroups} />

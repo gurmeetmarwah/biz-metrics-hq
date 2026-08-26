@@ -2,11 +2,11 @@ import type { ReportMeta, ReportSection } from "@/lib/industries/reports/types";
 
 export const reportMeta: ReportMeta = {
   slug: "dental-practice-revenue-2026",
-  title: "How Much Revenue Does a Dental Practice Generate?",
+  title: "Dental Practice Revenue: How Much Do Practices Collect?",
   subtitle:
-    "2026 analysis of US dental practice collections by practice type, size, operatory count, and payer mix — with market context for investors and operators.",
+    "2026 analysis of US dental practice revenue by practice type, size, operatory count, and payer mix — with market context for investors and operators.",
   description:
-    "Dental practice revenue benchmarks for 2026: median $1.8M collections, revenue by specialty and size, operatory economics, and US dental services market sizing.",
+    "Dental practice revenue benchmarks for 2026: median $1.8M collections ($1.2M–$2.6M range), revenue by specialty and size, operatory economics, and US dental services market sizing.",
   published: "June 2026",
   dataVintage: "2025–2026",
   readTime: "7 min",

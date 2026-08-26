@@ -254,25 +254,33 @@ const isCleaningProfitable = {
     "Is a cleaning business profitable? Yes — healthy operators keep 10–20% net (median ~15%), typically $50K–$100K a year at median $500K revenue. Top crews reach 21–25% when labor utilization and route density stay high.",
 } as const;
 
-/** CTR-led primary question matches Search Console long-tail: is a cleaning business profitable */
+const cleaningMargins = {
+  heading: "What are typical cleaning business profit margins?",
+  answer:
+    "Cleaning business profit margins typically run 10–20% net (median ~15%), or about $50K–$100K a year at median $500K revenue. Top crews reach 21–25% when labor utilization and route density stay high; thin margins usually mean payroll bloat or weak contract retention.",
+} as const;
+
+/** CTR-led for Search Console: cleaning business profit margins (+ is profitable) */
 export const cleaningBusinessProfitabilitySeo = {
   ...cleaningBusinessProfitabilitySeoBase,
-  lead: "Is a cleaning business profitable? Yes — most clear 10–20% net profit (median ~15%), or about $50K–$100K a year. The real gap is between average operators and those who nail route density.",
-  sectionTitle: "Is a Cleaning Business Profitable?",
+  lead: "Cleaning business profit margins typically run 10–20% net (median ~15%) — about $50K–$100K a year. The gap between average and top operators is mostly route density and labor control.",
+  sectionTitle: "Cleaning Business Profit Margins",
   sectionSubtitle:
-    "Typical net margin 10–20% (median ~15%) — about $50K–$100K profit on $500K revenue, plus owner pay and valuation multiples.",
-  faqSectionTitle: "Cleaning Business Profitability FAQs",
+    "Typical net margins 10–20% (median ~15%) — about $50K–$100K profit on $500K revenue, plus owner pay and valuation multiples.",
+  faqSectionTitle: "Cleaning Business Profit Margin FAQs",
   sections: [
+    { heading: cleaningMargins.heading, answer: cleaningMargins.answer },
     { heading: isCleaningProfitable.heading, answer: isCleaningProfitable.answer },
-    cleaningHowSection,
     cleaningMarginSection,
+    cleaningHowSection,
     cleaningProfitSection,
     cleaningAreSection,
   ],
   faqs: [
+    { question: cleaningMargins.heading, answer: cleaningMargins.answer },
     { question: isCleaningProfitable.heading, answer: isCleaningProfitable.answer },
-    cleaningHowFaq,
     cleaningMarginFaq,
+    cleaningHowFaq,
     cleaningProfitFaq,
     cleaningAreFaq,
   ],

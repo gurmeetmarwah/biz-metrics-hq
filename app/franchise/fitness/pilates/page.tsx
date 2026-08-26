@@ -7,6 +7,8 @@ export const metadata: Metadata = buildFranchiseGuideMetadata({
   title: pilatesFranchiseGuide.meta.title,
   description: pilatesFranchiseGuide.meta.subtitle,
   keywords: [
+    "best pilates franchises",
+    "best pilates franchises 2026",
     "best franchise for pilates",
     "best pilates franchise",
     "best pilates franchise 2026",

@@ -35,8 +35,9 @@ const config: FranchiseRankingIndustryConfig = {
   compareHref: "/comparisons/gym-vs-pilates-studio/",
   keywords: {
     best: [
-      "best franchise for pilates",
       "best pilates franchises",
+      "best pilates franchises 2026",
+      "best franchise for pilates",
       "best pilates franchise to buy",
       "best pilates franchise 2026",
       "top pilates franchise opportunities",
@@ -153,10 +154,10 @@ const built = buildAllFranchiseRankings(config);
 
 const titleOverrides: Record<string, { title: string; cardLabel: string; description: string }> = {
   "best-pilates-franchises-2026": {
-    title: "Best Franchise for Pilates 2026: Top Brands Ranked",
-    cardLabel: "Best Franchise for Pilates",
+    title: "Best Pilates Franchises 2026: Top Brands Ranked",
+    cardLabel: "Best Pilates Franchises",
     description:
-      "Best franchise for Pilates in 2026 — ranked Club Pilates, Solidcore, Kinrgy, and BodyBar on investment, fees, revenue, profit margins, and multi-unit fit. Compare costs and ROI before you buy.",
+      "Best Pilates franchises in 2026 — ranked Club Pilates, Solidcore, Kinrgy, and BodyBar on investment, fees, revenue, profit margins, and multi-unit fit. Compare costs and ROI before you buy.",
   },
   "lowest-cost-pilates-franchises-2026": {
     title: "Lowest Cost Pilates Franchises 2026",

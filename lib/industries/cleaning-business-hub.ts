@@ -36,9 +36,9 @@ export const hubMeta = {
   slug: "cleaning-business",
   parentSlug: "",
   parentLabel: "Industries",
-  title: "Is a Cleaning Business Profitable?",
+  title: "Cleaning Business Profit Margins: What's Typical in 2026?",
   subtitle:
-    "Yes — typical net margins run 10–20% (median ~15%), or about $50K–$100K profit on $500K revenue. See 2026 benchmarks for margins, owner pay, contracts, and valuation.",
+    "Cleaning business profit margins typically run 10–20% net (median ~15%), or about $50K–$100K on $500K revenue. See owner pay, contracts, and valuation benchmarks.",
   dataVintage: "2025–2026",
   sampleSize: "190+ cleaning businesses",
 };
@@ -165,6 +165,11 @@ export const relatedHomeServiceIndustries = [
 ] as const;
 
 const baseFaqs = [
+  {
+    question: "What are typical cleaning business profit margins?",
+    answer:
+      "Cleaning business profit margins typically run 10–20% net (median ~15%), or about $50K–$100K a year at median $500K revenue. Residential-focused operators with strong route density can reach 18–22%; commercial-heavy books often run 10–14% with more contract stability.",
+  },
   {
     question: "Is a cleaning business profitable?",
     answer:
