@@ -64,6 +64,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Gym",
   profitabilitySeo,
   keywords: industryPageKeywords.gym,
+  title: "Gym Profit Margin (12–24% Typical) | BizMetricsHQ",
+  description:
+    "Gym profit margins typically run 12–24% net (median ~18%), or about $145K–$290K on $1.2M revenue. See 2026 owner pay, membership economics & valuation benchmarks.",
 });
 
 function HubSection({

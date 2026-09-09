@@ -5,12 +5,19 @@ import {
 } from "@/lib/industries/gym-calculators-shared";
 
 export const meta = {
-  title: "Gym Business Valuation Calculator & SDE Multiple Tool",
-  shortTitle: "Gym Valuation Calculator",
+  title: "Gym Business Valuation Calculator (2.8×–4.2× SDE)",
+  shortTitle: "Gym Business Valuation Calculator",
   subtitle:
-    "Estimate what your gym is worth using SDE multiples, revenue multiples, and recurring revenue quality.",
+    "Free gym business valuation calculator — estimate what your gym is worth using SDE multiples (typically 2.8×–4.2×, median ~3.5×).",
   description:
-    "Free gym business valuation calculator using SDE and revenue multiples. Compare estimated value against fitness industry benchmarks for membership-based gyms.",
+    "Gym business valuation calculator for buyers and sellers. Estimate value using SDE and revenue multiples (2.8×–4.2× SDE, median ~3.5×) against membership gym benchmarks.",
+  keywords: [
+    "gym business valuation",
+    "gym valuation calculator",
+    "gym business valuation calculator",
+    "how much is a gym worth",
+    "gym SDE multiple",
+  ],
 };
 
 export const introContent = {

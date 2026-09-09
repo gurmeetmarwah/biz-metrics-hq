@@ -36,9 +36,9 @@ export const hubMeta = {
   slug: "gym",
   parentSlug: "",
   parentLabel: "Industries",
-  title: "Gym Industry Benchmarks",
+  title: "Gym Profit Margin: What's Typical in 2026?",
   subtitle:
-    "Revenue, profit margins, owner salaries, membership economics and valuation multiples for gym businesses.",
+    "Gym profit margins typically run 12–24% net (median ~18%), or about $145K–$290K on $1.2M revenue. See owner pay, membership economics, and valuation multiples.",
   dataVintage: "2025–2026",
   sampleSize: "290+ gym businesses",
 };

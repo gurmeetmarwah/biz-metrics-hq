@@ -3,9 +3,9 @@ import type { SourcedMemberMetric } from "@/lib/industries/gym";
 export const pilatesStudioMeta = {
   slug: "pilates-studio",
   name: "Pilates Studio",
-  title: "Pilates Studio Business Benchmarks",
+  title: "Pilates Studio Profit Margin: What's Typical in 2026?",
   subtitle:
-    "Revenue, profit margins, owner salaries, membership economics and business valuation for Pilates studios.",
+    "Pilates studio profit margins typically run 16–28% net (median ~22%), or about $135K–$240K on $850K revenue. See owner pay, reformer economics, and valuation.",
   dataVintage: "2025–2026",
   sampleSize: "140+ Pilates studios",
   geography: "United States",

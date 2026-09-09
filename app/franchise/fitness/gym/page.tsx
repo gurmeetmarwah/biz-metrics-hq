@@ -4,10 +4,11 @@ import { buildFranchiseGuideMetadata } from "@/lib/franchise/franchise-page-meta
 import { gymFranchiseGuide } from "@/lib/franchise/fitness/gym-franchise";
 
 export const metadata: Metadata = buildFranchiseGuideMetadata({
-  title: "Best Gym Franchise 2026: Costs, ROI, Profit Margins & Top Brands",
-  description:
-    "Find the best gym franchise — compare Anytime Fitness, Planet Fitness, Orangetheory, and Snap Fitness. See startup costs, franchise fees, royalties, profit margins, owner income, and ROI before you buy.",
+  title: gymFranchiseGuide.meta.title,
+  description: gymFranchiseGuide.meta.subtitle,
   keywords: [
+    "best gym franchises",
+    "best gym franchises 2026",
     "best gym franchise",
     "best gym franchise 2026",
     "gym franchise cost",

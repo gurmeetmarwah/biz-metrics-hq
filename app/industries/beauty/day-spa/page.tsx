@@ -48,6 +48,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Day Spa",
   profitabilitySeo,
   keywords: industryPageKeywords.daySpa,
+  title: "Day Spa Profit Margin (10–18% Typical) | BizMetricsHQ",
+  description:
+    "Day spa profit margins typically run 10–18% net (median ~14%), or about $75K–$135K on $750K revenue. See 2026 owner pay, membership economics & valuation.",
 });
 
 function HubSection({

@@ -195,15 +195,15 @@ const industryKeywords: Record<string, string[]> = {
   "Coffee Shop": ["cafe", "coffee", "coffee shop profit margin", "coffee shop owner salary"],
   Bakery: ["bake", "bakery", "pastry", "bakery profit margin", "bakery startup cost"],
   "Food Truck": ["food truck", "mobile food", "food truck profit margin", "food truck owner salary"],
-  Gym: ["gym", "fitness", "gym profit margin", "gym owner salary", "membership revenue"],
-  "Yoga Studio": ["yoga", "yoga studio profit margin", "yoga studio owner salary"],
-  "Pilates Studio": ["pilates", "reformer", "pilates studio profit margin"],
+  Gym: ["gym", "fitness", "gym profit margin", "gym owner salary", "membership revenue", "gym business valuation"],
+  "Yoga Studio": ["yoga", "yoga studio profit margin", "yoga studio owner salary", "yoga studio revenue"],
+  "Pilates Studio": ["pilates", "reformer", "pilates studio profit margin", "reformer studio revenue"],
   "CrossFit Gym": ["crossfit", "affiliate", "crossfit franchise", "crossfit gym profit margin"],
   "Martial Arts School": ["martial arts", "dojo", "martial arts school profit margin"],
   "Hair Salon": ["salon", "hair salon profit margin", "hair salon owner salary", "stylist"],
   "Nail Salon": ["nails", "nail salon profit margin", "nail salon startup cost"],
-  "Medical Spa": ["med spa", "spa revenue calculator", "medical spa profit margin", "aesthetic"],
-  "Day Spa": ["spa", "spa revenue calculator", "day spa profit margin"],
+  "Medical Spa": ["med spa", "medical spa profit margin", "spa revenue calculator", "aesthetic"],
+  "Day Spa": ["spa", "day spa profit margin", "spa revenue calculator"],
   Barbershop: ["barber", "barbershop profit margin", "chair rental"],
   "Optometry": ["optometry", "optical", "optometrist owner salary", "optometry practice"],
   "Ice Cream Shop": [
@@ -329,10 +329,12 @@ function buildIndex(): SiteSearchItem[] {
   });
 
   add({
-    label: "Coffee Shop Franchise Guide",
+    label: "Best Coffee Shop Franchises 2026",
     href: "/franchise/food/coffee-shop-franchise/",
     category: "Hub",
     keywords: [
+      "best coffee shop franchises",
+      "best coffee shop franchises 2026",
       "coffee shop franchise",
       "coffee franchise cost",
       "dunkin franchise",
@@ -350,10 +352,12 @@ function buildIndex(): SiteSearchItem[] {
   });
 
   add({
-    label: "Hair Salon Franchise Guide",
+    label: "Best Hair Salon Franchises 2026",
     href: "/franchise/beauty/hair-salon/",
     category: "Hub",
     keywords: [
+      "best hair salon franchises",
+      "best hair salon franchises 2026",
       "hair salon franchise",
       "great clips",
       "sport clips",
@@ -402,10 +406,12 @@ function buildIndex(): SiteSearchItem[] {
   });
 
   add({
-    label: "HVAC Franchise Guide",
+    label: "Best HVAC Franchises 2026",
     href: "/franchise/home-services/hvac/",
     category: "Hub",
     keywords: [
+      "best hvac franchises",
+      "best hvac franchises 2026",
       "hvac franchise",
       "hvac franchise cost",
       "one hour heating franchise",
@@ -416,10 +422,12 @@ function buildIndex(): SiteSearchItem[] {
   });
 
   add({
-    label: "Plumbing Franchise Guide",
+    label: "Best Plumbing Franchises 2026",
     href: "/franchise/home-services/plumbing/",
     category: "Hub",
     keywords: [
+      "best plumbing franchises",
+      "best plumbing franchises 2026",
       "plumbing franchise",
       "plumbing franchise cost",
       "mr rooter franchise",
@@ -430,10 +438,13 @@ function buildIndex(): SiteSearchItem[] {
   });
 
   add({
-    label: "Cleaning Franchise Guide",
+    label: "Best Cleaning Franchises 2026",
     href: "/franchise/home-services/cleaning/",
     category: "Hub",
     keywords: [
+      "best cleaning franchises",
+      "best cleaning franchises 2026",
+      "best maid franchise",
       "cleaning franchise",
       "maid franchise",
       "merry maids franchise",
@@ -444,10 +455,12 @@ function buildIndex(): SiteSearchItem[] {
   });
 
   add({
-    label: "Pest Control Franchise Guide",
+    label: "Best Pest Control Franchises 2026",
     href: "/franchise/home-services/pest-control/",
     category: "Hub",
     keywords: [
+      "best pest control franchises",
+      "best pest control franchises 2026",
       "pest control franchise",
       "orkin franchise",
       "terminix franchise",
@@ -458,10 +471,12 @@ function buildIndex(): SiteSearchItem[] {
   });
 
   add({
-    label: "Gym Franchise Guide",
+    label: "Best Gym Franchises 2026",
     href: "/franchise/fitness/gym/",
     category: "Hub",
     keywords: [
+      "best gym franchises",
+      "best gym franchises 2026",
       "best gym franchise",
       "gym franchise",
       "gym franchise cost",

@@ -7,9 +7,9 @@ export const hubMeta = {
   slug: "medical-spa",
   parentSlug: "beauty",
   parentLabel: "Beauty & Personal Care",
-  title: "Medical Spa Benchmarks, KPIs & Business Metrics",
+  title: "Medical Spa Profit Margin: What's Typical in 2026?",
   subtitle:
-    "Revenue, profit margins, startup costs, EBITDA, valuation, patient lifetime value, treatment room utilization, and industry benchmarks — helping medical spa owners, buyers, and investors make smarter business decisions with real-world data.",
+    "Medical spa profit margins typically run 15–30% net (median ~22%), or about $180K–$360K on $1.2M revenue. See owner pay, injectables mix, treatment economics, and valuation multiples.",
   dataVintage: "2025–2026",
   sampleSize: "120+ medical spas",
 } as const;

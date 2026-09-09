@@ -25,16 +25,16 @@ export const gymFranchiseGuide: HomeServicesFranchiseGuideData = {
     slug: "gym",
     categoryLabel: "Fitness",
     shortName: "Gym",
-    title: "Best Gym Franchise 2026: Costs, ROI, Profit Margins & Top Brands",
+    title: "Best Gym Franchises 2026: Costs, ROI & Top Brands",
     subtitle:
-      "Find the best gym franchise — compare Anytime Fitness, Planet Fitness, Orangetheory, and Snap Fitness. See startup costs, franchise fees, royalties, profit margins, owner income, and ROI before you buy.",
+      "Compare the best gym franchises — Anytime Fitness, Planet Fitness, Orangetheory, and Snap Fitness. See startup costs, franchise fees, royalties, profit margins, owner income, and ROI before you buy.",
     dataVintage: "2025–2026",
     sampleSize: "leading U.S. gym & boutique fitness franchises",
     kpiDashboardTitle: "Gym Franchise KPIs",
     kpiDashboardSubtitle: "Directional ranges across national 24/7 gym clubs and boutique fitness franchise systems.",
-    overviewTitle: "Which Gym Franchise Is Right for You?",
+    overviewTitle: "Best Gym Franchises — Which Brand Fits You?",
     overviewSubtitle: "Match capital, real estate footprint, and membership model to the right gym franchise.",
-    compareTitle: "Compare Gym Franchise Brands",
+    compareTitle: "Compare the Best Gym Franchises Side by Side",
     compareSubtitle:
       "Side-by-side snapshot of investment, fees, royalties, footprint, and buyer fit — open a brand for the full investment profile.",
     economicsSubtitle: "Industry-average operating ranges for mature U.S. gym franchise units after royalties.",
@@ -43,7 +43,7 @@ export const gymFranchiseGuide: HomeServicesFranchiseGuideData = {
     startupPanelSubtitle:
       "Includes franchise fees, leasehold improvements, gym equipment, technology, and opening working capital.",
     calculatorsSubtitle: "Model membership growth, member lifetime value, churn, and valuation before you buy a gym franchise.",
-    rankingsSubtitle: "Curated lists for comparing gym franchises by cost, ROI, growth, and owner fit.",
+    rankingsSubtitle: "Curated best gym franchises lists ranked by cost, ROI, growth, and owner fit.",
     prosConsTitle: "Franchise vs Independent Gym",
     prosConsSubtitle: "Trade brand systems, national marketing, and buying power for royalties and less operating freedom.",
     shouldBuyHref: "#faq",
@@ -265,9 +265,9 @@ export const gymFranchiseGuide: HomeServicesFranchiseGuideData = {
         "A gym franchise typically costs $200,000 to $4,000,000+ in total investment, with many operators landing near $550,000. That includes the franchise fee ($25,000–$60,000), leasehold improvements, gym equipment, technology, furniture, signage, pre-opening marketing, training, insurance, and working capital. Compact 24/7 clubs like Snap Fitness sit toward the low end, while large-format low-price clubs like Planet Fitness can exceed $1.5M–$4M+. Always rebuild Item 7 with local contractor and equipment quotes before you buy.",
     },
     {
-      question: "What is the best gym franchise to open?",
+      question: "What are the best gym franchises?",
       answer:
-        "The best gym franchise depends on your goals. Anytime Fitness often suits multi-unit operators seeking a compact 24/7 footprint and lean staffing, while Planet Fitness fits buyers with larger capital who want the highest revenue ceiling and strongest brand recognition. Orangetheory Fitness appeals to boutique studio operators targeting premium, class-based memberships, and Snap Fitness suits capital-constrained buyers wanting a lower-CapEx 24/7 club. Rank brands on after-fee cash flow, territory quality, and membership retention — not marketing claims alone.",
+        "The best gym franchises depend on your goals. Anytime Fitness often suits multi-unit operators seeking a compact 24/7 footprint and lean staffing, while Planet Fitness fits buyers with larger capital who want the highest revenue ceiling and strongest brand recognition. Orangetheory Fitness appeals to boutique studio operators targeting premium, class-based memberships, and Snap Fitness suits capital-constrained buyers wanting a lower-CapEx 24/7 club. Rank brands on after-fee cash flow, territory quality, and membership retention — not marketing claims alone.",
     },
     {
       question: "How profitable are gym franchises?",
@@ -408,6 +408,6 @@ export const gymFranchiseGuide: HomeServicesFranchiseGuideData = {
   roiCtaLabel: "Franchise ROI Calculator",
   economicsTitle: "Gym Franchise Economics",
   calculatorsTitle: "Gym Franchise Calculators",
-  rankingsTitle: "Top Gym Franchise Rankings",
+  rankingsTitle: "Best Gym Franchises — Rankings & Shortlists",
   categoryId: "fitness",
 };

@@ -35,9 +35,9 @@ export const hvacFranchisePageMeta = {
   categoryId: "home-services",
   categoryLabel: "Home Services",
   shortName: "HVAC",
-  title: "HVAC Franchise Guide: Compare Costs, ROI, Profit Margins & Top Franchise Opportunities",
+  title: "Best HVAC Franchises 2026: Costs, ROI & Top Brands",
   subtitle:
-    "Compare startup costs, franchise fees, royalties, owner earnings, investment requirements, and financial performance across leading HVAC franchise systems.",
+    "Compare the best HVAC franchises — startup costs, franchise fees, royalties, owner earnings, and ROI across leading HVAC franchise and dealer systems.",
   dataVintage: "2025–2026",
   sampleSize: "leading U.S. HVAC franchise & dealer systems",
   kpiDashboardTitle: "HVAC Franchise KPIs",

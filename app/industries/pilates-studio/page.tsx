@@ -66,6 +66,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Pilates Studio",
   profitabilitySeo,
   keywords: industryPageKeywords.pilates,
+  title: "Pilates Studio Profit Margin (16–28% Typical) | BizMetricsHQ",
+  description:
+    "Pilates studio profit margins typically run 16–28% net (median ~22%), or about $135K–$240K on $850K revenue. See 2026 owner pay, reformer economics & valuation.",
 });
 
 function HubSection({

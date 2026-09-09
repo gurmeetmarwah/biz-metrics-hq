@@ -24,16 +24,16 @@ export const pestControlFranchiseGuide: HomeServicesFranchiseGuideData = {
     slug: "pest-control",
     categoryLabel: "Home Services",
     shortName: "Pest Control",
-    title: "Pest Control Franchise Guide: Compare Costs, ROI, Profit Margins & Top Franchise Opportunities",
+    title: "Best Pest Control Franchises 2026: Costs, ROI & Brands",
     subtitle:
-      "Compare startup costs, franchise fees, royalties, owner earnings, investment requirements, and financial performance across leading pest control franchise systems.",
+      "Compare the best pest control franchises — Orkin, Terminix, Aptive, and Mosquito Joe. See startup costs, fees, royalties, margins, and ROI before you buy.",
     dataVintage: "2025–2026",
     sampleSize: "leading U.S. pest control franchise systems",
     kpiDashboardTitle: "Pest Control Franchise KPIs",
     kpiDashboardSubtitle: "Directional ranges across national pest control franchise systems.",
-    overviewTitle: "Which Pest Control Franchise Fits Your Goals?",
+    overviewTitle: "Best Pest Control Franchises — Which Brand Fits You?",
     overviewSubtitle: "Match capital, route-building experience, and multi-territory ambition to the right pest control franchise.",
-    compareTitle: "Compare Pest Control Franchise Brands",
+    compareTitle: "Compare the Best Pest Control Franchises Side by Side",
     compareSubtitle:
       "Side-by-side snapshot of investment, fees, royalties, footprint, and buyer fit — open a brand for the full investment profile.",
     economicsSubtitle:

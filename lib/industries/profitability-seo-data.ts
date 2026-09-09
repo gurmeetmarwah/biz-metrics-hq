@@ -15,7 +15,7 @@ export const barbershopProfitabilitySeo = buildProfitabilitySeo({
   costDriver: "payroll stays 40–48% of revenue and chair utilization above 70% drives volume",
 });
 
-export const daySpaProfitabilitySeo = buildProfitabilitySeo({
+export const daySpaProfitabilitySeoBase = buildProfitabilitySeo({
   businessPhrase: "a day spa",
   companiesPhrase: "day spas",
   profitEntityPhrase: "a day spa",
@@ -30,7 +30,24 @@ export const daySpaProfitabilitySeo = buildProfitabilitySeo({
   costDriver: "payroll stays 42–50% of revenue and membership plus package revenue drives margin",
 });
 
-export const medicalSpaProfitabilitySeo = buildProfitabilitySeo({
+const [daySpaHowSection, daySpaMarginSection, daySpaAreSection, daySpaProfitSection] =
+  daySpaProfitabilitySeoBase.sections;
+const [daySpaHowFaq, daySpaMarginFaq, daySpaAreFaq, daySpaProfitFaq] =
+  daySpaProfitabilitySeoBase.faqs;
+
+/** CTR-led for Search Console: day spa profit margin */
+export const daySpaProfitabilitySeo = {
+  ...daySpaProfitabilitySeoBase,
+  lead: "Day spa profit margins typically run 10–18% net (median ~14%) — about $75K–$135K a year at median $750K revenue. Membership and package mix drive the gap vs average operators.",
+  sectionTitle: "Day Spa Profit Margin",
+  sectionSubtitle:
+    "Typical net margins 10–18% (median ~14%) — about $75K–$135K profit on $750K revenue, plus owner pay and valuation multiples.",
+  faqSectionTitle: "Day Spa Profit Margin FAQs",
+  sections: [daySpaMarginSection, daySpaHowSection, daySpaAreSection, daySpaProfitSection],
+  faqs: [daySpaMarginFaq, daySpaHowFaq, daySpaAreFaq, daySpaProfitFaq],
+};
+
+export const medicalSpaProfitabilitySeoBase = buildProfitabilitySeo({
   businessPhrase: "a medical spa",
   companiesPhrase: "medical spas",
   profitEntityPhrase: "a medical spa",
@@ -44,6 +61,23 @@ export const medicalSpaProfitabilitySeo = buildProfitabilitySeo({
   medianProfit: "$264K",
   costDriver: "payroll stays 30–40% of revenue and membership plus injectable volume drive margin",
 });
+
+const [medSpaHowSection, medSpaMarginSection, medSpaAreSection, medSpaProfitSection] =
+  medicalSpaProfitabilitySeoBase.sections;
+const [medSpaHowFaq, medSpaMarginFaq, medSpaAreFaq, medSpaProfitFaq] =
+  medicalSpaProfitabilitySeoBase.faqs;
+
+/** CTR-led for Search Console: medical spa profit margin */
+export const medicalSpaProfitabilitySeo = {
+  ...medicalSpaProfitabilitySeoBase,
+  lead: "Medical spa profit margins typically run 15–30% net (median ~22%) — about $180K–$360K a year at median $1.2M revenue. Injectables mix and membership cadence drive the gap vs average operators.",
+  sectionTitle: "Medical Spa Profit Margin",
+  sectionSubtitle:
+    "Typical net margins 15–30% (median ~22%) — about $180K–$360K profit on $1.2M revenue, plus owner pay and valuation multiples.",
+  faqSectionTitle: "Medical Spa Profit Margin FAQs",
+  sections: [medSpaMarginSection, medSpaHowSection, medSpaAreSection, medSpaProfitSection],
+  faqs: [medSpaMarginFaq, medSpaHowFaq, medSpaAreFaq, medSpaProfitFaq],
+};
 
 export const nailSalonProfitabilitySeo = buildProfitabilitySeo({
   businessPhrase: "a nail salon",
@@ -316,7 +350,7 @@ export const treeServiceProfitabilitySeo = buildProfitabilitySeo({
   costDriver: "crew utilization and equipment costs stay disciplined",
 });
 
-export const gymProfitabilitySeo = buildProfitabilitySeo({
+const gymProfitabilitySeoBase = buildProfitabilitySeo({
   businessPhrase: "a gym business",
   companiesPhrase: "gyms",
   profitEntityPhrase: "a gym",
@@ -331,7 +365,23 @@ export const gymProfitabilitySeo = buildProfitabilitySeo({
   costDriver: "membership retention and staffing stay in range",
 });
 
-export const pilatesStudioProfitabilitySeo = buildProfitabilitySeo({
+const [gymHowSection, gymMarginSection, gymAreSection, gymProfitSection] =
+  gymProfitabilitySeoBase.sections;
+const [gymHowFaq, gymMarginFaq, gymAreFaq, gymProfitFaq] = gymProfitabilitySeoBase.faqs;
+
+/** CTR-led for Search Console: gym profit margin */
+export const gymProfitabilitySeo = {
+  ...gymProfitabilitySeoBase,
+  lead: "Gym profit margins typically run 12–24% net (median ~18%) — about $145K–$290K a year at median $1.2M revenue. Retention and training attach drive the gap vs average operators.",
+  sectionTitle: "Gym Profit Margin",
+  sectionSubtitle:
+    "Typical net margins 12–24% (median ~18%) — about $145K–$290K profit on $1.2M revenue, plus owner pay and valuation multiples.",
+  faqSectionTitle: "Gym Profit Margin FAQs",
+  sections: [gymMarginSection, gymHowSection, gymAreSection, gymProfitSection],
+  faqs: [gymMarginFaq, gymHowFaq, gymAreFaq, gymProfitFaq],
+};
+
+const pilatesStudioProfitabilitySeoBase = buildProfitabilitySeo({
   businessPhrase: "a Pilates studio",
   companiesPhrase: "Pilates studios",
   profitEntityPhrase: "a Pilates studio",
@@ -346,7 +396,28 @@ export const pilatesStudioProfitabilitySeo = buildProfitabilitySeo({
   costDriver: "class utilization and instructor costs stay efficient",
 });
 
-export const yogaStudioProfitabilitySeo = buildProfitabilitySeo({
+const [
+  pilatesHowSection,
+  pilatesMarginSection,
+  pilatesAreSection,
+  pilatesProfitSection,
+] = pilatesStudioProfitabilitySeoBase.sections;
+const [pilatesHowFaq, pilatesMarginFaq, pilatesAreFaq, pilatesProfitFaq] =
+  pilatesStudioProfitabilitySeoBase.faqs;
+
+/** CTR-led for Search Console: pilates studio profit margin */
+export const pilatesStudioProfitabilitySeo = {
+  ...pilatesStudioProfitabilitySeoBase,
+  lead: "Pilates studio profit margins typically run 16–28% net (median ~22%) — about $135K–$240K a year at median $850K revenue. Class occupancy and private-session mix drive the gap.",
+  sectionTitle: "Pilates Studio Profit Margin",
+  sectionSubtitle:
+    "Typical net margins 16–28% (median ~22%) — about $135K–$240K profit on $850K revenue, plus owner pay and valuation multiples.",
+  faqSectionTitle: "Pilates Studio Profit Margin FAQs",
+  sections: [pilatesMarginSection, pilatesHowSection, pilatesAreSection, pilatesProfitSection],
+  faqs: [pilatesMarginFaq, pilatesHowFaq, pilatesAreFaq, pilatesProfitFaq],
+};
+
+const yogaStudioProfitabilitySeoBase = buildProfitabilitySeo({
   businessPhrase: "a yoga studio",
   companiesPhrase: "yoga studios",
   profitEntityPhrase: "a yoga studio",
@@ -360,6 +431,23 @@ export const yogaStudioProfitabilitySeo = buildProfitabilitySeo({
   medianProfit: "$118K",
   costDriver: "membership mix and rent stay controlled",
 });
+
+const [yogaHowSection, yogaMarginSection, yogaAreSection, yogaProfitSection] =
+  yogaStudioProfitabilitySeoBase.sections;
+const [yogaHowFaq, yogaMarginFaq, yogaAreFaq, yogaProfitFaq] =
+  yogaStudioProfitabilitySeoBase.faqs;
+
+/** CTR-led for Search Console: yoga studio profit margin */
+export const yogaStudioProfitabilitySeo = {
+  ...yogaStudioProfitabilitySeoBase,
+  lead: "Yoga studio profit margins typically run 14–24% net (median ~19%) — about $85K–$150K a year at median $620K revenue. Membership mix and rent control drive the gap vs average studios.",
+  sectionTitle: "Yoga Studio Profit Margin",
+  sectionSubtitle:
+    "Typical net margins 14–24% (median ~19%) — about $85K–$150K profit on $620K revenue, plus owner pay and valuation multiples.",
+  faqSectionTitle: "Yoga Studio Profit Margin FAQs",
+  sections: [yogaMarginSection, yogaHowSection, yogaAreSection, yogaProfitSection],
+  faqs: [yogaMarginFaq, yogaHowFaq, yogaAreFaq, yogaProfitFaq],
+};
 
 export const martialArtsSchoolProfitabilitySeo = buildProfitabilitySeo({
   businessPhrase: "a martial arts school",

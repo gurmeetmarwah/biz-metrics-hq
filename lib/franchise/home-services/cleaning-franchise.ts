@@ -31,17 +31,17 @@ export const cleaningFranchiseGuide: HomeServicesFranchiseGuideData = {
     slug: "cleaning",
     categoryLabel: "Home Services",
     shortName: "Cleaning",
-    title: "Cleaning Franchise Guide: Compare Costs, ROI, Profit Margins & Top Franchise Opportunities",
+    title: "Best Cleaning Franchises 2026: Costs, ROI & Maid Brands",
     subtitle:
-      "Compare startup costs, franchise fees, royalties, owner earnings, investment requirements, and financial performance across leading residential cleaning franchise systems.",
+      "Compare the best cleaning franchises — Merry Maids, Molly Maid, The Cleaning Authority, and MaidPro. See startup costs, fees, royalties, margins, and ROI before you buy.",
     dataVintage: "2025–2026",
     sampleSize: "leading U.S. residential cleaning franchise systems",
     kpiDashboardTitle: "Cleaning Franchise KPIs",
     kpiDashboardSubtitle: "Directional ranges across national residential cleaning franchise systems.",
-    overviewTitle: "Which Cleaning Franchise Fits Your Goals?",
+    overviewTitle: "Best Cleaning Franchises — Which Brand Fits You?",
     overviewSubtitle:
       "Match capital, recurring-revenue goals, and multi-territory ambition to the right cleaning franchise system.",
-    compareTitle: "Compare Cleaning Franchise Brands",
+    compareTitle: "Compare the Best Cleaning Franchises Side by Side",
     compareSubtitle:
       "Side-by-side snapshot of investment, fees, royalties, footprint, and buyer fit — open a brand for the full investment profile.",
     economicsSubtitle:

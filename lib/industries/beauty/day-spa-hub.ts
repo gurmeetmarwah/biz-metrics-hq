@@ -7,9 +7,9 @@ export const hubMeta = {
   slug: "day-spa",
   parentSlug: "beauty",
   parentLabel: "Beauty & Personal Care",
-  title: "Day Spa Benchmarks, KPIs & Business Metrics",
+  title: "Day Spa Profit Margin: What's Typical in 2026?",
   subtitle:
-    "Revenue, profit margins, startup costs, EBITDA, valuation, client lifetime value, treatment room utilization, and industry benchmarks — helping day spa owners, buyers, and investors make smarter business decisions with real-world data.",
+    "Day spa profit margins typically run 10–18% net (median ~14%), or about $75K–$135K on $750K revenue. See owner pay, membership economics, and valuation multiples.",
   dataVintage: "2025–2026",
   sampleSize: "100+ day spas",
 } as const;

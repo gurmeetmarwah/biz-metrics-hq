@@ -48,6 +48,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Medical Spa",
   profitabilitySeo,
   keywords: industryPageKeywords.medicalSpa,
+  title: "Medical Spa Profit Margin (15–30% Typical) | BizMetricsHQ",
+  description:
+    "Medical spa profit margins typically run 15–30% net (median ~22%), or about $180K–$360K on $1.2M revenue. See 2026 owner pay, injectables mix & valuation.",
 });
 
 function HubSection({

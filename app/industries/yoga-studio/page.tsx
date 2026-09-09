@@ -68,6 +68,9 @@ export const metadata: Metadata = buildIndustryPageMetadata({
   industryLabel: "Yoga Studio",
   profitabilitySeo,
   keywords: industryPageKeywords.yoga,
+  title: "Yoga Studio Profit Margin (14–24% Typical) | BizMetricsHQ",
+  description:
+    "Yoga studio profit margins typically run 14–24% net (median ~19%), or about $85K–$150K on $620K revenue. See 2026 owner pay, membership economics & valuation.",
 });
 
 function HubSection({

@@ -2,9 +2,9 @@ export const franchisePageMeta = {
   slug: "hair-salon",
   categoryId: "beauty",
   categoryLabel: "Beauty",
-  title: "Hair Salon Franchise Guide: Costs, ROI, Profit Margins & Best Franchise Opportunities",
+  title: "Best Hair Salon Franchises 2026: Costs, ROI & Top Brands",
   subtitle:
-    "Compare startup costs, franchise fees, royalties, owner earnings, investment requirements, and business performance across leading hair salon franchises.",
+    "Compare the best hair salon franchises — startup costs, franchise fees, royalties, owner earnings, and ROI across leading salon franchise brands.",
   dataVintage: "2025–2026",
   sampleSize: "leading U.S. salon franchise brands",
 } as const;

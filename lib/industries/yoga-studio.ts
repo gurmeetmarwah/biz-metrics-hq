@@ -3,9 +3,9 @@ import type { SourcedMemberMetric } from "@/lib/industries/gym";
 export const yogaStudioMeta = {
   slug: "yoga-studio",
   name: "Yoga Studio",
-  title: "Yoga Studio Business Benchmarks",
+  title: "Yoga Studio Profit Margin: What's Typical in 2026?",
   subtitle:
-    "Revenue, profit margins, owner salaries, membership economics and business valuation for yoga studios.",
+    "Yoga studio profit margins typically run 14–24% net (median ~19%), or about $85K–$150K on $620K revenue. See owner pay, membership economics, and valuation.",
   dataVintage: "2025–2026",
   sampleSize: "120+ yoga studios",
   geography: "United States",

@@ -146,9 +146,9 @@ export const coffeeShopFranchiseBrandPresets: Record<
 
 export const coffeeShopFranchiseGuide = {
   meta: {
-    title: "Coffee Shop Franchise: Costs, Profit Margins, ROI & Top Franchise Opportunities",
+    title: "Best Coffee Shop Franchises 2026: Costs, ROI & Brands",
     subtitle:
-      "Compare coffee shop franchise startup costs, franchise fees, royalties, revenue potential, profitability, and investment requirements across leading coffee franchise brands.",
+      "Compare the best coffee shop franchises — Dunkin', Dutch Bros, Scooter's, and 7 Brew. See startup costs, franchise fees, royalties, margins, and ROI before you buy.",
     dataVintage: "2025–2026",
     sampleSize: "leading U.S. coffee franchise systems",
     shortName: "Coffee Shop",
@@ -156,6 +156,8 @@ export const coffeeShopFranchiseGuide = {
   },
 
   keywords: [
+    "best coffee shop franchises",
+    "best coffee shop franchises 2026",
     "coffee shop franchise",
     "coffee franchise cost",
     "dunkin franchise",
